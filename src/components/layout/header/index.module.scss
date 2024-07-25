@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  .background {
+    background-color: #f9f9f8;
+    .control {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      .images {
+        img {
+          width: 170px;
+        }
+      }
+      .services {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+      }
+      .icons {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        svg {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

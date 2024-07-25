@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .background {
+    background-color: #f9f9f8;
+  }
+  .background .control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .background .control .images img {
+    width: 170px;
+  }
+  .background .control .services {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .background .control .icons {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+  }
+  .background .control .icons svg {
+    cursor: pointer;
+  }
+}/*# sourceMappingURL=index.module.css.map */
