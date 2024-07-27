@@ -1,0 +1,103 @@
+@media (min-width: 768px) {
+  .background .header {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+  }
+  .background .header h2 {
+    font-weight: 600;
+    font-size: 32px;
+  }
+  .background .control {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 17px;
+  }
+  .background .control .border1 {
+    width: 33%;
+    background-color: #DFEED7;
+    border-radius: 10px;
+  }
+  .background .control .border1 .bordertext1 {
+    padding: 88px 137px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    color: #439A75;
+    font-weight: 600;
+  }
+  .background .control .border1 .bordertext1 h2 {
+    font-size: 32px;
+  }
+  .background .control .border1 .bordertext1 p {
+    font-size: 20px;
+  }
+  .background .control .border2 {
+    background-color: #e6deeb;
+    width: 33%;
+    border-radius: 10px;
+  }
+  .background .control .border2 .bordertext2 {
+    padding: 88px 137px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #9b8dd4;
+    font-weight: 600;
+  }
+  .background .control .border2 .bordertext2 h2 {
+    font-size: 32px;
+  }
+  .background .control .border2 .bordertext2 p {
+    font-size: 20px;
+  }
+  .background .control .border3 {
+    background-color: #F9E8D6;
+    width: 33%;
+    border-radius: 10px;
+  }
+  .background .control .border3 .bordertext3 {
+    padding: 88px 137px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ED8E61;
+    font-weight: 600;
+  }
+  .background .control .border3 .bordertext3 h2 {
+    font-size: 32px;
+  }
+  .background .control .border3 .bordertext3 p {
+    font-size: 20px;
+  }
+  .background .control .border4 {
+    background-color: #DFEED7;
+    width: 33%;
+    border-radius: 10px;
+  }
+  .background .control .border4 .bordertext4 {
+    padding: 88px 137px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #439A75;
+    font-weight: 600;
+  }
+  .background .control .border4 .bordertext4 h2 {
+    font-size: 32px;
+  }
+  .background .control .border4 .bordertext4 p {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=index.module.css.map */
