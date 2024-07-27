@@ -4,6 +4,7 @@ import Wrapper from '../../components/UI/wrapper/index'
 import Hero from '../../components/hero';
 import Main from '../../components/main';
 import Logo from '../../components/logo';
+import YusifAbout from '../../components/yusifabout';
 
 const Home = () => {
 
@@ -15,6 +16,7 @@ const Home = () => {
     <Wrapper>
       <Main/>
       <Logo/>
+      <YusifAbout/>
     </Wrapper>
     </>
   )
