@@ -1,25 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-@media (min-width: 768px) {
-  .background {
-    padding-top: 70px;
-    padding-bottom: 20px;
-    .control {
-      display: flex;
-      justify-content: space-between;
-      gap: 70px;
-      .leftside {
-        width: 100%;
-        img {
-          border-radius: 20px;
-      
-            height: 50vh;
-        }
-      }
-      .rightside {
+.background{
+    padding-top: 80px;
+     .rightside {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
@@ -37,6 +23,7 @@
               justify-content: space-between;
               h2 {
                 font-weight: 600;
+                font-size: 32px;
               }
               svg {
                 display: flex;
@@ -46,7 +33,7 @@
             .orangeabout {
               padding-top: 20px;
               p {
-                font-size: 14px;
+                font-size: 20px;
                 line-height: 20px;
               }
             }
@@ -63,6 +50,8 @@
             align-items: center;
             justify-content: space-between;
             h2 {
+                font-size: 32px;
+
               font-weight: 600;
             }
             svg {
@@ -73,7 +62,7 @@
           .orangeabout {
             padding-top: 20px;
             p {
-              font-size: 14px;
+              font-size: 20px;
               line-height: 20px;
             }
           }
@@ -90,6 +79,8 @@
             align-items: center;
             justify-content: space-between;
             h2 {
+                font-size: 32px;
+
               font-weight: 600;
             }
             svg {
@@ -100,7 +91,7 @@
           .orangeabout {
             padding-top: 20px;
             p {
-              font-size: 14px;
+              font-size: 20px;
               line-height: 20px;
             }
           }
@@ -117,6 +108,8 @@
             align-items: center;
             justify-content: space-between;
             h2 {
+                font-size: 32px;
+
               font-weight: 600;
             }
             svg {
@@ -127,12 +120,10 @@
           .orangeabout {
             padding-top: 20px;
             p {
-              font-size: 14px;
+              font-size: 20px;
               line-height: 20px;
             }
           }
         }
       }
-    }
-  }
 }

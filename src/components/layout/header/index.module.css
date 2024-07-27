@@ -7,6 +7,9 @@
 @media (min-width: 768px) {
   .background {
     background-color: #f9f9f8;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
   .background .control {
     display: flex;

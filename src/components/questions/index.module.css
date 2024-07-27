@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  padding-top: 80px;
+}
+.background .rightside {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+}
+.background .rightside .greenborder {
+  cursor: pointer;
+  padding: 30px;
+  background-color: #dfeed7;
+  width: 100%;
+  border-radius: 15px;
+}
+.background .rightside .greenborder .greentext {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.background .rightside .greenborder .greentext h2 {
+  font-weight: 600;
+  font-size: 32px;
+}
+.background .rightside .greenborder .greentext svg {
+  display: flex;
+  justify-content: flex-end;
+}
+.background .rightside .greenborder .orangeabout {
+  padding-top: 20px;
+}
+.background .rightside .greenborder .orangeabout p {
+  font-size: 20px;
+  line-height: 20px;
+}
+.background .rightside .orangeborder {
+  cursor: pointer;
+  padding: 30px;
+  background-color: #f8f0d2;
+  width: 100%;
+  border-radius: 15px;
+}
+.background .rightside .orangeborder .orangetext {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.background .rightside .orangeborder .orangetext h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+.background .rightside .orangeborder .orangetext svg {
+  display: flex;
+  justify-content: flex-end;
+}
+.background .rightside .orangeborder .orangeabout {
+  padding-top: 20px;
+}
+.background .rightside .orangeborder .orangeabout p {
+  font-size: 20px;
+  line-height: 20px;
+}
+.background .rightside .redborder {
+  cursor: pointer;
+  padding: 30px;
+  background-color: #f9e8d6;
+  width: 100%;
+  border-radius: 15px;
+}
+.background .rightside .redborder .redtext {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.background .rightside .redborder .redtext h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+.background .rightside .redborder .redtext svg {
+  display: flex;
+  justify-content: flex-end;
+}
+.background .rightside .redborder .orangeabout {
+  padding-top: 20px;
+}
+.background .rightside .redborder .orangeabout p {
+  font-size: 20px;
+  line-height: 20px;
+}
+.background .rightside .violetborder {
+  cursor: pointer;
+  padding: 30px;
+  background-color: #E6DEEB;
+  width: 100%;
+  border-radius: 15px;
+}
+.background .rightside .violetborder .violettext {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.background .rightside .violetborder .violettext h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+.background .rightside .violetborder .violettext svg {
+  display: flex;
+  justify-content: flex-end;
+}
+.background .rightside .violetborder .orangeabout {
+  padding-top: 20px;
+}
+.background .rightside .violetborder .orangeabout p {
+  font-size: 20px;
+  line-height: 20px;
+}/*# sourceMappingURL=index.module.css.map */

@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  padding-top: 80px;
+}
+.background .control {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.background .control .leftside .header h2 {
+  font-size: 51px;
+  font-weight: 600;
+}
+.background .control .leftside .profilpicture {
+  padding-top: 40px;
+}
+.background .control .leftside .profilpicture img {
+  width: 100%;
+  border-radius: 20px;
+  height: 70vh;
+}
+.background .control .leftside .experience {
+  margin-top: 20px;
+  background-color: #F8F0D2;
+  padding: 40px 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.background .control .leftside .experience h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+.background .control .rightside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.background .control .rightside .education {
+  margin-top: 20px;
+  background-color: #E6DEEB;
+  padding: 40px 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.background .control .rightside .education h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+.background .control .rightside .diplom {
+  margin-top: 20px;
+  background-color: #DFEED7;
+  padding: 40px 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.background .control .rightside .diplom h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+.background .control .rightside .sertifikat img {
+  width: 100%;
+  border-radius: 20px;
+}/*# sourceMappingURL=index.module.css.map */

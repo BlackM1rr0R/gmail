@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  margin-top: 80px;
+  padding-bottom: 80px;
+  background-color: #f9f9f8;
+}
+.background .control {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 65px;
+}
+.background .control .line1 h2 {
+  padding-top: 20px;
+  font-weight: 600;
+  font-size: 28px;
+  width: 400px;
+}
+.background .control .line1 p {
+  padding-top: 20px;
+  width: 350px;
+  font-size: 15px;
+}
+.background .control .line2 {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.background .control .line2 h2 {
+  color: #9D9DA9;
+  font-size: 14px;
+}
+.background .control .line2 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.background .control .line2 ul li {
+  font-size: 17px;
+}
+.background .control .line3 {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.background .control .line3 h2 {
+  color: #9D9DA9;
+  font-size: 14px;
+}
+.background .control .line3 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.background .control .line3 ul li {
+  font-size: 17px;
+}/*# sourceMappingURL=index.module.css.map */
