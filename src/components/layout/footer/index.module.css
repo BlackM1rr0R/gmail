@@ -31,13 +31,13 @@
   gap: 14px;
 }
 .background .control .line2 h2 {
-  color: #9D9DA9;
+  color: #9d9da9;
   font-size: 14px;
 }
 .background .control .line2 ul {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 20px;
 }
 .background .control .line2 ul li {
   font-size: 17px;
@@ -48,14 +48,26 @@
   gap: 14px;
 }
 .background .control .line3 h2 {
-  color: #9D9DA9;
+  color: #9d9da9;
   font-size: 14px;
 }
 .background .control .line3 ul {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 20px;
 }
 .background .control .line3 ul li {
   font-size: 17px;
+}
+.background .control .line3 .icons {
+  display: flex;
+  justify-content: space-between;
+}
+.background .control .line3 .icons .linkedin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #9B9FAC;
+  padding: 12px;
+  border-radius: 50%;
 }/*# sourceMappingURL=index.module.css.map */

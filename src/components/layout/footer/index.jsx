@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./index.module.css";
 import Wrapper from "../../UI/wrapper/index";
 import Logo from "../../../assets/images/logo1.png";
+import { FacebookIcon, InstagramIcon, LinkedinIcon } from "../../../icons";
 const Footer = () => {
   return (
     <div className={styles.background}>
@@ -19,7 +20,7 @@ const Footer = () => {
             </p>
           </div>
           <div className={styles.line2}>
-          <h2>Navigation</h2>
+            <h2>Navigation</h2>
             <ul>
               <li>Əsas Səhifə</li>
               <li>Skoliozlar</li>
@@ -29,14 +30,24 @@ const Footer = () => {
             </ul>
           </div>
           <div className={styles.line3}>
-          <h2>Main office</h2>
+            <h2>Main office</h2>
             <ul>
               <li>1905 Market St, Tampa, FL</li>
               <li>+1 800 458 09 02</li>
               <li>recruiting@gmail.com</li>
               <li>info@gmail.com</li>
-              <li>Əlaqə</li>
             </ul>
+            <div className={styles.icons}>
+              <div className={styles.linkedin}>
+                <LinkedinIcon />
+              </div>
+              <div className={styles.linkedin}>
+                <FacebookIcon />
+              </div>
+              <div className={styles.linkedin}>
+                <InstagramIcon />
+              </div>
+            </div>
           </div>
         </div>
       </Wrapper>
