@@ -4,13 +4,57 @@
   box-sizing: border-box;
 }
 
+.background {
+  background-color: #f9f9f8;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.background .control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.background .control .images img {
+  width: 170px;
+}
+.background .control .services {
+  display: none;
+}
+.background .control .hamburger {
+  display: flex;
+  flex-direction: column;
+}
+.background .control .icons {
+  display: none;
+}
+.background .overlay {
+  display: flex;
+  flex-direction: column;
+}
+.background .overlay .services {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.background .overlay .services h2 {
+  padding-bottom: 25px;
+  padding-top: 25px;
+  font-size: 24px;
+  font-weight: 600;
+  border-bottom: 1px solid gray;
+}
+.background .overlay .icons {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  border-bottom: 1px solid gray;
+}
+
 @media (min-width: 768px) {
-  .background {
-    background-color: #f9f9f8;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
   .background .control {
     display: flex;
     justify-content: space-between;
@@ -33,5 +77,8 @@
   }
   .background .control .icons svg {
     cursor: pointer;
+  }
+  .background .control .hamburger {
+    display: none;
   }
 }/*# sourceMappingURL=index.module.css.map */

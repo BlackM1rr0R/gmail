@@ -5,7 +5,7 @@
 }
 
 .background {
-  padding-top: 80px;
+  padding-top: 40px;
 }
 .background .text {
   display: flex;
@@ -16,17 +16,46 @@
   gap: 10px;
 }
 .background .text h2 {
-  font-size: 73px;
+  font-size: 35px;
   color: #ED8E61;
   font-weight: 600;
 }
 .background .text h3 {
-  font-size: 73px;
+  font-size: 30px;
   font-weight: 600;
 }
 .background .images {
-  padding-top: 70px;
+  padding-top: 40px;
 }
 .background .images img {
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .background {
+    padding-top: 80px;
+  }
+  .background .text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .background .text h2 {
+    font-size: 73px;
+    color: #ED8E61;
+    font-weight: 600;
+  }
+  .background .text h3 {
+    font-size: 73px;
+    font-weight: 600;
+  }
+  .background .images {
+    padding-top: 70px;
+  }
+  .background .images img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=index.module.css.map */

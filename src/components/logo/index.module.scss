@@ -3,13 +3,35 @@
     padding: 0;
     box-sizing: border-box;
 }
+.background{
+    .control{
+
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        
+        .border{
+            display: flex;
+            justify-content: center;
+            background-color: #F1F1F2;
+            padding: 25px 40px;
+            border-radius: 5px;
+            width: 100%;
+  
+        }
+    }
+}
 @media(min-width:768px){
 
     .background{
         .control{
             padding-top: 30px;
             padding-bottom: 30px;
-            display: flex;
+        flex-direction: row;
+        display: flex;
             justify-content: center;
             align-items: center;
             gap: 10px;

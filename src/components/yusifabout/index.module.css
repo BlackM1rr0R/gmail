@@ -4,6 +4,133 @@
   box-sizing: border-box;
 }
 
+.background {
+  padding-bottom: 20px;
+}
+.background .control {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+.background .control .leftside {
+  width: 100%;
+}
+.background .control .leftside img {
+  border-radius: 20px;
+  width: 100%;
+}
+.background .control .rightside {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+}
+.background .control .rightside .greenborder {
+  cursor: pointer;
+  padding: 30px;
+  background-color: #dfeed7;
+  width: 100%;
+  border-radius: 15px;
+}
+.background .control .rightside .greenborder .greentext {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.background .control .rightside .greenborder .greentext h2 {
+  font-weight: 600;
+}
+.background .control .rightside .greenborder .greentext svg {
+  display: flex;
+  justify-content: flex-end;
+}
+.background .control .rightside .greenborder .orangeabout {
+  padding-top: 20px;
+}
+.background .control .rightside .greenborder .orangeabout p {
+  font-size: 14px;
+  line-height: 20px;
+}
+.background .control .rightside .orangeborder {
+  cursor: pointer;
+  padding: 30px;
+  background-color: #f8f0d2;
+  width: 100%;
+  border-radius: 15px;
+}
+.background .control .rightside .orangeborder .orangetext {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.background .control .rightside .orangeborder .orangetext h2 {
+  font-weight: 600;
+}
+.background .control .rightside .orangeborder .orangetext svg {
+  display: flex;
+  justify-content: flex-end;
+}
+.background .control .rightside .orangeborder .orangeabout {
+  padding-top: 20px;
+}
+.background .control .rightside .orangeborder .orangeabout p {
+  font-size: 14px;
+  line-height: 20px;
+}
+.background .control .rightside .redborder {
+  cursor: pointer;
+  padding: 30px;
+  background-color: #f9e8d6;
+  width: 100%;
+  border-radius: 15px;
+}
+.background .control .rightside .redborder .redtext {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.background .control .rightside .redborder .redtext h2 {
+  font-weight: 600;
+}
+.background .control .rightside .redborder .redtext svg {
+  display: flex;
+  justify-content: flex-end;
+}
+.background .control .rightside .redborder .orangeabout {
+  padding-top: 20px;
+}
+.background .control .rightside .redborder .orangeabout p {
+  font-size: 14px;
+  line-height: 20px;
+}
+.background .control .rightside .violetborder {
+  cursor: pointer;
+  padding: 30px;
+  background-color: #E6DEEB;
+  width: 100%;
+  border-radius: 15px;
+}
+.background .control .rightside .violetborder .violettext {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.background .control .rightside .violetborder .violettext h2 {
+  font-weight: 600;
+}
+.background .control .rightside .violetborder .violettext svg {
+  display: flex;
+  justify-content: flex-end;
+}
+.background .control .rightside .violetborder .orangeabout {
+  padding-top: 20px;
+}
+.background .control .rightside .violetborder .orangeabout p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
 @media (min-width: 768px) {
   .background {
     padding-top: 70px;
@@ -11,21 +138,21 @@
   }
   .background .control {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    gap: 70px;
+    gap: 40px;
   }
   .background .control .leftside {
     width: 100%;
   }
   .background .control .leftside img {
     border-radius: 20px;
-    height: 50vh;
   }
   .background .control .rightside {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
   }
   .background .control .rightside .greenborder {
     cursor: pointer;

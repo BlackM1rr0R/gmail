@@ -7,12 +7,13 @@
     padding-top: 80px;
     .control{
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        gap: 50px;
+     
         .leftside{
             .header{
                     h2{
-                        font-size: 51px;
+                        font-size: 35px;
                         font-weight: 600;
                     }
             }
@@ -21,7 +22,7 @@
                 img{
                     width: 100%;
                     border-radius: 20px;
-                    height: 70vh;
+                 
             
                 }
             }
@@ -70,6 +71,7 @@
                 }
             }
             .sertifikat{
+                padding-top: 20px;
                 img{
                     width: 100%;
                     border-radius: 20px;
@@ -77,4 +79,84 @@
             }
         }
     }
+}
+@media(min-width:768px){
+    .background{
+    padding-top: 80px;
+    .control{
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-between;
+        gap: 50px;
+        .leftside{
+            .header{
+                    h2{
+                        font-size: 51px;
+                        font-weight: 600;
+                    }
+            }
+            .profilpicture{
+                padding-top: 40px;
+                img{
+                    
+                    border-radius: 20px;
+                 
+            
+                }
+            }
+            .experience{
+                margin-top: 20px;
+                background-color: #F8F0D2;
+                padding: 40px 30px;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                h2{
+                    font-size: 28px;
+                    font-weight: 600;
+                }
+            }
+        }
+        .rightside{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .education{
+                margin-top: 20px;
+                background-color: #E6DEEB;
+                padding: 40px 30px;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                h2{
+                    font-size: 28px;
+                    font-weight: 600;
+                }
+            }
+            .diplom{
+                margin-top: 20px;
+                background-color: #DFEED7;
+                padding: 40px 30px;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                h2{
+                    font-size: 28px;
+                    font-weight: 600;
+                }
+            }
+            .sertifikat{
+                padding-top: 0;
+                img{
+                    width: 100%;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+}
 }

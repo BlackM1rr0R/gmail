@@ -4,6 +4,131 @@
     box-sizing: border-box;
 }
 .background{
+    padding-top: 40px;
+     .rightside {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 20px;
+        .greenborder {
+            cursor: pointer;
+  
+            padding: 30px;
+            background-color: #dfeed7;
+            width: 100%;
+            border-radius: 15px;
+            .greentext {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              h2 {
+                font-weight: 600;
+                font-size: 20px;
+              }
+              svg {
+                display: flex;
+                justify-content: flex-end;
+              }
+            }
+            .orangeabout {
+              padding-top: 20px;
+              p {
+                font-size: 14px;
+                line-height: 20px;
+              }
+            }
+          }
+        .orangeborder {
+          cursor: pointer;
+
+          padding: 30px;
+          background-color: #f8f0d2;
+          width: 100%;
+          border-radius: 15px;
+          .orangetext {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h2 {
+                font-size: 20px;
+
+              font-weight: 600;
+            }
+            svg {
+              display: flex;
+              justify-content: flex-end;
+            }
+          }
+          .orangeabout {
+            padding-top: 20px;
+            p {
+              font-size: 14px;
+              line-height: 20px;
+            }
+          }
+        }
+        .redborder {
+          cursor: pointer;
+
+          padding: 30px;
+          background-color: #f9e8d6;
+          width: 100%;
+          border-radius: 15px;
+          .redtext {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h2 {
+                font-size: 20px;
+
+              font-weight: 600;
+            }
+            svg {
+              display: flex;
+              justify-content: flex-end;
+            }
+          }
+          .orangeabout {
+            padding-top: 20px;
+            p {
+              font-size: 14px;
+              line-height: 20px;
+            }
+          }
+        }
+        .violetborder {
+          cursor: pointer;
+
+          padding: 30px;
+          background-color: #E6DEEB;
+          width: 100%;
+          border-radius: 15px;
+          .violettext {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h2 {
+                font-size: 20px;
+
+              font-weight: 600;
+            }
+            svg {
+              display: flex;
+              justify-content: flex-end;
+            }
+          }
+          .orangeabout {
+            padding-top: 20px;
+            p {
+              font-size: 14px;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+}
+@media(min-width:768px){
+  .background{
     padding-top: 80px;
      .rightside {
         display: flex;
@@ -23,7 +148,7 @@
               justify-content: space-between;
               h2 {
                 font-weight: 600;
-                font-size: 32px;
+             font-size: 26px;
               }
               svg {
                 display: flex;
@@ -33,7 +158,7 @@
             .orangeabout {
               padding-top: 20px;
               p {
-                font-size: 20px;
+                font-size: 16px;
                 line-height: 20px;
               }
             }
@@ -50,7 +175,7 @@
             align-items: center;
             justify-content: space-between;
             h2 {
-                font-size: 32px;
+                font-size: 26px;
 
               font-weight: 600;
             }
@@ -62,7 +187,7 @@
           .orangeabout {
             padding-top: 20px;
             p {
-              font-size: 20px;
+            font-size: 16px;
               line-height: 20px;
             }
           }
@@ -79,7 +204,7 @@
             align-items: center;
             justify-content: space-between;
             h2 {
-                font-size: 32px;
+                  font-size: 26px;
 
               font-weight: 600;
             }
@@ -91,7 +216,7 @@
           .orangeabout {
             padding-top: 20px;
             p {
-              font-size: 20px;
+          font-size: 16px;
               line-height: 20px;
             }
           }
@@ -108,7 +233,7 @@
             align-items: center;
             justify-content: space-between;
             h2 {
-                font-size: 32px;
+              font-size: 26px;
 
               font-weight: 600;
             }
@@ -120,10 +245,11 @@
           .orangeabout {
             padding-top: 20px;
             p {
-              font-size: 20px;
+     font-size: 16px;
               line-height: 20px;
             }
           }
         }
       }
+}
 }
