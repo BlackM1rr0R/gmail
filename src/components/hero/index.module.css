@@ -7,17 +7,20 @@
 .background .headers {
   padding-top: 33px;
   display: flex;
+  justify-content: center;
 }
 .background .headers h2 {
   background-color: black;
-  padding: 4px 12px;
+  padding: 8px 12px;
   color: white;
   border-radius: 20px;
 }
 .background .texts {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
   gap: 20px;
   padding-top: 15px;
 }
@@ -38,13 +41,19 @@
   flex-direction: column;
   gap: 40px;
 }
+.background .control .leftside .line1 {
+  text-align: center;
+}
 .background .control .leftside .line1 h2 {
   font-size: 22px;
   width: 100%;
 }
 .background .control .leftside .line2 {
   display: flex;
-  gap: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 .background .control .leftside .line2 h2 {
   background-color: black;
@@ -67,11 +76,17 @@
 .background .control .leftside .line3 .controlemergency {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  gap: 30px;
 }
 .background .control .leftside .line3 .controlemergency .emergency {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 12px;
 }
 .background .control .leftside .line3 .controlemergency .emergency .emergencynumber {
@@ -79,7 +94,7 @@
   align-items: center;
 }
 .background .control .leftside .line3 .controlemergency .emergency .emergencynumber h2 {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 35px;
 }
 .background .control .leftside .line3 .controlemergency .emergency .emergencytext h2 {
@@ -96,6 +111,7 @@
   .background .headers {
     padding-top: 53px;
     display: flex;
+    justify-content: flex-start;
   }
   .background .headers h2 {
     background-color: black;
@@ -106,6 +122,9 @@
   .background .texts {
     display: flex;
     align-items: center;
+    text-align: start;
+    flex-direction: row;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 20px;
     padding-top: 15px;
@@ -128,12 +147,18 @@
     flex-direction: column;
     gap: 70px;
   }
+  .background .control .leftside .line1 {
+    text-align: start;
+  }
   .background .control .leftside .line1 h2 {
     font-size: 22px;
     width: 650px;
   }
   .background .control .leftside .line2 {
     display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
     gap: 40px;
   }
   .background .control .leftside .line2 h2 {
@@ -157,11 +182,13 @@
   .background .control .leftside .line3 .controlemergency {
     display: flex;
     justify-content: flex-start;
+    flex-direction: row;
     gap: 40px;
   }
   .background .control .leftside .line3 .controlemergency .emergency {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 12px;
   }
   .background .control .leftside .line3 .controlemergency .emergency .emergencynumber {

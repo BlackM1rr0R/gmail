@@ -9,6 +9,7 @@ import {
   TiktokIcon,
   YoutubeIcon,
 } from "../../../icons";
+import { Link } from "react-router-dom";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -19,11 +20,11 @@ const Header = () => {
     <div className={styles.background}>
       <Wrapper>
         <div className={styles.control}>
-          <div className={styles.images}>
+          <Link to={"/"} className={styles.images}>
             <img src={Logo} alt="" />
-          </div>
+          </Link>
           <div className={styles.services}>
-            <h2>Haqqımda</h2>
+            <Link to={"/about"}>Haqqımda</Link>
             <h2>Müalicələr</h2>
             <h2>Kifoz</h2>
             <h2>Galereya</h2>

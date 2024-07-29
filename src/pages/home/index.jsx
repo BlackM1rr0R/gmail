@@ -7,7 +7,7 @@ import Logo from "../../components/logo";
 import YusifAbout from "../../components/yusifabout";
 import Hospital from "../../components/hospital";
 import ChatApp from "../../components/chat";
-import Certificates from "../../components/certificates";
+
 import Questions from "../../components/questions";
 
 const Home = () => {
@@ -20,7 +20,7 @@ const Home = () => {
         <YusifAbout />
         <Hospital />
         <ChatApp />
-        <Certificates />
+
         <Questions />
       </Wrapper>
     </>

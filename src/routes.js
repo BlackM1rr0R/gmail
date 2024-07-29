@@ -14,7 +14,7 @@ const routes = {
   home: routeItem(1, 'home', "/", Home),
   about: routeItem(2, 'about', "/about", About),
   notFound: routeItem(3, 'notFound', "*", NotFound),
-
+ 
 };
 
 const routeArr = Object.values(routes);
