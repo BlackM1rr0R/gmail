@@ -23,6 +23,10 @@
 .background .control .services {
   display: none;
 }
+.background .control .services a {
+  text-decoration: none;
+  color: black;
+}
 .background .control .hamburger {
   display: flex;
   flex-direction: column;
@@ -39,7 +43,9 @@
   gap: 10px;
   flex-direction: column;
 }
-.background .overlay .services h2 {
+.background .overlay .services a {
+  text-decoration: none;
+  color: black;
   padding-bottom: 25px;
   padding-top: 25px;
   font-size: 24px;

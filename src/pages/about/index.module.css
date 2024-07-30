@@ -4,6 +4,76 @@
   box-sizing: border-box;
 }
 
+.backimg {
+  padding-bottom: 120px;
+}
+.backimg .backtext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.backimg .backtext h2 {
+  font-weight: 700;
+  font-size: 22px;
+  width: 100%;
+}
+.backimg .backtext p {
+  font-weight: 500;
+  font-size: 20;
+  width: 100%;
+  line-height: 28px;
+}
+.backimg .backimages .images1 {
+  position: absolute;
+  rotate: 10deg;
+  width: 20%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.backimg .backimages .images2 {
+  position: absolute;
+  left: 40%;
+  rotate: -10deg;
+  width: 20%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.backimg .backimages .images3 {
+  position: absolute;
+  left: 60%;
+  top: 35%;
+  width: 30%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.backimg .backimages .images4 {
+  position: absolute;
+  width: 30%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.backimg .backimages .images5 {
+  position: absolute;
+  width: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.backimg .backimages .images6 {
+  position: absolute;
+  width: 30%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.backimg .backimages .images7 {
+  position: absolute;
+  width: 30%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .background {
   padding-top: 30px;
 }
@@ -76,8 +146,81 @@
 }
 
 @media (min-width: 768px) {
-  .background {
-    padding-top: 80px;
+  .backimg {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .backimg .backtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+  .backimg .backtext h2 {
+    font-weight: 700;
+    font-size: 52px;
+    width: 550px;
+  }
+  .backimg .backtext p {
+    font-weight: 500;
+    font-size: 20;
+    width: 450px;
+    line-height: 28px;
+  }
+  .backimg .backimages {
+    position: relative;
+  }
+  .backimg .backimages img {
+    width: auto;
+  }
+  .backimg .backimages .images1 {
+    position: absolute;
+    top: -120%;
+    width: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .backimg .backimages .images2 {
+    position: absolute;
+    top: -70%;
+    width: auto;
+    left: 5%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .backimg .backimages .images3 {
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    width: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .backimg .backimages .images5 {
+    position: absolute;
+    top: -90%;
+    width: auto;
+    left: 83%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .backimg .backimages .images6 {
+    position: absolute;
+    top: -120%;
+    width: auto;
+    left: 45%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .backimg .backimages .images7 {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    width: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .background .control {
     display: flex;

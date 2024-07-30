@@ -45,24 +45,23 @@ const Header = () => {
             />
           </div>
         </div>
-          {isMenuOpen && (
-            <div className={styles.overlay}>
-           
-                <div className={styles.services}>
-                  <h2>Haqqımda</h2>
-                  <h2>Müalicələr</h2>
-                  <h2>Kifoz</h2>
-                  <h2>Galereya</h2>
-                  <h2>Əlaqə</h2>
-                </div>
-                <div className={styles.icons}>
-            <FacebookIcon />
-            <InstagramIcon />
-            <YoutubeIcon />
-            <TiktokIcon />
-          </div>
+        {isMenuOpen && (
+          <div className={styles.overlay}>
+            <div className={styles.services}>
+              <Link to={"/about"}>Haqqımda</Link>
+              <Link>Müalicələr</Link>
+              <Link>Kifoz</Link>
+              <Link>Galereya</Link>
+              <Link>Əlaqə</Link>
             </div>
-          )}
+            <div className={styles.icons}>
+              <FacebookIcon />
+              <InstagramIcon />
+              <YoutubeIcon />
+              <TiktokIcon />
+            </div>
+          </div>
+        )}
       </Wrapper>
     </div>
   );
