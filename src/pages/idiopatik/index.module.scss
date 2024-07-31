@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.background {
+  padding-top: 10px;
+  padding-bottom: 40px;
+  .buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 40px;
+    .button1{
+      width: 100%;
+      .button{
+        cursor: pointer;
+        background-color: rgb(255, 255, 255);
+        padding: 16px 22px;
+        width: 100%;
+        
+        outline: none;
+        font-weight: 600;
+  
+        border-radius: 10px;
+        border: 1px solid gray;
+      }
+      .idiopatiks{
+        cursor: pointer;
+        background-color: yellow;
+        padding: 16px 22px;
+        width: 100%;
+        
+        outline: none;
+        font-weight: 600;
+  
+        border-radius: 10px;
+        border: 1px solid gray;
+      }
+      button:hover{
+        background-color: yellow;
+        color: black;
+      }
+    }
+    .button2{
+      width: 100%;
+      .button{
+        cursor: pointer;
+        background-color: rgb(255, 255, 255);
+        padding: 16px 22px;
+        width: 100%;
+        
+        outline: none;
+        font-weight: 600;
+  
+        border-radius: 10px;
+        border: 1px solid gray;
+      }
+      .konjenental{
+        cursor: pointer;
+        background-color: yellow;
+        padding: 16px 22px;
+        width: 100%;
+        
+        outline: none;
+        font-weight: 600;
+  
+        border-radius: 10px;
+        border: 1px solid gray;
+      }
+      button:hover{
+        background-color: yellow;
+        color: black;
+      }
+    }
+    .button3{
+      width: 100%;
+      .button{
+        cursor: pointer;
+        background-color: rgb(255, 255, 255);
+        padding: 16px 22px;
+        width: 100%;
+        
+        outline: none;
+        font-weight: 600;
+  
+        border-radius: 10px;
+        border: 1px solid gray;
+      }
+      .neyromuskulyar{
+        cursor: pointer;
+        background-color: yellow;
+        padding: 16px 22px;
+        width: 100%;
+        
+        outline: none;
+        font-weight: 600;
+  
+        border-radius: 10px;
+        border: 1px solid gray;
+      }
+      button:hover{
+        background-color: yellow;
+        color: black;
+      }
+    }
+    .button4{
+      width: 100%;
+      .button{
+        cursor: pointer;
+        background-color: rgb(255, 255, 255);
+        padding: 16px 22px;
+        width: 100%;
+        
+        outline: none;
+        font-weight: 600;
+  
+        border-radius: 10px;
+        border: 1px solid gray;
+      }
+      .kifoz{
+        cursor: pointer;
+        background-color: yellow;
+        padding: 16px 22px;
+        width: 100%;
+        
+        outline: none;
+        font-weight: 600;
+  
+        border-radius: 10px;
+        border: 1px solid gray;
+      }
+      button:hover{
+        background-color: yellow;
+        color: black;
+      }
+    }
+  }
+  .idiopatikheaders {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    h2 {
+      font-weight: 600;
+      font-size: 32px;
+    }
+    p {
+      text-align: center;
+    }
+  }
+  .boxs {
+    margin-top: 50px;
+    border: 1px solid #5d6371;
+    border-radius: 30px;
+    padding: 20px 40px;
+    .boxsheader {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        font-weight: 600;
+        font-size: 32px;
+      }
+    }
+    .controlboxs {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      padding-top: 62px;
+      .boxs1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        .boxstexts1 {
+          h2 {
+            text-align: center;
+            font-weight: 600;
+            font-size: 22px;
+          }
+        }
+        .boxsdescription1 {
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .xtray {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .leftside {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .leftheader {
+        h2 {
+          font-weight: 600;
+          font-size: 32px;
+        }
+      }
+      .leftdesc {
+        p {
+          width: 100%;
+          color: #004f92;
+          font-weight: 600;
+          line-height: 24px;
+        }
+      }
+      .mrt {
+        width: 100%;
+        img {
+          border-radius: 20px;
+          width: 100%;
+        }
+      }
+    }
+    .rightside {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .xtrayimage {
+        img {
+          width: 100%;
+          border-radius: 10px;
+        }
+      }
+      .rightdesc {
+        p {
+          width: 100%;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  .swiper {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    .price {
+      .borders {
+        margin-bottom: 50px;
+        img {
+          cursor: pointer;
+          width: 100%;
+          height: 40vh;
+        }
+      }
+    }
+  }
+  .about {
+    padding-top: 50px;
+    .aboutheaders {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      h2 {
+        font-weight: 600;
+        font-size: 14px;
+        color: #004f92;
+      }
+      h1 {
+        font-weight: 600;
+        font-size: 25px;
+      }
+    }
+    .list {
+      padding-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      .leftul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        .list1 {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+          gap: 5px;
+
+          li {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .background {
+    .buttons{
+      padding-top: 50px;
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+    }
+    .idiopatikheaders {
+      h2 {
+        font-size: 48px;
+      }
+    }
+    .boxs {
+      padding-top: 30px;
+      padding-bottom: 50px;
+      height: 100%;
+      .controlboxs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: flex-start;
+
+        .boxs1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .boxsdescription1 {
+            display: flex;
+            justify-content: flex-end;
+
+            p {
+            }
+          }
+        }
+      }
+    }
+    .xtray {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .leftside {
+        .leftdesc {
+          p {
+            width: 600px;
+          }
+        }
+      }
+      .rightside {
+        .xtrayimage {
+          width: 100%;
+          img {
+            width: 100%;
+          }
+        }
+        .rightdesc {
+          p {
+            width: 600px;
+            line-height: 40px;
+          }
+        }
+      }
+    }
+    .swiper {
+      padding-top: 150px;
+      display: flex;
+      justify-content: center;
+      .price {
+        .borders {
+          margin-bottom: 50px;
+          img {
+            cursor: pointer;
+            width: 100%;
+            height: 40vh;
+          }
+        }
+      }
+    }
+    .about{
+  
+      .list {
+        padding-top: 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .leftul {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+      
+          .list1 {
+            display: flex;
+            align-items: center;
+  
+            gap: 0;
+  
+            li {
+              font-weight: 600;
+              width: 500px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

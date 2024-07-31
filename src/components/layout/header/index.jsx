@@ -25,9 +25,9 @@ const Header = () => {
           </Link>
           <div className={styles.services}>
             <Link to={"/about"}>Haqqımda</Link>
-            <h2>Müalicələr</h2>
+            <Link to={"/idiopatik"}>Müalicələr</Link>
             <h2>Kifoz</h2>
-            <h2>Galereya</h2>
+            <Link to={"/gallery"}>Galereya</Link>
             <Link to={"/contact"}>Əlaqə</Link>
           </div>
           <div className={styles.icons}>
@@ -51,7 +51,7 @@ const Header = () => {
               <Link to={"/about"}>Haqqımda</Link>
               <Link>Müalicələr</Link>
               <Link>Kifoz</Link>
-              <Link>Galereya</Link>
+              <Link to={"/gallery"}>Galereya</Link>
               <Link to={"/contact"}>Əlaqə</Link>
             </div>
             <div className={styles.icons}>

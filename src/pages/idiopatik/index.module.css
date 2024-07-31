@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+.background .buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 40px;
+}
+.background .buttons .button1 {
+  width: 100%;
+}
+.background .buttons .button1 .button {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  padding: 16px 22px;
+  width: 100%;
+  outline: none;
+  font-weight: 600;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+.background .buttons .button1 .idiopatiks {
+  cursor: pointer;
+  background-color: yellow;
+  padding: 16px 22px;
+  width: 100%;
+  outline: none;
+  font-weight: 600;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+.background .buttons .button1 button:hover {
+  background-color: yellow;
+  color: black;
+}
+.background .buttons .button2 {
+  width: 100%;
+}
+.background .buttons .button2 .button {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  padding: 16px 22px;
+  width: 100%;
+  outline: none;
+  font-weight: 600;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+.background .buttons .button2 .konjenental {
+  cursor: pointer;
+  background-color: yellow;
+  padding: 16px 22px;
+  width: 100%;
+  outline: none;
+  font-weight: 600;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+.background .buttons .button2 button:hover {
+  background-color: yellow;
+  color: black;
+}
+.background .buttons .button3 {
+  width: 100%;
+}
+.background .buttons .button3 .button {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  padding: 16px 22px;
+  width: 100%;
+  outline: none;
+  font-weight: 600;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+.background .buttons .button3 .neyromuskulyar {
+  cursor: pointer;
+  background-color: yellow;
+  padding: 16px 22px;
+  width: 100%;
+  outline: none;
+  font-weight: 600;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+.background .buttons .button3 button:hover {
+  background-color: yellow;
+  color: black;
+}
+.background .buttons .button4 {
+  width: 100%;
+}
+.background .buttons .button4 .button {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  padding: 16px 22px;
+  width: 100%;
+  outline: none;
+  font-weight: 600;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+.background .buttons .button4 .kifoz {
+  cursor: pointer;
+  background-color: yellow;
+  padding: 16px 22px;
+  width: 100%;
+  outline: none;
+  font-weight: 600;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+.background .buttons .button4 button:hover {
+  background-color: yellow;
+  color: black;
+}
+.background .idiopatikheaders {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.background .idiopatikheaders h2 {
+  font-weight: 600;
+  font-size: 32px;
+}
+.background .idiopatikheaders p {
+  text-align: center;
+}
+.background .boxs {
+  margin-top: 50px;
+  border: 1px solid #5d6371;
+  border-radius: 30px;
+  padding: 20px 40px;
+}
+.background .boxs .boxsheader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.background .boxs .boxsheader h2 {
+  font-weight: 600;
+  font-size: 32px;
+}
+.background .boxs .controlboxs {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding-top: 62px;
+}
+.background .boxs .controlboxs .boxs1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.background .boxs .controlboxs .boxs1 .boxstexts1 h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 22px;
+}
+.background .boxs .controlboxs .boxs1 .boxsdescription1 p {
+  text-align: center;
+}
+.background .xtray {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.background .xtray .leftside {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.background .xtray .leftside .leftheader h2 {
+  font-weight: 600;
+  font-size: 32px;
+}
+.background .xtray .leftside .leftdesc p {
+  width: 100%;
+  color: #004f92;
+  font-weight: 600;
+  line-height: 24px;
+}
+.background .xtray .leftside .mrt {
+  width: 100%;
+}
+.background .xtray .leftside .mrt img {
+  border-radius: 20px;
+  width: 100%;
+}
+.background .xtray .rightside {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.background .xtray .rightside .xtrayimage img {
+  width: 100%;
+  border-radius: 10px;
+}
+.background .xtray .rightside .rightdesc p {
+  width: 100%;
+  line-height: 24px;
+}
+.background .swiper {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.background .swiper .price .borders {
+  margin-bottom: 50px;
+}
+.background .swiper .price .borders img {
+  cursor: pointer;
+  width: 100%;
+  height: 40vh;
+}
+.background .about {
+  padding-top: 50px;
+}
+.background .about .aboutheaders {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.background .about .aboutheaders h2 {
+  font-weight: 600;
+  font-size: 14px;
+  color: #004f92;
+}
+.background .about .aboutheaders h1 {
+  font-weight: 600;
+  font-size: 25px;
+}
+.background .about .list {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.background .about .list .leftul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.background .about .list .leftul .list1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+}
+.background .about .list .leftul .list1 li {
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .background .buttons {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .background .idiopatikheaders h2 {
+    font-size: 48px;
+  }
+  .background .boxs {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    height: 100%;
+  }
+  .background .boxs .controlboxs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: flex-start;
+  }
+  .background .boxs .controlboxs .boxs1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .background .boxs .controlboxs .boxs1 .boxsdescription1 {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .background .xtray {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .background .xtray .leftside .leftdesc p {
+    width: 600px;
+  }
+  .background .xtray .rightside .xtrayimage {
+    width: 100%;
+  }
+  .background .xtray .rightside .xtrayimage img {
+    width: 100%;
+  }
+  .background .xtray .rightside .rightdesc p {
+    width: 600px;
+    line-height: 40px;
+  }
+  .background .swiper {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+  }
+  .background .swiper .price .borders {
+    margin-bottom: 50px;
+  }
+  .background .swiper .price .borders img {
+    cursor: pointer;
+    width: 100%;
+    height: 40vh;
+  }
+  .background .about .list {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .background .about .list .leftul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .background .about .list .leftul .list1 {
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+  .background .about .list .leftul .list1 li {
+    font-weight: 600;
+    width: 500px;
+    line-height: 24px;
+  }
+}/*# sourceMappingURL=index.module.css.map */

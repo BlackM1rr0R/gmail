@@ -601,6 +601,320 @@ const RightArrow = () => {
     </svg>
   );
 };
+const SpineIcon = () => {
+  return (
+    <svg
+      width="75"
+      height="74"
+      viewBox="0 0 75 74"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clip-path="url(#clip0_37_8297)">
+        <g clip-path="url(#clip1_37_8297)">
+          <g clip-path="url(#clip2_37_8297)">
+            <path
+              d="M62.9116 0H12.0366C5.65083 0 0.474121 5.17671 0.474121 11.5625V62.4375C0.474121 68.8233 5.65083 74 12.0366 74H62.9116C69.2974 74 74.4741 68.8233 74.4741 62.4375V11.5625C74.4741 5.17671 69.2974 0 62.9116 0Z"
+              fill="#004F92"
+            />
+            <path
+              d="M21.2068 34.0409L17.0229 22.8299L24.7336 13.5293L30.049 27.9228"
+              stroke="white"
+              stroke-width="1.15625"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M52.5854 34.0409L56.7692 22.8299L49.0586 13.5293L43.7432 27.9228"
+              stroke="white"
+              stroke-width="1.15625"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M24.7329 13.5293H49.0575"
+              stroke="white"
+              stroke-width="1.15625"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M28.1699 22.8296H45.6264"
+              stroke="white"
+              stroke-width="1.15625"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M36.8976 61.6272C45.3123 61.6272 52.1337 54.8059 52.1337 46.3913C52.1337 37.9766 45.3123 31.1553 36.8976 31.1553C28.483 31.1553 21.6616 37.9766 21.6616 46.3913C21.6616 54.8059 28.483 61.6272 36.8976 61.6272Z"
+              stroke="white"
+              stroke-width="1.15625"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M38.2227 52.557V40.2251L34.6694 42.1091"
+              stroke="white"
+              stroke-width="1.15625"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M15.6981 46.3911H9.07373"
+              stroke="white"
+              stroke-width="1.15625"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M64.7167 46.3911H58.0923"
+              stroke="white"
+              stroke-width="1.15625"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M16.9737 53.6406L10.7495 55.9062"
+              stroke="white"
+              stroke-width="1.15625"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M63.0431 36.876L56.8188 39.1415"
+              stroke="white"
+              stroke-width="1.15625"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M56.8188 53.6406L63.0431 55.9062"
+              stroke="white"
+              stroke-width="1.15625"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M10.7495 36.876L16.9737 39.1415"
+              stroke="white"
+              stroke-width="1.15625"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+        </g>
+      </g>
+      <defs>
+        <clipPath id="clip0_37_8297">
+          <rect x="0.474121" width="74" height="74" rx="10" fill="white" />
+        </clipPath>
+        <clipPath id="clip1_37_8297">
+          <rect
+            width="74"
+            height="74"
+            fill="white"
+            transform="translate(0.474121)"
+          />
+        </clipPath>
+        <clipPath id="clip2_37_8297">
+          <rect
+            width="74"
+            height="74"
+            fill="white"
+            transform="translate(0.474121)"
+          />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};
+const SpineIcon2 = () => {
+  return (
+    <svg
+      width="75"
+      height="74"
+      viewBox="0 0 75 74"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clip-path="url(#clip0_37_8321)">
+        <g clip-path="url(#clip1_37_8321)">
+          <g clip-path="url(#clip2_37_8321)">
+            <path
+              d="M63.4121 0H12.5371C6.15132 0 0.974609 5.17671 0.974609 11.5625V62.4375C0.974609 68.8233 6.15132 74 12.5371 74H63.4121C69.7979 74 74.9746 68.8233 74.9746 62.4375V11.5625C74.9746 5.17671 69.7979 0 63.4121 0Z"
+              fill="#004F92"
+            />
+            <path
+              d="M37.9726 51.4387L52.2162 58.9507L49.4845 43.0487L60.9964 31.8294L45.0944 29.488L37.9726 15.0493L30.8509 29.488L14.9487 31.8294L26.4607 43.0487L23.7291 58.9507L37.9726 51.4387Z"
+              stroke="white"
+              stroke-width="1.15625"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M55.5351 40.9023H65.291L59.4374 47.7314L65.291 54.5605H54.5596"
+              stroke="white"
+              stroke-width="1.15625"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M21.3896 54.5605H10.6582L16.5117 47.7314L10.6582 40.9023H20.4141"
+              stroke="white"
+              stroke-width="1.15625"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+        </g>
+      </g>
+      <defs>
+        <clipPath id="clip0_37_8321">
+          <rect
+            width="74"
+            height="74"
+            fill="white"
+            transform="translate(0.974609)"
+          />
+        </clipPath>
+        <clipPath id="clip1_37_8321">
+          <rect
+            width="74"
+            height="74"
+            fill="white"
+            transform="translate(0.974609)"
+          />
+        </clipPath>
+        <clipPath id="clip2_37_8321">
+          <rect
+            width="74"
+            height="74"
+            fill="white"
+            transform="translate(0.974609)"
+          />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};
+const SpineIcon3 = () => {
+  return (
+    <svg
+      width="75"
+      height="74"
+      viewBox="0 0 75 74"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clip-path="url(#clip0_37_8342)">
+        <g clip-path="url(#clip1_37_8342)">
+          <g clip-path="url(#clip2_37_8342)">
+            <path
+              d="M62.9336 0H12.0586C5.6728 0 0.496094 5.17671 0.496094 11.5625V62.4375C0.496094 68.8233 5.6728 74 12.0586 74H62.9336C69.3194 74 74.4961 68.8233 74.4961 62.4375V11.5625C74.4961 5.17671 69.3194 0 62.9336 0Z"
+              fill="#004F92"
+            />
+            <path
+              d="M42.8194 18.0151C42.8194 21.1749 40.2294 24.7167 37.0955 24.7167C33.9616 24.7167 31.3716 21.1749 31.3716 18.0151C31.3716 14.8553 33.9616 12.6797 37.0955 12.6797C40.2294 12.6797 42.8194 14.8488 42.8194 18.0151Z"
+              stroke="white"
+              stroke-width="1.15625"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M29.4609 44.7956L30.1408 35.0767"
+              stroke="white"
+              stroke-width="1.15625"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M50.2137 44.7699L49.0223 34.9085C49.0951 33.0541 48.4835 31.2375 47.3039 29.8048C46.1241 28.3721 44.4589 27.4231 42.625 27.1385C40.819 26.9019 39.0007 26.7722 37.1795 26.75C35.2919 26.7804 33.4072 26.9101 31.5333 27.1385C28.0368 27.6177 25.1425 30.6026 25.1425 34.9085L24.0547 44.7699"
+              stroke="white"
+              stroke-width="1.15625"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M44.0225 35.0767L44.7023 44.7956"
+              stroke="white"
+              stroke-width="1.15625"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M37.2127 41.9922L40.3271 48.2988L47.2878 49.3154L42.2502 54.2235L43.4416 61.1517L37.2127 57.8818L30.9902 61.1517L32.1751 54.2235L27.144 49.3154L34.1047 48.2988L37.2127 41.9922Z"
+              stroke="white"
+              stroke-width="1.15625"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M56.1901 46.7705L58.5276 51.5037L63.7529 52.2613L59.9715 55.9521L60.8651 61.1515L56.1901 58.6975L51.5216 61.1515L52.4087 55.9521L48.6338 52.2613L53.8591 51.5037L56.1901 46.7705Z"
+              stroke="white"
+              stroke-width="1.15625"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M18.2347 46.7705L20.5722 51.5037L25.7975 52.2613L22.0161 55.9521L22.9096 61.1515L18.2347 58.6975L13.5597 61.1515L14.4533 55.9521L10.6719 52.2613L15.8972 51.5037L18.2347 46.7705Z"
+              stroke="white"
+              stroke-width="1.15625"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+        </g>
+      </g>
+      <defs>
+        <clipPath id="clip0_37_8342">
+          <rect
+            width="74"
+            height="74"
+            fill="white"
+            transform="translate(0.496094)"
+          />
+        </clipPath>
+        <clipPath id="clip1_37_8342">
+          <rect
+            width="74"
+            height="74"
+            fill="white"
+            transform="translate(0.496094)"
+          />
+        </clipPath>
+        <clipPath id="clip2_37_8342">
+          <rect
+            width="74"
+            height="74"
+            fill="white"
+            transform="translate(0.496094)"
+          />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};
+const GreenIcon = () => {
+  return (
+    <svg
+      width="40"
+      height="40"
+      viewBox="0 0 28 29"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M19.5375 9.10045L11.1841 17.1621L8.96747 14.7938C8.55914 14.4088 7.91747 14.3855 7.45081 14.7121C6.99581 15.0505 6.86747 15.6455 7.14747 16.1238L9.77247 20.3938C10.0291 20.7905 10.4725 21.0355 10.9741 21.0355C11.4525 21.0355 11.9075 20.7905 12.1641 20.3938C12.5841 19.8455 20.5991 10.2905 20.5991 10.2905C21.6491 9.21712 20.3775 8.27211 19.5375 9.08878V9.10045Z"
+        fill="#00B090"
+      />
+    </svg>
+  );
+};
 export {
   FacebookIcon,
   InstagramIcon,
@@ -621,5 +935,9 @@ export {
   LinkedinIcon,
   RightArrow,
   GrayArrow,
-  GrayArrowTrue
+  GrayArrowTrue,
+  SpineIcon,
+  SpineIcon2,
+  SpineIcon3,
+  GreenIcon
 };

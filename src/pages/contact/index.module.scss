@@ -83,6 +83,7 @@
         padding-bottom: 88px;
         .control{
             display: flex;
+            flex-direction: row;
            gap: 30px;
             .images{
                 width: 50%;
