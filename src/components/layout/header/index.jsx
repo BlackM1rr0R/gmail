@@ -49,7 +49,7 @@ const Header = () => {
           <div className={styles.overlay}>
             <div className={styles.services}>
               <Link to={"/about"}>Haqqımda</Link>
-              <Link>Müalicələr</Link>
+              <Link to={"/idiopatik"}>Müalicələr</Link>
               <Link>Kifoz</Link>
               <Link to={"/gallery"}>Galereya</Link>
               <Link to={"/contact"}>Əlaqə</Link>
