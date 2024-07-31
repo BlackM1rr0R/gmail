@@ -143,9 +143,11 @@
     gap: 40px;
   }
   .background .control .leftside {
-    width: 100%;
+    width: 70%;
   }
   .background .control .leftside img {
+    width: 100%;
+    height: auto;
     border-radius: 20px;
   }
   .background .control .rightside {

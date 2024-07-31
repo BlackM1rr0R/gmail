@@ -3,26 +3,19 @@ import styles from "./index.module.css";
 import Yusif from "../../assets/images/yusifprofil.png";
 import YusifDiplom from "../../assets/images/diplom.png";
 import Wrapper from "../../components/UI/wrapper";
-import Patient1 from "../../assets/images/patient1.png";
-import Patient2 from "../../assets/images/patient2.png";
-import Patient3 from "../../assets/images/patient3.png";
-import Patient4 from "../../assets/images/patient4.png";
-import Patient5 from "../../assets/images/patient5.png";
+import Photos1 from "../../assets/images/background2.png";
+import Hero from '../../components/main'
 const About = () => {
   return (
     <>
       <div className={styles.backimg}>
         <Wrapper>
-          <div className={styles.backtext}>
-            <h2>Fizioterapevt Doktor Yusif Zeynalov</h2>
-            <p>
-              Skolioz, Disk yırtığı, İdman zədələnmələri, Onurğa sütunu
-              problemlərlinin reabilitasiya və fizioterapiyası.
-            </p>
-          </div>
-   
+          <img src={Photos1} alt="" />
         </Wrapper>
       </div>
+      <Wrapper>
+        <Hero/>
+      </Wrapper>
       <Wrapper>
         <div className={styles.background}>
           <div className={styles.control}>

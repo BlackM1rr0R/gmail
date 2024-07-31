@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background{
+    padding-top: 48px;
+    padding-bottom: 48px;
+    .control{
+        display: flex;
+        flex-direction: column;
+       gap: 30px;
+        .images{
+            width: 100%;
+            img{
+                width: 100%;
+                border-radius: 20px;
+            }
+        }
+        .texts{
+            width: 100%;
+            background-color: #f1f1f2;
+            padding: 28px 50px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 20px;
+            gap: 50px;
+           justify-content: space-between;
+            .headertext{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                h2{
+                    font-weight: 600;
+                    font-size: 25px;
+                }
+            }
+            .controltext{
+                display: flex;
+                justify-content: space-between;
+                .chattext{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    h2{
+                        font-weight: 600;
+                    }
+                }
+                .calltext{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    h2{
+                        font-weight: 600;
+                    }
+                }
+            }
+            .visittext{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                h2{
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .maps {
+        margin-top: 42px;
+        width: 100%;
+        height: 300px;
+        .map {
+      border-radius: 20px;
+
+          width: 100%;
+          height: 100%;
+        }
+    }
+}
+@media(min-width:768px){
+    .background{
+        padding-top: 88px;
+        padding-bottom: 88px;
+        .control{
+            display: flex;
+           gap: 30px;
+            .images{
+                width: 50%;
+                img{
+                    width: 100%;
+                    border-radius: 20px;
+                }
+            }
+            .texts{
+                width: 100%;
+                background-color: #f1f1f2;
+                padding: 48px 70px;
+                display: flex;
+                flex-direction: column;
+                border-radius: 20px;
+               justify-content: space-between;
+                .headertext{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    h2{
+                        font-weight: 600;
+                        font-size: 48px;
+                    }
+                }
+                .controltext{
+                    display: flex;
+                    justify-content: space-between;
+                    .chattext{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        h2{
+                            font-weight: 600;
+                        }
+                    }
+                    .calltext{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        h2{
+                            font-weight: 600;
+                        }
+                    }
+                }
+                .visittext{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    h2{
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .maps {
+            margin-top: 82px;
+            width: 100%;
+            height: 500px;
+            .map {
+          border-radius: 20px;
+    
+              width: 100%;
+              height: 100%;
+            }
+        }
+    }
+}

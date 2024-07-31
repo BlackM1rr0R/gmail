@@ -7,7 +7,7 @@
 .background .header {
   display: flex;
   justify-content: center;
-  padding-top: 70px;
+  padding-top: 40px;
 }
 .background .header h2 {
   font-weight: 600;
@@ -27,11 +27,12 @@
   border-radius: 10px;
 }
 .background .control .border1 .bordertext1 {
-  padding: 88px 137px;
+  padding: 44px 97px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 15px;
+  text-align: center;
   align-items: center;
   color: #439a75;
   font-weight: 600;
@@ -48,9 +49,10 @@
   border-radius: 10px;
 }
 .background .control .border2 .bordertext2 {
-  padding: 88px 137px;
+  padding: 44px 97px;
   display: flex;
   gap: 15px;
+  text-align: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -69,9 +71,10 @@
   border-radius: 10px;
 }
 .background .control .border3 .bordertext3 {
-  padding: 88px 137px;
+  padding: 44px 97px;
   display: flex;
   gap: 15px;
+  text-align: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -90,7 +93,8 @@
   border-radius: 10px;
 }
 .background .control .border4 .bordertext4 {
-  padding: 88px 137px;
+  padding: 44px 97px;
+  text-align: center;
   display: flex;
   gap: 15px;
   flex-direction: column;

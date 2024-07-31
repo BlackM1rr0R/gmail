@@ -5,71 +5,12 @@
 }
 
 .backimg {
-  padding-bottom: 120px;
+  background-color: #f1f1f1;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
-.backimg .backtext {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 20px;
-}
-.backimg .backtext h2 {
-  font-weight: 700;
-  font-size: 22px;
+.backimg img {
   width: 100%;
-}
-.backimg .backtext p {
-  font-weight: 500;
-  font-size: 20;
-  width: 100%;
-  line-height: 28px;
-}
-.backimg .backimages .images1 {
-  position: absolute;
-  rotate: 10deg;
-  width: 20%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.backimg .backimages .images2 {
-  position: absolute;
-  left: 40%;
-  rotate: -10deg;
-  width: 20%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.backimg .backimages .images3 {
-  position: absolute;
-  left: 60%;
-  top: 35%;
-  width: 30%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.backimg .backimages .images4 {
-  position: absolute;
-  width: 30%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.backimg .backimages .images5 {
-  position: absolute;
-  width: 40%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.backimg .backimages .images6 {
-  position: absolute;
-  width: 30%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.backimg .backimages .images7 {
-  position: absolute;
-  width: 30%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -95,7 +36,7 @@
 }
 .background .control .leftside .experience {
   margin-top: 20px;
-  background-color: #F8F0D2;
+  background-color: #f8f0d2;
   padding: 40px 30px;
   border-radius: 20px;
   display: flex;
@@ -113,7 +54,7 @@
 }
 .background .control .rightside .education {
   margin-top: 20px;
-  background-color: #E6DEEB;
+  background-color: #e6deeb;
   padding: 40px 30px;
   border-radius: 20px;
   display: flex;
@@ -126,7 +67,7 @@
 }
 .background .control .rightside .diplom {
   margin-top: 20px;
-  background-color: #DFEED7;
+  background-color: #dfeed7;
   padding: 40px 30px;
   border-radius: 20px;
   display: flex;
@@ -147,8 +88,10 @@
 
 @media (min-width: 768px) {
   .backimg {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    background-color: #f1f1f1;
+  }
+  .backimg img {
+    width: auto;
   }
   .backimg .backtext {
     display: flex;
@@ -169,59 +112,6 @@
     width: 450px;
     line-height: 28px;
   }
-  .backimg .backimages {
-    position: relative;
-  }
-  .backimg .backimages img {
-    width: auto;
-  }
-  .backimg .backimages .images1 {
-    position: absolute;
-    top: -120%;
-    width: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .backimg .backimages .images2 {
-    position: absolute;
-    top: -70%;
-    width: auto;
-    left: 5%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .backimg .backimages .images3 {
-    position: absolute;
-    top: 20%;
-    left: 70%;
-    width: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .backimg .backimages .images5 {
-    position: absolute;
-    top: -90%;
-    width: auto;
-    left: 83%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .backimg .backimages .images6 {
-    position: absolute;
-    top: -120%;
-    width: auto;
-    left: 45%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .backimg .backimages .images7 {
-    position: absolute;
-    top: 20%;
-    left: 35%;
-    width: auto;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
   .background .control {
     display: flex;
     flex-direction: row;
@@ -240,7 +130,7 @@
   }
   .background .control .leftside .experience {
     margin-top: 20px;
-    background-color: #F8F0D2;
+    background-color: #f8f0d2;
     padding: 40px 30px;
     border-radius: 20px;
     display: flex;
@@ -258,7 +148,7 @@
   }
   .background .control .rightside .education {
     margin-top: 20px;
-    background-color: #E6DEEB;
+    background-color: #e6deeb;
     padding: 40px 30px;
     border-radius: 20px;
     display: flex;
@@ -271,7 +161,7 @@
   }
   .background .control .rightside .diplom {
     margin-top: 20px;
-    background-color: #DFEED7;
+    background-color: #dfeed7;
     padding: 40px 30px;
     border-radius: 20px;
     display: flex;

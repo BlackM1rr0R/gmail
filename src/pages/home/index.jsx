@@ -9,6 +9,7 @@ import Hospital from "../../components/hospital";
 import ChatApp from "../../components/chat";
 
 import Questions from "../../components/questions";
+import SwiperComp from "../../components/swipercomp";
 
 const Home = () => {
   return (

@@ -17,14 +17,14 @@ const YusifAbout = () => {
   const [red, setRed] = useState(false);
   const [violet, setViolet] = useState(false);
   const greenClick = () => {
-    setGreen(!green);
+    setGreen(true);
     setOrange(false);
     setRed(false)
     setViolet(false)
   };
   const orangeClick = () => {
     setGreen(false);
-    setOrange(!orange);
+    setOrange(true);
     setRed(false)
     setViolet(false)
 
@@ -32,7 +32,7 @@ const YusifAbout = () => {
   const redClick = () => {
     setGreen(false);
     setOrange(false);
-    setRed(!red)
+    setRed(true)
     setViolet(false)
 
   };
@@ -40,7 +40,7 @@ const YusifAbout = () => {
     setGreen(false);
     setOrange(false);
     setRed(false)
-    setViolet(!violet)
+    setViolet(true)
 
   };
   return (

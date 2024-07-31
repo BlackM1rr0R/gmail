@@ -28,7 +28,7 @@ const Header = () => {
             <h2>Müalicələr</h2>
             <h2>Kifoz</h2>
             <h2>Galereya</h2>
-            <h2>Əlaqə</h2>
+            <Link to={"/contact"}>Əlaqə</Link>
           </div>
           <div className={styles.icons}>
             <FacebookIcon />
@@ -52,7 +52,7 @@ const Header = () => {
               <Link>Müalicələr</Link>
               <Link>Kifoz</Link>
               <Link>Galereya</Link>
-              <Link>Əlaqə</Link>
+              <Link to={"/contact"}>Əlaqə</Link>
             </div>
             <div className={styles.icons}>
               <FacebookIcon />

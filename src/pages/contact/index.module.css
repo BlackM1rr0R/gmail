@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.background .control {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.background .control .images {
+  width: 100%;
+}
+.background .control .images img {
+  width: 100%;
+  border-radius: 20px;
+}
+.background .control .texts {
+  width: 100%;
+  background-color: #f1f1f2;
+  padding: 28px 50px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  gap: 50px;
+  justify-content: space-between;
+}
+.background .control .texts .headertext {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.background .control .texts .headertext h2 {
+  font-weight: 600;
+  font-size: 25px;
+}
+.background .control .texts .controltext {
+  display: flex;
+  justify-content: space-between;
+}
+.background .control .texts .controltext .chattext {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.background .control .texts .controltext .chattext h2 {
+  font-weight: 600;
+}
+.background .control .texts .controltext .calltext {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.background .control .texts .controltext .calltext h2 {
+  font-weight: 600;
+}
+.background .control .texts .visittext {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.background .control .texts .visittext h2 {
+  font-weight: 600;
+}
+.background .maps {
+  margin-top: 42px;
+  width: 100%;
+  height: 300px;
+}
+.background .maps .map {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .background {
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
+  .background .control {
+    display: flex;
+    gap: 30px;
+  }
+  .background .control .images {
+    width: 50%;
+  }
+  .background .control .images img {
+    width: 100%;
+    border-radius: 20px;
+  }
+  .background .control .texts {
+    width: 100%;
+    background-color: #f1f1f2;
+    padding: 48px 70px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    justify-content: space-between;
+  }
+  .background .control .texts .headertext {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .background .control .texts .headertext h2 {
+    font-weight: 600;
+    font-size: 48px;
+  }
+  .background .control .texts .controltext {
+    display: flex;
+    justify-content: space-between;
+  }
+  .background .control .texts .controltext .chattext {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .background .control .texts .controltext .chattext h2 {
+    font-weight: 600;
+  }
+  .background .control .texts .controltext .calltext {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .background .control .texts .controltext .calltext h2 {
+    font-weight: 600;
+  }
+  .background .control .texts .visittext {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .background .control .texts .visittext h2 {
+    font-weight: 600;
+  }
+  .background .maps {
+    margin-top: 82px;
+    width: 100%;
+    height: 500px;
+  }
+  .background .maps .map {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+  }
+}/*# sourceMappingURL=index.module.css.map */
