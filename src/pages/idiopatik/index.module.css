@@ -21,26 +21,26 @@
 }
 .background .buttons .button1 .button {
   cursor: pointer;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   padding: 16px 22px;
   width: 100%;
+  border: 1px solid gray;
   outline: none;
   font-weight: 600;
   border-radius: 10px;
-  border: 1px solid gray;
 }
 .background .buttons .button1 .idiopatiks {
   cursor: pointer;
-  background-color: yellow;
+  background-color: #dfeed7;
   padding: 16px 22px;
   width: 100%;
   outline: none;
   font-weight: 600;
   border-radius: 10px;
-  border: 1px solid gray;
+  border: none;
 }
 .background .buttons .button1 button:hover {
-  background-color: yellow;
+  background-color: #dfeed7;
   color: black;
 }
 .background .buttons .button2 {
@@ -58,16 +58,16 @@
 }
 .background .buttons .button2 .konjenental {
   cursor: pointer;
-  background-color: yellow;
+  background-color: #f8f0d2;
   padding: 16px 22px;
   width: 100%;
   outline: none;
   font-weight: 600;
   border-radius: 10px;
-  border: 1px solid gray;
+  border: none;
 }
 .background .buttons .button2 button:hover {
-  background-color: yellow;
+  background-color: #f8f0d2;
   color: black;
 }
 .background .buttons .button3 {
@@ -85,16 +85,16 @@
 }
 .background .buttons .button3 .neyromuskulyar {
   cursor: pointer;
-  background-color: yellow;
+  background-color: #f9e8d6;
   padding: 16px 22px;
   width: 100%;
   outline: none;
   font-weight: 600;
   border-radius: 10px;
-  border: 1px solid gray;
+  border: none;
 }
 .background .buttons .button3 button:hover {
-  background-color: yellow;
+  background-color: #f9e8d6;
   color: black;
 }
 .background .buttons .button4 {
@@ -112,16 +112,16 @@
 }
 .background .buttons .button4 .kifoz {
   cursor: pointer;
-  background-color: yellow;
+  background-color: #e6deeb;
   padding: 16px 22px;
   width: 100%;
   outline: none;
   font-weight: 600;
   border-radius: 10px;
-  border: 1px solid gray;
+  border: none;
 }
 .background .buttons .button4 button:hover {
-  background-color: yellow;
+  background-color: #e6deeb;
   color: black;
 }
 .background .idiopatikheaders {
@@ -272,6 +272,31 @@
     display: flex;
     flex-direction: row;
     gap: 30px;
+  }
+  .background .buttons .button1 button {
+    border: 1px solid gray;
+  }
+  .background .buttons .button1 .idiopatiks {
+    border: none;
+    font-weight: 600;
+  }
+  .background .buttons .button2 button {
+    border: 1px solid gray;
+  }
+  .background .buttons .button2 .konjenental {
+    border: none;
+  }
+  .background .buttons .button3 button {
+    border: 1px solid gray;
+  }
+  .background .buttons .button3 .neyromuskulyar {
+    border: none;
+  }
+  .background .buttons .button4 button {
+    border: 1px solid gray;
+  }
+  .background .buttons .button4 .kifoz {
+    border: none;
   }
   .background .idiopatikheaders h2 {
     font-size: 48px;
