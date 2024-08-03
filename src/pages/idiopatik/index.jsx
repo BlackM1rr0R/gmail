@@ -74,10 +74,18 @@ const Idiopatik = () => {
             </button>
           </div>
           <div onClick={() => neyromuskulyarClick()} className={styles.button3}>
-            <button className={`${neyromuskulyar ? styles.neyromuskulyar : styles.button}`}>Neyromuskulyar</button>
+            <button
+              className={`${
+                neyromuskulyar ? styles.neyromuskulyar : styles.button
+              }`}
+            >
+              Neyromuskulyar
+            </button>
           </div>
           <div onClick={() => kifozClick()} className={styles.button4}>
-            <button  className={`${kifoz ? styles.kifoz : styles.button}`}>Kifoz</button>
+            <button className={`${kifoz ? styles.kifoz : styles.button}`}>
+              Kifoz
+            </button>
           </div>
         </div>
         {idiopatiks ? (
