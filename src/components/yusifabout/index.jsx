@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useReducer, useState } from "react";
 import styles from "./index.module.css";
 import YusifPhoto from "../../assets/images/yusifsekil.png";
 import {
@@ -11,38 +11,27 @@ import {
   VioletArrow,
   VioletArrowTrue,
 } from "../../icons";
+const initialState = {
+  green: true,
+  orange: false,
+  red: false,
+  violet: false,
+};
+function reducer(state, action) {
+  switch (action.type) {
+    case "green":
+      return { green: true, orange: false, red: false, violet: false };
+    case "orange":
+      return { green: false, orange: true, red: false, violet: false };
+    case "red":
+      return { green: false, orange: false, red: true, violet: false };
+    case "violet":
+      return { green: false, orange: false, red: false, violet: true };
+  }
+}
 const YusifAbout = () => {
-  const [green, setGreen] = useState(true);
-  const [orange, setOrange] = useState(false);
-  const [red, setRed] = useState(false);
-  const [violet, setViolet] = useState(false);
-  const greenClick = () => {
-    setGreen(true);
-    setOrange(false);
-    setRed(false)
-    setViolet(false)
-  };
-  const orangeClick = () => {
-    setGreen(false);
-    setOrange(true);
-    setRed(false)
-    setViolet(false)
+  const [state, dispatch] = useReducer(reducer, initialState);
 
-  };
-  const redClick = () => {
-    setGreen(false);
-    setOrange(false);
-    setRed(true)
-    setViolet(false)
-
-  };
-  const violetClick = () => {
-    setGreen(false);
-    setOrange(false);
-    setRed(false)
-    setViolet(true)
-
-  };
   return (
     <div className={styles.background}>
       <div className={styles.control}>
@@ -50,8 +39,11 @@ const YusifAbout = () => {
           <img src={YusifPhoto} alt="" />
         </div>
         <div className={styles.rightside}>
-          <div onClick={() => greenClick()} className={styles.greenborder}>
-            {green ? (
+          <div
+            onClick={() => dispatch({ type: "green" })}
+            className={styles.greenborder}
+          >
+            {state.green ? (
               <>
                 <div className={styles.greentext}>
                   <h2>Idiopatik Skaliozlar </h2>
@@ -74,8 +66,8 @@ const YusifAbout = () => {
               </div>
             )}
           </div>
-          <div onClick={() => orangeClick()} className={styles.orangeborder}>
-            {orange ? (
+          <div onClick={() => dispatch({type:'orange'})} className={styles.orangeborder}>
+            {state.orange ? (
               <>
                 <div className={styles.orangetext}>
                   <h2>Konjenental Skoliozlar </h2>
@@ -98,8 +90,8 @@ const YusifAbout = () => {
               </div>
             )}
           </div>
-          <div onClick={() => redClick()} className={styles.redborder}>
-            {red ? (
+          <div onClick={() => dispatch({type:'red'})} className={styles.redborder}>
+            {state.red ? (
               <>
                 <div className={styles.redtext}>
                   <h2>Neyromuskulyar Skoliozlar </h2>
@@ -122,12 +114,12 @@ const YusifAbout = () => {
               </div>
             )}
           </div>
-          <div onClick={() => violetClick()} className={styles.violetborder}>
-            {violet ? (
+          <div onClick={() => dispatch({type:'violet'})} className={styles.violetborder}>
+            {state.violet ? (
               <>
                 <div className={styles.violettext}>
                   <h2>Kifoz</h2>
-                <VioletArrow/>
+                  <VioletArrow />
                 </div>
                 <div className={styles.orangeabout}>
                   <p>
@@ -142,7 +134,7 @@ const YusifAbout = () => {
             ) : (
               <div className={styles.violettext}>
                 <h2>Kifoz </h2>
-             <VioletArrowTrue/>
+                <VioletArrowTrue />
               </div>
             )}
           </div>

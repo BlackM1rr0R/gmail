@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useReducer } from "react";
 import styles from "./index.module.css";
 import Wrapper from "../../components/UI/wrapper";
 import { GreenIcon, SpineIcon, SpineIcon2, SpineIcon3 } from "../../icons";
@@ -16,37 +16,28 @@ import Xeste3 from "../../assets/images/xeste1.png";
 import Xeste4 from "../../assets/images/xeste2.png";
 import Xeste5 from "../../assets/images/xeste1.png";
 import Xeste6 from "../../assets/images/xeste2.png";
+const initialState = {
+  idiopatiks: true,
+  konjenental: false,
+  neyromuskulyar: false,
+  kifoz: false,
+};
+function reducer(state, action) {
+  switch (action.type) {
+    case 'idiopatiks':
+      return { idiopatiks: true, konjenental: false, neyromuskulyar: false, kifoz: false };
+    case 'konjenental':
+      return { idiopatiks: false, konjenental: true, neyromuskulyar: false, kifoz: false };
+    case 'neyromuskulyar':
+      return { idiopatiks: false, konjenental: false, neyromuskulyar: true, kifoz: false };
+    case 'kifoz':
+      return { idiopatiks: false, konjenental: false, neyromuskulyar: false, kifoz: true };
+    default:
+      return state;
+  }
+}
 const Idiopatik = () => {
-  const [idiopatiks, setIdiopatiks] = useState(true);
-  const [konjenental, setKonjenental] = useState(false);
-  const [neyromuskulyar, setNeyromuskulyar] = useState(false);
-  const [kifoz, setKifoz] = useState(false);
-
-  const idiopatiksClick = () => {
-    setIdiopatiks(true);
-
-    setKonjenental(false);
-    setNeyromuskulyar(false);
-    setKifoz(false);
-  };
-  const konjenentalClick = () => {
-    setIdiopatiks(false);
-    setKonjenental(true);
-    setNeyromuskulyar(false);
-    setKifoz(false);
-  };
-  const neyromuskulyarClick = () => {
-    setIdiopatiks(false);
-    setKonjenental(false);
-    setNeyromuskulyar(true);
-    setKifoz(false);
-  };
-  const kifozClick = () => {
-    setIdiopatiks(false);
-    setKonjenental(false);
-    setNeyromuskulyar(false);
-    setKifoz(true);
-  };
+  const [state, dispatch] = useReducer(reducer, initialState);
   const [photos, setPhotos] = useState([
     { image: Xeste1 },
     { image: Xeste2 },
@@ -59,36 +50,36 @@ const Idiopatik = () => {
     <div className={styles.background}>
       <Wrapper>
         <div className={styles.buttons}>
-          <div onClick={() => idiopatiksClick()} className={styles.button1}>
+          <div onClick={() => dispatch({ type: 'idiopatiks' })} className={styles.button1}>
             <button
-              className={`${idiopatiks ? styles.idiopatiks : styles.button}`}
+              className={`${state.idiopatiks ? styles.idiopatiks : styles.button}`}
             >
               Idiopatik
             </button>
           </div>
-          <div onClick={() => konjenentalClick()} className={styles.button2}>
+          <div onClick={() => dispatch({ type: 'konjenental' })} className={styles.button2}>
             <button
-              className={`${konjenental ? styles.konjenental : styles.button}`}
+              className={`${state.konjenental ? styles.konjenental : styles.button}`}
             >
               Konjenental
             </button>
           </div>
-          <div onClick={() => neyromuskulyarClick()} className={styles.button3}>
+          <div onClick={() => dispatch({ type: 'neyromuskulyar' })} className={styles.button3}>
             <button
               className={`${
-                neyromuskulyar ? styles.neyromuskulyar : styles.button
+                state.neyromuskulyar ? styles.neyromuskulyar : styles.button
               }`}
             >
               Neyromuskulyar
             </button>
           </div>
-          <div onClick={() => kifozClick()} className={styles.button4}>
-            <button className={`${kifoz ? styles.kifoz : styles.button}`}>
+          <div onClick={() => dispatch({ type: 'kifoz' })} className={styles.button4}>
+            <button className={`${state.kifoz ? styles.kifoz : styles.button}`}>
               Kifoz
             </button>
           </div>
         </div>
-        {idiopatiks ? (
+        {state.idiopatiks ? (
           <>
             <div className={styles.idiopatikheaders}>
               <h2>Idiopatik Skolioz</h2>
@@ -318,7 +309,7 @@ const Idiopatik = () => {
         ) : (
           ""
         )}
-        {konjenental ? (
+        {state.konjenental ? (
           <>
             <div className={styles.idiopatikheaders}>
               <h2>Konjenental Skolioz</h2>
@@ -548,7 +539,7 @@ const Idiopatik = () => {
         ) : (
           ""
         )}
-        {neyromuskulyar ? (
+        {state.neyromuskulyar ? (
           <>
             <div className={styles.idiopatikheaders}>
               <h2>Neyromuskulyar Skolioz</h2>
@@ -778,7 +769,7 @@ const Idiopatik = () => {
         ) : (
           ""
         )}
-        {kifoz ? (
+        {state.kifoz ? (
           <>
             <div className={styles.idiopatikheaders}>
               <h2>Kifoz</h2>
