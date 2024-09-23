@@ -1,4 +1,4 @@
-import React, { useState,useReducer } from "react";
+import React, { useState,useReducer, useMemo } from "react";
 import styles from "./index.module.css";
 import Wrapper from "../../components/UI/wrapper";
 import { GreenIcon, SpineIcon, SpineIcon2, SpineIcon3 } from "../../icons";
@@ -38,14 +38,14 @@ function reducer(state, action) {
 }
 const Idiopatik = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
-  const [photos, setPhotos] = useState([
+  const photos = useMemo(()=>[
     { image: Xeste1 },
     { image: Xeste2 },
     { image: Xeste3 },
     { image: Xeste4 },
     { image: Xeste5 },
     { image: Xeste6 },
-  ]);
+  ],[]);
   return (
     <div className={styles.background}>
       <Wrapper>
@@ -1004,4 +1004,4 @@ const Idiopatik = () => {
   );
 };
 
-export default Idiopatik;
+export default React.memo(Idiopatik);

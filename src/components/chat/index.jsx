@@ -15,4 +15,4 @@ const ChatApp = () => {
   )
 }
 
-export default ChatApp
+export default React.memo(ChatApp);

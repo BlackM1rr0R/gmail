@@ -40,9 +40,8 @@
   }
   .background .boxs {
     padding-top: 60px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
   }
 }/*# sourceMappingURL=index.module.css.map */

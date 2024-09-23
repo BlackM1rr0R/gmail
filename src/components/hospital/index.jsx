@@ -31,4 +31,4 @@ const Hospital = () => {
   );
 };
 
-export default Hospital;
+export default React.memo(Hospital);

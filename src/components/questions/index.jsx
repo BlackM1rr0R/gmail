@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useReducer, useState } from "react";
 import styles from "./index.module.css";
 import {
   GrayArrow,
@@ -12,40 +12,34 @@ import {
   VioletArrow,
   VioletArrowTrue,
 } from "../../icons";
+const initialState = {
+  green: true,
+  orange: false,
+  red: false,
+  violet: false,
+};
+function reducer(state, action) {
+  switch (action.type) {
+    case "green":
+      return { green: true, orange: false, red: false, violet: false };
+    case "orange":
+      return { green: false, orange: true, red: false, violet: false };
+    case "red":
+      return { green: false, orange: false, red: true, violet: false };
+    case "violet":
+      return { green: false, orange: false, red: false, violet: true };
+  }
+}
 const Questions = () => {
-  const [green, setGreen] = useState(true);
-  const [orange, setOrange] = useState(false);
-  const [red, setRed] = useState(false);
-  const [violet, setViolet] = useState(false);
-  const greenClick = () => {
-    setGreen(!green);
-    setOrange(false);
-    setRed(false);
-    setViolet(false);
-  };
-  const orangeClick = () => {
-    setGreen(false);
-    setOrange(!orange);
-    setRed(false);
-    setViolet(false);
-  };
-  const redClick = () => {
-    setGreen(false);
-    setOrange(false);
-    setRed(!red);
-    setViolet(false);
-  };
-  const violetClick = () => {
-    setGreen(false);
-    setOrange(false);
-    setRed(false);
-    setViolet(!violet);
-  };
+  const [state, setState] = useReducer(reducer, initialState);
   return (
     <div className={styles.background}>
       <div className={styles.rightside}>
-        <div onClick={() => greenClick()} className={styles.greenborder}>
-          {green ? (
+        <div
+          onClick={() => setState({ type: "green" })}
+          className={styles.greenborder}
+        >
+          {state.green ? (
             <>
               <div className={styles.greentext}>
                 <h2>What is Zelh?</h2>
@@ -69,8 +63,11 @@ const Questions = () => {
             </div>
           )}
         </div>
-        <div onClick={() => orangeClick()} className={styles.orangeborder}>
-          {orange ? (
+        <div
+          onClick={() => setState({ type: "orange" })}
+          className={styles.orangeborder}
+        >
+          {state.orange ? (
             <>
               <div className={styles.orangetext}>
                 <h2>What positions can you cover? </h2>
@@ -94,8 +91,11 @@ const Questions = () => {
             </div>
           )}
         </div>
-        <div onClick={() => redClick()} className={styles.redborder}>
-          {red ? (
+        <div
+          onClick={() => setState({ type: "red" })}
+          className={styles.redborder}
+        >
+          {state.red ? (
             <>
               <div className={styles.redtext}>
                 <h2>Staffing suit my business? </h2>
@@ -118,8 +118,11 @@ const Questions = () => {
             </div>
           )}
         </div>
-        <div onClick={() => violetClick()} className={styles.violetborder}>
-          {violet ? (
+        <div
+          onClick={() => setState({ type: "violet" })}
+          className={styles.violetborder}
+        >
+          {state.violet ? (
             <>
               <div className={styles.violettext}>
                 <h2>How much can I save annually?</h2>

@@ -39,13 +39,13 @@
         font-size: 48px;
       }
     }
-    .boxs{
-        padding-top: 60px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-            
+    .boxs {
+      padding-top: 60px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 50px;
+      .border1 {
+      }
     }
   }
 }
