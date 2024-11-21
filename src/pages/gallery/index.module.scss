@@ -24,11 +24,19 @@
     padding-top: 50px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    .border1 {
+    gap: 30px;
+    .border {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      background-color: #F1F1F2;
+      border-radius: 10px;
+      h2{
+        padding: 27px 30px;
+        font-weight: 600;
+      }
+      img{
+        border-radius: 10px;
+      }
     }
   }
 }
@@ -44,7 +52,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 50px;
-      .border1 {
+      .border {
       }
     }
   }

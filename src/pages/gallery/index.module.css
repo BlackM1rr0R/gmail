@@ -26,12 +26,20 @@
   padding-top: 50px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
 }
-.background .boxs .border1 {
+.background .boxs .border {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  background-color: #F1F1F2;
+  border-radius: 10px;
+}
+.background .boxs .border h2 {
+  padding: 27px 30px;
+  font-weight: 600;
+}
+.background .boxs .border img {
+  border-radius: 10px;
 }
 
 @media (min-width: 768px) {

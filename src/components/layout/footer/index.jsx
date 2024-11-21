@@ -32,10 +32,9 @@ const Footer = () => {
           <div className={styles.line3}>
             <h2>Main office</h2>
             <ul>
-              <li>1905 Market St, Tampa, FL</li>
-              <li>+1 800 458 09 02</li>
-              <li>recruiting@gmail.com</li>
-              <li>info@gmail.com</li>
+              <li>İçkapı No: 66 Avcılar/İstanbulL</li>
+              <li>0850 377 7 360</li>
+              <li>info@360saglik.com</li>
             </ul>
             <div className={styles.icons}>
               <div className={styles.linkedin}>

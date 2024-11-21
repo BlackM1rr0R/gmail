@@ -4,17 +4,74 @@
   box-sizing: border-box;
 }
 
-.background {
-  padding-top: 48px;
-  padding-bottom: 48px;
+.background .headerControl {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.background .headerControl .location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.background .headerControl .location h2 {
+  font-size: 14px;
+}
+.background .headerControl .location svg {
+  width: 16px;
+  height: 16px;
+}
+.background .headerControl .clockOpen {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.background .headerControl .clockOpen h2 {
+  font-size: 14px;
+}
+.background .headerControl .clockOpen svg {
+  width: 16px;
+  height: 16px;
+}
+.background .headerControl .phone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.background .headerControl .phone h2 {
+  font-size: 14px;
+  text-decoration: none;
+}
+.background .headerControl .phone h2 a {
+  text-decoration: none;
+  color: #666666;
+}
+.background .headerControl .phone svg {
+  width: 16px;
+  height: 16px;
 }
 .background .control {
+  padding-top: 48px;
+  padding-bottom: 48px;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 .background .control .images {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.background .control .images h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.background .control .images h2 {
+  line-height: 25px;
 }
 .background .control .images img {
   width: 100%;
@@ -23,52 +80,57 @@
 .background .control .texts {
   width: 100%;
   background-color: #f1f1f2;
-  padding: 28px 50px;
+  padding: 28px 20px;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
   gap: 50px;
   justify-content: space-between;
 }
-.background .control .texts .headertext {
+.background .control .texts label {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
+  width: 100%;
 }
-.background .control .texts .headertext h2 {
-  font-weight: 600;
-  font-size: 25px;
+.background .control .texts label input {
+  background-color: transparent;
+  color: black;
+  border-radius: 10px;
+  outline: none;
+  padding: 14px 30px;
+  border: 1px solid rgb(203, 203, 203);
 }
-.background .control .texts .controltext {
+.background .control .texts .buttonControl {
   display: flex;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
-.background .control .texts .controltext .chattext {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.background .control .texts .buttonControl button {
+  background-color: #6e4eef;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 13px 38px;
 }
-.background .control .texts .controltext .chattext h2 {
-  font-weight: 600;
+.background .control .texts .textArea {
+  width: 100%;
 }
-.background .control .texts .controltext .calltext {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.background .control .texts .controltext .calltext h2 {
-  font-weight: 600;
-}
-.background .control .texts .visittext {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.background .control .texts .visittext h2 {
-  font-weight: 600;
+.background .control .texts .textArea textarea {
+  background-color: transparent;
+  color: black;
+  border-radius: 10px;
+  outline: none;
+  padding: 14px 30px;
+  border: 1px solid rgb(203, 203, 203);
+  max-height: 20vh;
+  width: 100%;
 }
 .background .maps {
   margin-top: 42px;
+  margin-bottom: 30px;
   width: 100%;
   height: 300px;
 }
@@ -77,19 +139,65 @@
   width: 100%;
   height: 100%;
 }
+.background .maps h2 {
+  padding-top: 20px;
+  font-weight: 600;
+}
 
 @media (min-width: 768px) {
-  .background {
-    padding-top: 88px;
-    padding-bottom: 88px;
+  .background .headerControl {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .background .headerControl .location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .background .headerControl .location h2 {
+    color: #666666;
+  }
+  .background .headerControl .clockOpen {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .background .headerControl .clockOpen h2 {
+    color: #666666;
+  }
+  .background .headerControl .phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .background .headerControl .phone h2 {
+    text-decoration: none;
+  }
+  .background .headerControl .phone h2 a {
+    text-decoration: none;
+    color: #666666;
   }
   .background .control {
+    padding-top: 88px;
+    padding-bottom: 88px;
     display: flex;
     flex-direction: row;
     gap: 30px;
   }
   .background .control .images {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     width: 50%;
+  }
+  .background .control .images h1 {
+    font-size: 48px;
+    font-weight: 600;
+  }
+  .background .control .images h2 {
+    line-height: 25px;
   }
   .background .control .images img {
     width: 100%;
@@ -100,49 +208,55 @@
     background-color: #f1f1f2;
     padding: 48px 70px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
     border-radius: 20px;
     justify-content: space-between;
   }
-  .background .control .texts .headertext {
+  .background .control .texts label {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
+    width: 45%;
   }
-  .background .control .texts .headertext h2 {
-    font-weight: 600;
-    font-size: 48px;
+  .background .control .texts label input {
+    background-color: transparent;
+    color: black;
+    border-radius: 10px;
+    outline: none;
+    padding: 14px 30px;
+    border: 1px solid rgb(203, 203, 203);
   }
-  .background .control .texts .controltext {
+  .background .control .texts .buttonControl {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
   }
-  .background .control .texts .controltext .chattext {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  .background .control .texts .buttonControl button {
+    background-color: #6e4eef;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 13px 38px;
   }
-  .background .control .texts .controltext .chattext h2 {
-    font-weight: 600;
+  .background .control .texts .textArea {
+    width: 100%;
   }
-  .background .control .texts .controltext .calltext {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .background .control .texts .controltext .calltext h2 {
-    font-weight: 600;
-  }
-  .background .control .texts .visittext {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .background .control .texts .visittext h2 {
-    font-weight: 600;
+  .background .control .texts .textArea textarea {
+    background-color: transparent;
+    color: black;
+    border-radius: 10px;
+    outline: none;
+    padding: 14px 30px;
+    border: 1px solid rgb(203, 203, 203);
+    max-height: 20vh;
+    width: 100%;
   }
   .background .maps {
-    margin-top: 82px;
+    margin-top: 12px;
+    padding-bottom: 48px;
     width: 100%;
     height: 500px;
   }
@@ -150,5 +264,11 @@
     border-radius: 20px;
     width: 100%;
     height: 100%;
+  }
+  .background .maps h2 {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
   }
 }/*# sourceMappingURL=index.module.css.map */
