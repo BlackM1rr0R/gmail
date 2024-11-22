@@ -26,7 +26,7 @@ const Header = () => {
           <div className={styles.services}>
             <Link to={"/about"}>Haqqımda</Link>
             <Link to={"/idiopatik"}>Müalicələr</Link>
-            <h2>Kifoz</h2>
+            <Link to={"/kifoz"}>Kifoz</Link>
             <Link to={"/gallery"}>Galereya</Link>
             <Link to={"/contact"}>Əlaqə</Link>
           </div>
