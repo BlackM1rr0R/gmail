@@ -3,13 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-.backimg {
-  background-color: #f1f1f1;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-  img {
-    width: 100%;
-    object-fit: cover;
+  .aboutText{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h2{
+    font-size: 32px;
+    font-weight: 600;
   }
 }
 
@@ -22,9 +24,18 @@
 
     .leftside {
       .header {
+        display: flex;
+        justify-content: center;
         h2 {
-          font-size: 35px;
+          display: flex;
+          align-items: center;
+          font-size: 21px;
           font-weight: 600;
+          h1{
+            font-size: 21px;
+            font-weight: 600;
+            color: #6E4EEF;
+          }
         }
       }
       .profilpicture {
@@ -46,6 +57,9 @@
           font-size: 28px;
           font-weight: 600;
         }
+      p{
+        line-height: 25px;
+      }
       }
     }
     .rightside {
@@ -64,6 +78,9 @@
           font-size: 28px;
           font-weight: 600;
         }
+        p{
+          line-height: 25px;
+        }
       }
       .diplom {
         margin-top: 20px;
@@ -77,6 +94,9 @@
           font-size: 28px;
           font-weight: 600;
         }
+        p{
+          line-height: 25px;
+        }
       }
       .sertifikat {
         padding-top: 20px;
@@ -89,32 +109,18 @@
   }
 }
 @media (min-width: 768px) {
-  .backimg {
-    background-color: #f1f1f1;
-
-    img {
-      width: auto;
-    }
-    .backtext {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      gap: 20px;
-      h2 {
-        font-weight: 700;
-        font-size: 52px;
-        width: 550px;
-      }
-      p {
-        font-weight: 500;
-        font-size: 20;
-        width: 450px;
-        line-height: 28px;
-      }
-    }
+  .aboutText{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h2{
+    font-size: 64px;
+    font-weight: 600;
   }
+}
+
   .background {
     .control {
       display: flex;
@@ -125,8 +131,15 @@
       .leftside {
         .header {
           h2 {
+            display: flex;
+            align-items: center;
             font-size: 51px;
             font-weight: 600;
+            h1{
+              font-size: 51px;
+              font-weight: 600;
+              color: #6E4EEF;
+            }
           }
         }
         .profilpicture {
@@ -147,12 +160,15 @@
             font-size: 28px;
             font-weight: 600;
           }
+          p{
+            line-height: 30px;
+          }
         }
       }
       .rightside {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+     
         .education {
           margin-top: 20px;
           background-color: #e6deeb;
@@ -164,6 +180,9 @@
           h2 {
             font-size: 28px;
             font-weight: 600;
+          }
+          p{
+            line-height: 25px;
           }
         }
         .diplom {
@@ -177,6 +196,9 @@
           h2 {
             font-size: 28px;
             font-weight: 600;
+          }
+            p{
+            line-height: 25px;
           }
         }
         .sertifikat {

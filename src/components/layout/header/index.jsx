@@ -50,7 +50,7 @@ const Header = () => {
             <div className={styles.services}>
               <Link to={"/about"}>Haqqımda</Link>
               <Link to={"/idiopatik"}>Müalicələr</Link>
-              <Link>Kifoz</Link>
+              <Link to={"/kifoz"}>Kifoz</Link>
               <Link to={"/gallery"}>Galereya</Link>
               <Link to={"/contact"}>Əlaqə</Link>
             </div>
