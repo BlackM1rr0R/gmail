@@ -48,7 +48,7 @@ const Header = () => {
         {isMenuOpen && (
           <div className={styles.overlay}>
             <div className={styles.services}>
-              <Link to={"/about"}>Haqqımda</Link>
+              <Link to={"/about"}>Haqqımdaa</Link>
               <Link to={"/idiopatik"}>Müalicələr</Link>
               <Link to={"/kifoz"}>Kifoz</Link>
               <Link to={"/gallery"}>Galereya</Link>
