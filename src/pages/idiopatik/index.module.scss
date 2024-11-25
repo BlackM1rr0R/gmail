@@ -6,445 +6,403 @@
 .background {
   padding-top: 10px;
   padding-bottom: 40px;
-  .buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding-bottom: 40px;
-    .button1 {
-      width: 100%;
-      .button {
-        cursor: pointer;
-        background-color: white;
-        padding: 16px 22px;
-        width: 100%;
-        border: 1px solid gray;
-        outline: none;
-        font-weight: 600;
-
-        border-radius: 10px;
-      }
-      .idiopatiks {
-        cursor: pointer;
-        background-color: #dfeed7;
-        padding: 16px 22px;
-        width: 100%;
-
-        outline: none;
-        font-weight: 600;
+  .control{
+    .headerText{
         display: flex;
-        justify-content: center;
         align-items: center;
-        border-radius: 10px;
-        border: none;
-      }
-      button:hover {
-        background-color: #dfeed7;
-        color: black;
-      }
-    }
-    .button2 {
-      width: 100%;
-      .button {
-        cursor: pointer;
-        background-color: rgb(255, 255, 255);
-        padding: 16px 22px;
-        width: 100%;
-
-        outline: none;
-        font-weight: 600;
-
-        border-radius: 10px;
-        border: 1px solid gray;
-      }
-      .konjenental {
-        cursor: pointer;
-        background-color: #f8f0d2;
-        padding: 16px 22px;
-        width: 100%;
-
-        outline: none;
-        font-weight: 600;
-        display: flex;
         justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-       border: none;
-      }
-      button:hover {
-        background-color: #f8f0d2;
-        color: black;
-      }
-    }
-    .button3 {
-      width: 100%;
-      .button {
-        cursor: pointer;
-        background-color: rgb(255, 255, 255);
-        padding: 16px 22px;
-        width: 100%;
-
-        outline: none;
-        font-weight: 600;
-
-        border-radius: 10px;
-        border: 1px solid gray;
-      }
-      .neyromuskulyar {
-        cursor: pointer;
-        background-color: #f9e8d6;
-        padding: 16px 22px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        outline: none;
-        font-weight: 600;
-
-        border-radius: 10px;
-        border: none;
-
-      }
-      button:hover {
-        background-color: #f9e8d6;
-        color: black;
-      }
-    }
-    .button4 {
-      width: 100%;
-      .button {
-        cursor: pointer;
-        background-color: rgb(255, 255, 255);
-        padding: 16px 22px;
-        width: 100%;
-
-        outline: none;
-        font-weight: 600;
-
-        border-radius: 10px;
-        border: 1px solid gray;
-      }
-      .kifoz {
-        cursor: pointer;
-        background-color: #e6deeb;
-        padding: 16px 22px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        outline: none;
-        font-weight: 600;
-
-        border-radius: 10px;
-        border: none;
-
-      }
-      button:hover {
-        background-color: #e6deeb;
-        color: black;
-      }
-    }
-  }
-  .idiopatikheaders {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    gap: 20px;
-    h2 {
-      font-weight: 600;
-      font-size: 32px;
-    }
-    p {
-      text-align: center;
-    }
-  }
-  .boxs {
-    margin-top: 50px;
-    border: 1px solid #5d6371;
-    border-radius: 30px;
-    padding: 20px 40px;
-    .boxsheader {
-      display: flex;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-      h2 {
-        font-weight: 600;
-        font-size: 32px;
-      }
-    }
-    .controlboxs {
-      display: flex;
-      flex-direction: column;
-      gap: 60px;
-      padding-top: 30px;
-      .boxs1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        .boxstexts1 {
-          h2 {
-            text-align: center;
-            font-weight: 600;
-            font-size: 22px;
-          }
-        }
-        .boxsdescription1 {
-          p {
-            text-align: center;
-          }
-        }
-      }
-    }
-  }
-  .xtray {
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    .leftside {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      .leftheader {
-        h2 {
-          font-weight: 600;
-          font-size: 32px;
-        }
-      }
-      .leftdesc {
-        p {
-          width: 100%;
-          color: #004f92;
-          font-weight: 600;
-          line-height: 24px;
-        }
-      }
-      .mrt {
-        width: 100%;
-        img {
-          border-radius: 20px;
-          width: 100%;
-        }
-      }
-    }
-    .rightside {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      .xtrayimage {
-        img {
-          width: 100%;
-          border-radius: 10px;
-        }
-      }
-      .rightdesc {
-        p {
-          width: 100%;
-          line-height: 24px;
-        }
-      }
-    }
-  }
-  .swiper {
-    padding-top: 50px;
-    display: flex;
-    justify-content: center;
-    .price {
-      .borders {
-        margin-bottom: 50px;
-        img {
-          cursor: pointer;
-          width: 100%;
-          height: 40vh;
-        }
-      }
-    }
-  }
-  .about {
-    padding-top: 50px;
-    .aboutheaders {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      h2 {
-        font-weight: 600;
-        font-size: 14px;
-        color: #004f92;
-      }
-      h1 {
-        font-weight: 600;
-        font-size: 25px;
-      }
-    }
-    .list {
-      padding-top: 30px;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      .leftul {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        .list1 {
-          display: flex;
-          justify-content: flex-start;
-          align-items: flex-start;
-          gap: 5px;
-
-          li {
-            font-weight: 600;
-          }
-        }
-      }
-    }
-  }
-}
-@media (min-width: 768px) {
-  .background {
-    .buttons {
-      padding-top: 50px;
-      display: flex;
-      flex-direction: row;
-      gap: 30px;
-      .button1 {
-        button {
-          border: 1px solid gray;
-        }
-        .idiopatiks {
-          border: none;
-          font-weight: 600;
-        }
-      }
-      .button2 {
-        button {
-          border: 1px solid gray;
-        }
-        .konjenental {
-          border: none;
-        }
-      }
-      .button3{
-        button{
-          border: 1px solid gray;
-        }
-        .neyromuskulyar{
-          border: none;
-        }
-      }
-      .button4{
-        button{
-          border: 1px solid gray;
-        }
-        .kifoz{
-          border: none;
-        }
-      }
-    }
-    .idiopatikheaders {
-      h2 {
-        font-size: 48px;
-      }
-    }
-    .boxs {
-      padding-top: 30px;
-      padding-bottom: 50px;
-      height: 100%;
-      .controlboxs {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        align-items: flex-start;
-
-        .boxs1 {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-
-          .boxsdescription1 {
-            display: flex;
-            justify-content: flex-end;
-
-            p {
-            }
-          }
-        }
-      }
-    }
-    .xtray {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-
-      .leftside {
-        .leftdesc {
-          p {
-            width: 600px;
-          }
-        }
-      }
-      .rightside {
-        .xtrayimage {
-          width: 100%;
-          img {
-            width: 100%;
-          }
-        }
-        .rightdesc {
-          p {
-            width: 600px;
-            line-height: 40px;
-          }
-        }
-      }
-    }
-    .swiper {
-      padding-top: 150px;
-      display: flex;
-      justify-content: center;
-      .price {
-        .borders {
-          display: flex;
-          align-items: center;
-          padding-bottom: 50px;
-          img {
-            cursor: pointer;
-            width: 100%;
-            height: auto;
-          }
-        }
-      }
-    }
-    .about {
-      .list {
-        padding-top: 70px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        .leftul {
-          display: flex;
-          flex-direction: column;
-          gap: 15px;
-
-          .list1 {
+        h2{
             display: flex;
             align-items: center;
-
-            gap: 0;
-
-            li {
-              font-weight: 600;
-              width: 500px;
-              line-height: 24px;
+            gap: 5px;
+            font-size: 72px;
+            font-weight: 600;
+            h1{
+            font-size: 72px;
+            color: #6E4EEF;
+            font-weight: 600;
             }
+        }
+    }
+    .boxOne{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 80px;
+       .leftBox{
+        width: 40%;
+           h1{
+            font-size: 32px;
+            font-weight: 600;
+           }
+           .controlLeftBox{
+            margin-top: 30px;
+            background-color: #DFEED7;
+            padding: 30px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            .leftBoxText{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 100px;
+                .leftBoxHeader{
+                    h2{
+                        color: #439A75;
+                    }
+                }
+                .leftBoxBottom{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    h2{
+                        font-size: 28px;
+                        font-weight: 600;
+                      
+                    }p{
+                        width: 400px;
+                    }
+                }
+            }
+           }
+       } 
+       .controlMiddleBox{
+        background-color: #F9E8D6;
+        width: 28%;
+        padding: 30px;
+        border-radius: 10px;
+        .middleBoxText{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 108px;
+            .middleBoxHeader{
+                h2{
+                    color: #ED8E61;
+                }
+            }
+            .middleBoxBottom{
+                display: flex;
+                flex-direction: column;
+                gap: 28px;
+                h2{
+                    font-size: 28px;
+                    font-weight: 600;
+                  
+                }p{
+                    max-width: 400px;
+                    line-height: 22px;
+                }
+            }
+        }
+       }
+       .controlRightBox{
+        background-color: #E6DEEB;
+        width: 28%;
+        padding: 30px;
+        border-radius: 10px;
+        .rightBoxText{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 108px;
+            .rightBoxHeader{
+                h2{
+                    color: #A68CD0;
+                }
+            }
+            .rightBoxBottom{
+                display: flex;
+                flex-direction: column;
+                gap: 28px;
+                h2{
+                    font-size: 28px;
+                    font-weight: 600;
+                  
+                }p{
+                    max-width: 400px;
+                    line-height: 22px;
+                }
+            }
+        }
+       }
+    }
+    .boxTwo{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 17px;
+        gap: 40px;
+        .controlFiveBox{
+
+            width: 100%;
+            background-color: #DFEED7;
+            padding: 30px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            .fiveBoxText{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 100px;
+                .fiveBoxHeader{
+                    h2{
+                        color: #439A75;
+                    }
+                }
+                .fiveBoxBottom{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    h2{
+                        font-size: 28px;
+                        font-weight: 600;
+                      
+                    }p{
+                        width: 400px;
+                    }
+                }
+            }
+           }
+           .controlForBox{
+            background-color: #E6DEEB;
+            width: 24%;
+            padding: 30px;
+            border-radius: 10px;
+            .forBox{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+    
+                .forBoxHeader{
+                    h2{
+                        color: #A68CD0;
+                    }
+                }
+                .forBoxBottom{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 28px;
+                    h2{
+                        font-size: 28px;
+                        font-weight: 600;
+                      
+                    }p{
+                        max-width: 400px;
+                        line-height: 22px;
+                    }
+                }
+            }
+           }
+
+    }
+    .boxThree{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 17px;
+        gap: 40px;
+        .controlFiveBox{
+
+            width: 100%;
+            background-color: #F8F0D2;
+            padding: 30px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            .fiveBoxText{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 100px;
+                .fiveBoxHeader{
+                    h2{
+                        color: #439A75;
+                    }
+                }
+                .fiveBoxBottom{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    h2{
+                        font-size: 28px;
+                        font-weight: 600;
+                      
+                    }p{
+                        width: 400px;
+                    }
+                }
+            }
+           }
+           .controlForBox{
+            background-color: #E6DEEB;
+            width: 24%;
+            padding: 30px;
+            border-radius: 10px;
+            .forBox{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+    
+                .forBoxHeader{
+                    h2{
+                        color: #A68CD0;
+                    }
+                }
+                .forBoxBottom{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 28px;
+                    h2{
+                        font-size: 28px;
+                        font-weight: 600;
+                      
+                    }p{
+                        max-width: 400px;
+                        line-height: 22px;
+                    }
+                }
+            }
+           }
+
+    }
+
+
+}
+}
+@media(max-width:498px){
+  .background{
+    .control{
+      .headerText{
+          h2{
+              font-size: 24px;
+
+              h1{
+                  font-size: 24px;
+              }
+          }
+      }
+      .boxOne{
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+        .leftBox{
+          width: 100%;
+          h1{
+              font-size: 20px;
+          }
+          .controlLeftBox{
+              .leftBoxText{
+                  .leftBoxBottom{
+                      h2{
+                          font-size: 18px;
+                      }
+                      p{
+                          width: 100%;
+                          font-size: 16px;
+                      }
+                  }
+              }
+          }
+        }
+        .controlMiddleBox{
+          width: 100%;
+          .middleBoxText{
+              .middleBoxBottom{
+                  h2{
+                      font-size: 18px;
+                  }
+                  p{
+                      width: 100%;
+                      font-size: 16px;
+                  }
+              }
+          }
+        }
+        .controlRightBox{
+          width: 100%;
+          .rightBoxText{
+              .rightBoxBottom{
+                  h2{
+                      font-size: 18px;
+                  }
+                  p{
+                      width: 100%;
+                      font-size: 16px;
+                  }
+              }
           }
         }
       }
-    }
+      .boxTwo{
+          display: flex;
+          flex-direction: column;
+          .controlForBox{
+              width: 100%;
+              .forBox{
+                  display: flex;
+                  flex-direction: column;
+                  gap: 100px;
+                  .forBoxBottom{
+                      h2{
+                          font-size: 18px;
+                      }
+                      p{
+                          width: 100%;
+                          font-size: 16px;
+                      }
+                  }
+              }
+          }
+          .controlFiveBox{
+              width: 100%;
+              .fiveBoxText{
+                  .fiveBoxBottom{
+                      h2{
+                          font-size: 18px;
+                      }
+                      p{
+                          width: 100%;
+                          font-size: 16px;
+                      }
+                  }
+              }
+          }
+      }
+      .boxThree{
+          display: flex;
+          flex-direction: column;
+          .controlForBox{
+              width: 100%;
+              .forBox{
+                  display: flex;
+                  flex-direction: column;
+                  gap: 100px;
+                  .forBoxBottom{
+                      h2{
+                          font-size: 18px;
+                      }
+                      p{
+                          width: 100%;
+                          font-size: 16px;
+                      }
+                  }
+              }
+          }
+          .controlFiveBox{
+              width: 100%;
+              .fiveBoxText{
+                  .fiveBoxBottom{
+                      h2{
+                          font-size: 18px;
+                      }
+                      p{
+                          width: 100%;
+                          font-size: 16px;
+                      }
+                  }
+              }
+          }
+      }
+  }
   }
 }

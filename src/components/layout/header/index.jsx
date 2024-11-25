@@ -24,11 +24,11 @@ const Header = () => {
             <img src={Logo} alt="" />
           </Link>
           <div className={styles.services}>
+            <Link to={"/idiopatik"}>Randevu</Link>
+            <Link to={"/kifoz"}>Hizmetlerimiz</Link>
             <Link to={"/about"}>Haqqımda</Link>
-            <Link to={"/idiopatik"}>Müalicələr</Link>
-            <Link to={"/kifoz"}>Kifoz</Link>
-            <Link to={"/gallery"}>Galereya</Link>
-            <Link to={"/contact"}>Əlaqə</Link>
+            <Link to={"/gallery"}>Blog</Link>
+            <Link to={"/contact"}>Iletisim</Link>
           </div>
           <div className={styles.icons}>
             <FacebookIcon />
@@ -49,10 +49,10 @@ const Header = () => {
           <div className={styles.overlay}>
             <div className={styles.services}>
               <Link to={"/about"}>Haqqımdaa</Link>
-              <Link to={"/idiopatik"}>Müalicələr</Link>
-              <Link to={"/kifoz"}>Kifoz</Link>
-              <Link to={"/gallery"}>Galereya</Link>
-              <Link to={"/contact"}>Əlaqə</Link>
+              <Link to={"/idiopatik"}>Randevu</Link>
+              <Link to={"/kifoz"}>Hizmetlerimiz</Link>
+              <Link to={"/gallery"}>Blog</Link>
+              <Link to={"/contact"}>Iletisim</Link>
             </div>
             <div className={styles.icons}>
               <FacebookIcon />

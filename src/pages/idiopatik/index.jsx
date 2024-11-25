@@ -1,1004 +1,172 @@
 import React, { useState,useReducer, useMemo } from "react";
 import styles from "./index.module.css";
 import Wrapper from "../../components/UI/wrapper";
-import { GreenIcon, SpineIcon, SpineIcon2, SpineIcon3 } from "../../icons";
-import Mrt from "../../assets/images/mrt1.png";
-import Xtray from "../../assets/images/xtray1.png";
-import { Autoplay, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-import Xeste1 from "../../assets/images/xeste1.png";
-import Xeste2 from "../../assets/images/xeste2.png";
-import Xeste3 from "../../assets/images/xeste1.png";
-import Xeste4 from "../../assets/images/xeste2.png";
-import Xeste5 from "../../assets/images/xeste1.png";
-import Xeste6 from "../../assets/images/xeste2.png";
+import DoctorSvg from "../../assets/images/doktor.png";
+import AmbulanceSvg from "../../assets/images/ambulance.png";
+import Patient from "../../assets/images/hasta.png";
+import {
+  GrayArrow,
+  GrayArrowTrue,
+  GreenArrow,
+  GreenArrowTrue,
+  OrangeArrow,
+  OrangeArrowTrue,
+  RedArrow,
+  RedArrowTrue,
+  VioletArrow,
+  VioletArrowTrue,
+} from "../../icons";
 const initialState = {
-  idiopatiks: true,
-  konjenental: false,
-  neyromuskulyar: false,
-  kifoz: false,
+  green: true,
+  orange: false,
+  red: false,
+  violet: false,
 };
 function reducer(state, action) {
   switch (action.type) {
-    case 'idiopatiks':
-      return { idiopatiks: true, konjenental: false, neyromuskulyar: false, kifoz: false };
-    case 'konjenental':
-      return { idiopatiks: false, konjenental: true, neyromuskulyar: false, kifoz: false };
-    case 'neyromuskulyar':
-      return { idiopatiks: false, konjenental: false, neyromuskulyar: true, kifoz: false };
-    case 'kifoz':
-      return { idiopatiks: false, konjenental: false, neyromuskulyar: false, kifoz: true };
-    default:
-      return state;
+    case "green":
+      return { green: true, orange: false, red: false, violet: false };
+    case "orange":
+      return { green: false, orange: true, red: false, violet: false };
+    case "red":
+      return { green: false, orange: false, red: true, violet: false };
+    case "violet":
+      return { green: false, orange: false, red: false, violet: true };
   }
 }
 const Idiopatik = () => {
-  const [state, dispatch] = useReducer(reducer, initialState);
-  const photos = useMemo(()=>[
-    { image: Xeste1 },
-    { image: Xeste2 },
-    { image: Xeste3 },
-    { image: Xeste4 },
-    { image: Xeste5 },
-    { image: Xeste6 },
-  ],[]);
+  
   return (
     <div className={styles.background}>
       <Wrapper>
-        <div className={styles.buttons}>
-          <div onClick={() => dispatch({ type: 'idiopatiks' })} className={styles.button1}>
-            <button
-              className={`${state.idiopatiks ? styles.idiopatiks : styles.button}`}
-            >
-              Idiopatik
-            </button>
+      <div className={styles.control}>
+          <div className={styles.headerText}>
+            <h2>
+              <h1>Randevu</h1> Online
+            </h2>
           </div>
-          <div onClick={() => dispatch({ type: 'konjenental' })} className={styles.button2}>
-            <button
-              className={`${state.konjenental ? styles.konjenental : styles.button}`}
-            >
-              Konjenental
-            </button>
+          <div className={styles.boxOne}>
+            <div className={styles.leftBox}>
+              <h1>Hizmetlerimiz</h1>
+              <div className={styles.controlLeftBox}>
+                <div className={styles.leftBoxText}>
+                  <div className={styles.leftBoxHeader}>
+                    <h2>01.</h2>
+                  </div>
+                  <div className={styles.leftBoxBottom}>
+                    <h2>Evde Doktor Hizmeti</h2>
+                    <p>
+                      Evde doktor hizmeti, hastaların kendi evlerinde kaliteli
+                      sağlık hizmeti alabilmeleri için kaliteli bir hizmet
+                      sunar.
+                    </p>
+                  </div>
+                </div>
+                <div className={styles.leftBoxSvg}>
+                  <img src={DoctorSvg} alt="" />
+                </div>
+              </div>
+            </div>
+            <div className={styles.controlMiddleBox}>
+              <div className={styles.middleBoxText}>
+                <div className={styles.middleBoxHeader}>
+                  <h2>02.</h2>
+                </div>
+                <div className={styles.middleBoxBottom}>
+                  <h2>Evde Hemşire Hizmeti</h2>
+                  <p>
+                    Evde hemşire hizmeti, özellikle yaşlı, yatalak veya kronik
+                    rahatsızlıkları olan bireyler için büyük bir kolaylık
+                    sağlar.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className={styles.controlRightBox}>
+              <div className={styles.rightBoxText}>
+                <div className={styles.rightBoxHeader}>
+                  <h2>03.</h2>
+                </div>
+                <div className={styles.rightBoxBottom}>
+                  <h2>Evde Geleneksel Tıp</h2>
+                  <p>
+                    Evde Geleneksel Tıp, binlerce yıllık doğal tedavi
+                    yöntemlerini modern yaşamınıza entegre eden bir hizmettir.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div onClick={() => dispatch({ type: 'neyromuskulyar' })} className={styles.button3}>
-            <button
-              className={`${
-                state.neyromuskulyar ? styles.neyromuskulyar : styles.button
-              }`}
-            >
-              Neyromuskulyar
-            </button>
+          <div className={styles.boxTwo}>
+            <div className={styles.controlForBox}>
+              <div className={styles.forBox}>
+                <div className={styles.forBoxHeader}>
+                  <h2>04.</h2>
+                </div>
+                <div className={styles.forBoxBottom}>
+                  <h2>Evde Tahlil Hizmeti</h2>
+                  <p>
+                    Uzman doktorlarımızla sağlık sorununuzun tespiti ve tedavisi
+                    için evinizin konforunda muayenenizi yapıyoruz.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className={styles.controlFiveBox}>
+              <div className={styles.fiveBoxText}>
+                <div className={styles.fiveBoxHeader}>
+                  <h2>05.</h2>
+                </div>
+                <div className={styles.fiveBoxBottom}>
+                  <h2>Özel Ambulans Hizmeti</h2>
+                  <p>
+                    Hasta Nakil Ambulansı hizmeti, yüksek standartlardaki
+                    medikal ekipmanları ve deneyimli sağlık personeli ile
+                    hastanızın konforu ve güvenliği en üst düzeyde tutulur.
+                  </p>
+                </div>
+              </div>
+              <div className={styles.fiveBoxSvg}>
+                <img src={AmbulanceSvg} alt="" />
+              </div>
+            </div>
           </div>
-          <div onClick={() => dispatch({ type: 'kifoz' })} className={styles.button4}>
-            <button className={`${state.kifoz ? styles.kifoz : styles.button}`}>
-              Kifoz
-            </button>
+          <div className={styles.boxThree}>
+            <div className={styles.controlFiveBox}>
+              <div className={styles.fiveBoxText}>
+                <div className={styles.fiveBoxHeader}>
+                  <h2>06.</h2>
+                </div>
+                <div className={styles.fiveBoxBottom}>
+                  <h2>Evde Hasta Bakıcı Hizmeti</h2>
+                  <p>
+                    Evde hasta bakıcı hizmeti, hastane ortamının stresinden
+                    uzakta, ancak tıbbi gereksinimlerinin profesyonel bir
+                    şekilde karşılandığı bir hizmettir.
+                  </p>
+                </div>
+              </div>
+              <div className={styles.fiveBoxSvg}>
+                <img src={Patient} alt="" />
+              </div>
+            </div>
+            <div className={styles.controlForBox}>
+              <div className={styles.forBox}>
+                <div className={styles.forBoxHeader}>
+                  <h2>07.</h2>
+                </div>
+                <div className={styles.forBoxBottom}>
+                  <h2>Evde Check Up Hizmeti</h2>
+                  <p>
+                    Yaşınıza ve sağlık durumunuza, kişiye özgü check-up
+                    paketlerimizi evinizde gerçekleştiriyoruz.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        {state.idiopatiks ? (
-          <>
-            <div className={styles.idiopatikheaders}>
-              <h2>Idiopatik Skolioz</h2>
-              <p>Pasiyentlərimiz ilə əldə etdiyimiz müalicə nəticələrimiz.</p>
-            </div>
-            <div className={styles.boxs}>
-              <div className={styles.boxsheader}>
-                <h2>The MMI Advantage</h2>
-              </div>
-              <div className={styles.controlboxs}>
-                <div className={styles.boxs1}>
-                  <div className={styles.spin1}>
-                    <SpineIcon />
-                  </div>
-                  <div className={styles.boxstexts1}>
-                    <h2>Leading spine imaging core lab</h2>
-                  </div>
-                  <div className={styles.boxsdescription1}>
-                    <p>
-                      We estimate MMI has been involved in ~80% of regulated
-                      spine trials run in the U.S. over the past 20 years.
-                    </p>
-                  </div>
-                </div>
-                <div className={styles.boxs1}>
-                  <div className={styles.spin1}>
-                    <SpineIcon2 />
-                  </div>
-                  <div className={styles.boxstexts1}>
-                    <h2>Gold standard QMA image analysis technology</h2>
-                  </div>
-                  <div className={styles.boxsdescription1}>
-                    <p>
-                      Highest accuracy and reproducibility of any published
-                      method for quantitative spine measurements and has been
-                      referenced in over 200 publications.
-                    </p>
-                  </div>
-                </div>
-                <div className={styles.boxs1}>
-                  <div className={styles.spin1}>
-                    <SpineIcon3 />
-                  </div>
-                  <div className={styles.boxstexts1}>
-                    <h2>Leading spine imaging core lab</h2>
-                  </div>
-                  <div className={styles.boxsdescription1}>
-                    <p>
-                      Our staff and expert reviewers have extensive experience
-                      across the full spectrum of spine treatments, including
-                      fusion, motion preservation, augmentation, and deformity
-                      correction.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={styles.xtray}>
-              <div className={styles.leftside}>
-                <div className={styles.leftheader}>
-                  <h2>Experience and Expertise</h2>
-                </div>
-                <div className={styles.leftdesc}>
-                  <p>
-                    MMI’s scientific experts have contributed hundreds of
-                    publications to the scientific literature on spine imaging
-                    and research. No other core lab offers our unique
-                    combination of experienced readers, scientific expertise,
-                    and specialized technology for spine clinical trials.
-                  </p>
-                </div>
-                <div className={styles.mrt}>
-                  <img src={Mrt} alt="Mrt" />
-                </div>
-              </div>
-              <div className={styles.rightside}>
-                <div className={styles.xtrayimage}>
-                  <img src={Xtray} alt="" />
-                </div>
-                <div className={styles.rightdesc}>
-                  <p>
-                    MMI has extensive experience with motion preserving
-                    technology, including total disc replacement, facet
-                    replacement, disc repair and regeneration, and dynamic
-                    stabilization therapies. Our spine fusion experience
-                    includes assessments of allografts, autografts, and bone
-                    graft substitutes. We also have experience with deformity
-                    correction, interspinous distraction, and fracture
-                    stabilization and healing technologies. We are leaders in
-                    the evaluation of biologic products for bone and soft-tissue
-                    repair and have evaluated an array of novel treatments to
-                    slow or reverse disc degeneration and promote bone healing
-                    following spine fusion procedures.We are experienced in
-                    virtually all major quantitative and semi- quantitative
-                    scoring systems to assess disease severity and response to
-                    therapy from medical imaging. We support image calibration
-                    strategies through the use of XCalibR™, MMI’s proprietary
-                    X-ray Calibration Ring marker. When appropriate, we apply
-                    validated, computer-assisted methods to objectively document
-                    the effect of new treatments. MMI’s proprietary and patented
-                    QMA technology produces accurate and reproducible
-                    measurements from spine radiographic images and has been
-                    published in over 200 peer-reviewed articles. Learn more
-                    about
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className={styles.swiper}>
-              <Swiper
-                modules={[Autoplay, Pagination]}
-                className={styles.price}
-                spaceBetween={50}
-                slidesPerView={3}
-                autoplay={{
-                  delay: 2000,
-                  disableOnInteraction: false,
-                }}
-                pagination={{ clickable: true }}
-                onSwiper={(swiper) => console.log(swiper)}
-                onSlideChange={() => console.log("slide change")}
-                breakpoints={{
-                  0: {
-                    spaceBetween: 24,
-                    slidesPerView: 1,
-                  },
-                  768: {
-                    spaceBetween: 24,
-                    slidesPerView: 2,
-                  },
-                  992: {
-                    spaceBetween: 50,
-                    slidesPerView: 3.5,
-                  },
-                }}
-              >
-                {photos.map((item, index) => (
-                  <SwiperSlide key={index} className={styles.borders}>
-                    <img src={item.image} alt={`Slide ${index}`} />
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
-            <div className={styles.about}>
-              <div className={styles.aboutheaders}>
-                <h2>What We Offer</h2>
-                <h1>Analysis Capabilities</h1>
-              </div>
-              <div className={styles.list}>
-                <ul className={styles.leftul}>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                </ul>
-                <ul className={styles.leftul}>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                </ul>
-              </div>
-            </div>
-          </>
-        ) : (
-          ""
-        )}
-        {state.konjenental ? (
-          <>
-            <div className={styles.idiopatikheaders}>
-              <h2>Konjenental Skolioz</h2>
-              <p>Pasiyentlərimiz ilə əldə etdiyimiz müalicə nəticələrimiz.</p>
-            </div>
-            <div className={styles.boxs}>
-              <div className={styles.boxsheader}>
-                <h2>The MMI Advantage</h2>
-              </div>
-              <div className={styles.controlboxs}>
-                <div className={styles.boxs1}>
-                  <div className={styles.spin1}>
-                    <SpineIcon />
-                  </div>
-                  <div className={styles.boxstexts1}>
-                    <h2>Leading spine imaging core lab</h2>
-                  </div>
-                  <div className={styles.boxsdescription1}>
-                    <p>
-                      We estimate MMI has been involved in ~80% of regulated
-                      spine trials run in the U.S. over the past 20 years.
-                    </p>
-                  </div>
-                </div>
-                <div className={styles.boxs1}>
-                  <div className={styles.spin1}>
-                    <SpineIcon2 />
-                  </div>
-                  <div className={styles.boxstexts1}>
-                    <h2>Gold standard QMA image analysis technology</h2>
-                  </div>
-                  <div className={styles.boxsdescription1}>
-                    <p>
-                      Highest accuracy and reproducibility of any published
-                      method for quantitative spine measurements and has been
-                      referenced in over 200 publications.
-                    </p>
-                  </div>
-                </div>
-                <div className={styles.boxs1}>
-                  <div className={styles.spin1}>
-                    <SpineIcon3 />
-                  </div>
-                  <div className={styles.boxstexts1}>
-                    <h2>Leading spine imaging core lab</h2>
-                  </div>
-                  <div className={styles.boxsdescription1}>
-                    <p>
-                      Our staff and expert reviewers have extensive experience
-                      across the full spectrum of spine treatments, including
-                      fusion, motion preservation, augmentation, and deformity
-                      correction.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={styles.xtray}>
-              <div className={styles.leftside}>
-                <div className={styles.leftheader}>
-                  <h2>Experience and Expertise</h2>
-                </div>
-                <div className={styles.leftdesc}>
-                  <p>
-                    MMI’s scientific experts have contributed hundreds of
-                    publications to the scientific literature on spine imaging
-                    and research. No other core lab offers our unique
-                    combination of experienced readers, scientific expertise,
-                    and specialized technology for spine clinical trials.
-                  </p>
-                </div>
-                <div className={styles.mrt}>
-                  <img src={Mrt} alt="Mrt" />
-                </div>
-              </div>
-              <div className={styles.rightside}>
-                <div className={styles.xtrayimage}>
-                  <img src={Xtray} alt="" />
-                </div>
-                <div className={styles.rightdesc}>
-                  <p>
-                    MMI has extensive experience with motion preserving
-                    technology, including total disc replacement, facet
-                    replacement, disc repair and regeneration, and dynamic
-                    stabilization therapies. Our spine fusion experience
-                    includes assessments of allografts, autografts, and bone
-                    graft substitutes. We also have experience with deformity
-                    correction, interspinous distraction, and fracture
-                    stabilization and healing technologies. We are leaders in
-                    the evaluation of biologic products for bone and soft-tissue
-                    repair and have evaluated an array of novel treatments to
-                    slow or reverse disc degeneration and promote bone healing
-                    following spine fusion procedures.We are experienced in
-                    virtually all major quantitative and semi- quantitative
-                    scoring systems to assess disease severity and response to
-                    therapy from medical imaging. We support image calibration
-                    strategies through the use of XCalibR™, MMI’s proprietary
-                    X-ray Calibration Ring marker. When appropriate, we apply
-                    validated, computer-assisted methods to objectively document
-                    the effect of new treatments. MMI’s proprietary and patented
-                    QMA technology produces accurate and reproducible
-                    measurements from spine radiographic images and has been
-                    published in over 200 peer-reviewed articles. Learn more
-                    about
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className={styles.swiper}>
-              <Swiper
-                modules={[Autoplay, Pagination]}
-                className={styles.price}
-                spaceBetween={50}
-                slidesPerView={3}
-                autoplay={{
-                  delay: 2000,
-                  disableOnInteraction: false,
-                }}
-                pagination={{ clickable: true }}
-                onSwiper={(swiper) => console.log(swiper)}
-                onSlideChange={() => console.log("slide change")}
-                breakpoints={{
-                  0: {
-                    spaceBetween: 24,
-                    slidesPerView: 1,
-                  },
-                  768: {
-                    spaceBetween: 24,
-                    slidesPerView: 2,
-                  },
-                  992: {
-                    spaceBetween: 50,
-                    slidesPerView: 3.5,
-                  },
-                }}
-              >
-                {photos.map((item, index) => (
-                  <SwiperSlide key={index} className={styles.borders}>
-                    <img src={item.image} alt={`Slide ${index}`} />
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
-            <div className={styles.about}>
-              <div className={styles.aboutheaders}>
-                <h2>What We Offer</h2>
-                <h1>Analysis Capabilities</h1>
-              </div>
-              <div className={styles.list}>
-                <ul className={styles.leftul}>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                </ul>
-                <ul className={styles.leftul}>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                </ul>
-              </div>
-            </div>
-          </>
-        ) : (
-          ""
-        )}
-        {state.neyromuskulyar ? (
-          <>
-            <div className={styles.idiopatikheaders}>
-              <h2>Neyromuskulyar Skolioz</h2>
-              <p>Pasiyentlərimiz ilə əldə etdiyimiz müalicə nəticələrimiz.</p>
-            </div>
-            <div className={styles.boxs}>
-              <div className={styles.boxsheader}>
-                <h2>The MMI Advantage</h2>
-              </div>
-              <div className={styles.controlboxs}>
-                <div className={styles.boxs1}>
-                  <div className={styles.spin1}>
-                    <SpineIcon />
-                  </div>
-                  <div className={styles.boxstexts1}>
-                    <h2>Leading spine imaging core lab</h2>
-                  </div>
-                  <div className={styles.boxsdescription1}>
-                    <p>
-                      We estimate MMI has been involved in ~80% of regulated
-                      spine trials run in the U.S. over the past 20 years.
-                    </p>
-                  </div>
-                </div>
-                <div className={styles.boxs1}>
-                  <div className={styles.spin1}>
-                    <SpineIcon2 />
-                  </div>
-                  <div className={styles.boxstexts1}>
-                    <h2>Gold standard QMA image analysis technology</h2>
-                  </div>
-                  <div className={styles.boxsdescription1}>
-                    <p>
-                      Highest accuracy and reproducibility of any published
-                      method for quantitative spine measurements and has been
-                      referenced in over 200 publications.
-                    </p>
-                  </div>
-                </div>
-                <div className={styles.boxs1}>
-                  <div className={styles.spin1}>
-                    <SpineIcon3 />
-                  </div>
-                  <div className={styles.boxstexts1}>
-                    <h2>Leading spine imaging core lab</h2>
-                  </div>
-                  <div className={styles.boxsdescription1}>
-                    <p>
-                      Our staff and expert reviewers have extensive experience
-                      across the full spectrum of spine treatments, including
-                      fusion, motion preservation, augmentation, and deformity
-                      correction.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={styles.xtray}>
-              <div className={styles.leftside}>
-                <div className={styles.leftheader}>
-                  <h2>Experience and Expertise</h2>
-                </div>
-                <div className={styles.leftdesc}>
-                  <p>
-                    MMI’s scientific experts have contributed hundreds of
-                    publications to the scientific literature on spine imaging
-                    and research. No other core lab offers our unique
-                    combination of experienced readers, scientific expertise,
-                    and specialized technology for spine clinical trials.
-                  </p>
-                </div>
-                <div className={styles.mrt}>
-                  <img src={Mrt} alt="Mrt" />
-                </div>
-              </div>
-              <div className={styles.rightside}>
-                <div className={styles.xtrayimage}>
-                  <img src={Xtray} alt="" />
-                </div>
-                <div className={styles.rightdesc}>
-                  <p>
-                    MMI has extensive experience with motion preserving
-                    technology, including total disc replacement, facet
-                    replacement, disc repair and regeneration, and dynamic
-                    stabilization therapies. Our spine fusion experience
-                    includes assessments of allografts, autografts, and bone
-                    graft substitutes. We also have experience with deformity
-                    correction, interspinous distraction, and fracture
-                    stabilization and healing technologies. We are leaders in
-                    the evaluation of biologic products for bone and soft-tissue
-                    repair and have evaluated an array of novel treatments to
-                    slow or reverse disc degeneration and promote bone healing
-                    following spine fusion procedures.We are experienced in
-                    virtually all major quantitative and semi- quantitative
-                    scoring systems to assess disease severity and response to
-                    therapy from medical imaging. We support image calibration
-                    strategies through the use of XCalibR™, MMI’s proprietary
-                    X-ray Calibration Ring marker. When appropriate, we apply
-                    validated, computer-assisted methods to objectively document
-                    the effect of new treatments. MMI’s proprietary and patented
-                    QMA technology produces accurate and reproducible
-                    measurements from spine radiographic images and has been
-                    published in over 200 peer-reviewed articles. Learn more
-                    about
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className={styles.swiper}>
-              <Swiper
-                modules={[Autoplay, Pagination]}
-                className={styles.price}
-                spaceBetween={50}
-                slidesPerView={3}
-                autoplay={{
-                  delay: 2000,
-                  disableOnInteraction: false,
-                }}
-                pagination={{ clickable: true }}
-                onSwiper={(swiper) => console.log(swiper)}
-                onSlideChange={() => console.log("slide change")}
-                breakpoints={{
-                  0: {
-                    spaceBetween: 24,
-                    slidesPerView: 1,
-                  },
-                  768: {
-                    spaceBetween: 24,
-                    slidesPerView: 2,
-                  },
-                  992: {
-                    spaceBetween: 50,
-                    slidesPerView: 3.5,
-                  },
-                }}
-              >
-                {photos.map((item, index) => (
-                  <SwiperSlide key={index} className={styles.borders}>
-                    <img src={item.image} alt={`Slide ${index}`} />
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
-            <div className={styles.about}>
-              <div className={styles.aboutheaders}>
-                <h2>What We Offer</h2>
-                <h1>Analysis Capabilities</h1>
-              </div>
-              <div className={styles.list}>
-                <ul className={styles.leftul}>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                </ul>
-                <ul className={styles.leftul}>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                </ul>
-              </div>
-            </div>
-          </>
-        ) : (
-          ""
-        )}
-        {state.kifoz ? (
-          <>
-            <div className={styles.idiopatikheaders}>
-              <h2>Kifoz</h2>
-              <p>Pasiyentlərimiz ilə əldə etdiyimiz müalicə nəticələrimiz.</p>
-            </div>
-            <div className={styles.boxs}>
-              <div className={styles.boxsheader}>
-                <h2>The MMI Advantage</h2>
-              </div>
-              <div className={styles.controlboxs}>
-                <div className={styles.boxs1}>
-                  <div className={styles.spin1}>
-                    <SpineIcon />
-                  </div>
-                  <div className={styles.boxstexts1}>
-                    <h2>Leading spine imaging core lab</h2>
-                  </div>
-                  <div className={styles.boxsdescription1}>
-                    <p>
-                      We estimate MMI has been involved in ~80% of regulated
-                      spine trials run in the U.S. over the past 20 years.
-                    </p>
-                  </div>
-                </div>
-                <div className={styles.boxs1}>
-                  <div className={styles.spin1}>
-                    <SpineIcon2 />
-                  </div>
-                  <div className={styles.boxstexts1}>
-                    <h2>Gold standard QMA image analysis technology</h2>
-                  </div>
-                  <div className={styles.boxsdescription1}>
-                    <p>
-                      Highest accuracy and reproducibility of any published
-                      method for quantitative spine measurements and has been
-                      referenced in over 200 publications.
-                    </p>
-                  </div>
-                </div>
-                <div className={styles.boxs1}>
-                  <div className={styles.spin1}>
-                    <SpineIcon3 />
-                  </div>
-                  <div className={styles.boxstexts1}>
-                    <h2>Leading spine imaging core lab</h2>
-                  </div>
-                  <div className={styles.boxsdescription1}>
-                    <p>
-                      Our staff and expert reviewers have extensive experience
-                      across the full spectrum of spine treatments, including
-                      fusion, motion preservation, augmentation, and deformity
-                      correction.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className={styles.xtray}>
-              <div className={styles.leftside}>
-                <div className={styles.leftheader}>
-                  <h2>Experience and Expertise</h2>
-                </div>
-                <div className={styles.leftdesc}>
-                  <p>
-                    MMI’s scientific experts have contributed hundreds of
-                    publications to the scientific literature on spine imaging
-                    and research. No other core lab offers our unique
-                    combination of experienced readers, scientific expertise,
-                    and specialized technology for spine clinical trials.
-                  </p>
-                </div>
-                <div className={styles.mrt}>
-                  <img src={Mrt} alt="Mrt" />
-                </div>
-              </div>
-              <div className={styles.rightside}>
-                <div className={styles.xtrayimage}>
-                  <img src={Xtray} alt="" />
-                </div>
-                <div className={styles.rightdesc}>
-                  <p>
-                    MMI has extensive experience with motion preserving
-                    technology, including total disc replacement, facet
-                    replacement, disc repair and regeneration, and dynamic
-                    stabilization therapies. Our spine fusion experience
-                    includes assessments of allografts, autografts, and bone
-                    graft substitutes. We also have experience with deformity
-                    correction, interspinous distraction, and fracture
-                    stabilization and healing technologies. We are leaders in
-                    the evaluation of biologic products for bone and soft-tissue
-                    repair and have evaluated an array of novel treatments to
-                    slow or reverse disc degeneration and promote bone healing
-                    following spine fusion procedures.We are experienced in
-                    virtually all major quantitative and semi- quantitative
-                    scoring systems to assess disease severity and response to
-                    therapy from medical imaging. We support image calibration
-                    strategies through the use of XCalibR™, MMI’s proprietary
-                    X-ray Calibration Ring marker. When appropriate, we apply
-                    validated, computer-assisted methods to objectively document
-                    the effect of new treatments. MMI’s proprietary and patented
-                    QMA technology produces accurate and reproducible
-                    measurements from spine radiographic images and has been
-                    published in over 200 peer-reviewed articles. Learn more
-                    about
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className={styles.swiper}>
-              <Swiper
-                modules={[Autoplay, Pagination]}
-                className={styles.price}
-                spaceBetween={50}
-                slidesPerView={3}
-                autoplay={{
-                  delay: 2000,
-                  disableOnInteraction: false,
-                }}
-                pagination={{ clickable: true }}
-                onSwiper={(swiper) => console.log(swiper)}
-                onSlideChange={() => console.log("slide change")}
-                breakpoints={{
-                  0: {
-                    spaceBetween: 24,
-                    slidesPerView: 1,
-                  },
-                  768: {
-                    spaceBetween: 24,
-                    slidesPerView: 2,
-                  },
-                  992: {
-                    spaceBetween: 50,
-                    slidesPerView: 3.5,
-                  },
-                }}
-              >
-                {photos.map((item, index) => (
-                  <SwiperSlide key={index} className={styles.borders}>
-                    <img src={item.image} alt={`Slide ${index}`} />
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
-            <div className={styles.about}>
-              <div className={styles.aboutheaders}>
-                <h2>What We Offer</h2>
-                <h1>Analysis Capabilities</h1>
-              </div>
-              <div className={styles.list}>
-                <ul className={styles.leftul}>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                </ul>
-                <ul className={styles.leftul}>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                  <div className={styles.list1}>
-                    <GreenIcon />
-                    <li>
-                      Quantitative spine measurements (e.g. rotation,
-                      translation, center of rotation, disc height, lordosis)
-                    </li>
-                  </div>
-                </ul>
-              </div>
-            </div>
-          </>
-        ) : (
-          ""
-        )}
+  
       </Wrapper>
     </div>
   );

@@ -8,384 +8,346 @@
   padding-top: 10px;
   padding-bottom: 40px;
 }
-.background .buttons {
+.background .control .headerText {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 10px;
-  padding-bottom: 40px;
-}
-.background .buttons .button1 {
-  width: 100%;
-}
-.background .buttons .button1 .button {
-  cursor: pointer;
-  background-color: white;
-  padding: 16px 22px;
-  width: 100%;
-  border: 1px solid gray;
-  outline: none;
-  font-weight: 600;
-  border-radius: 10px;
-}
-.background .buttons .button1 .idiopatiks {
-  cursor: pointer;
-  background-color: #dfeed7;
-  padding: 16px 22px;
-  width: 100%;
-  outline: none;
-  font-weight: 600;
-  display: flex;
   justify-content: center;
+}
+.background .control .headerText h2 {
+  display: flex;
   align-items: center;
-  border-radius: 10px;
-  border: none;
-}
-.background .buttons .button1 button:hover {
-  background-color: #dfeed7;
-  color: black;
-}
-.background .buttons .button2 {
-  width: 100%;
-}
-.background .buttons .button2 .button {
-  cursor: pointer;
-  background-color: rgb(255, 255, 255);
-  padding: 16px 22px;
-  width: 100%;
-  outline: none;
-  font-weight: 600;
-  border-radius: 10px;
-  border: 1px solid gray;
-}
-.background .buttons .button2 .konjenental {
-  cursor: pointer;
-  background-color: #f8f0d2;
-  padding: 16px 22px;
-  width: 100%;
-  outline: none;
-  font-weight: 600;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  border: none;
-}
-.background .buttons .button2 button:hover {
-  background-color: #f8f0d2;
-  color: black;
-}
-.background .buttons .button3 {
-  width: 100%;
-}
-.background .buttons .button3 .button {
-  cursor: pointer;
-  background-color: rgb(255, 255, 255);
-  padding: 16px 22px;
-  width: 100%;
-  outline: none;
-  font-weight: 600;
-  border-radius: 10px;
-  border: 1px solid gray;
-}
-.background .buttons .button3 .neyromuskulyar {
-  cursor: pointer;
-  background-color: #f9e8d6;
-  padding: 16px 22px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  outline: none;
-  font-weight: 600;
-  border-radius: 10px;
-  border: none;
-}
-.background .buttons .button3 button:hover {
-  background-color: #f9e8d6;
-  color: black;
-}
-.background .buttons .button4 {
-  width: 100%;
-}
-.background .buttons .button4 .button {
-  cursor: pointer;
-  background-color: rgb(255, 255, 255);
-  padding: 16px 22px;
-  width: 100%;
-  outline: none;
-  font-weight: 600;
-  border-radius: 10px;
-  border: 1px solid gray;
-}
-.background .buttons .button4 .kifoz {
-  cursor: pointer;
-  background-color: #e6deeb;
-  padding: 16px 22px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  outline: none;
-  font-weight: 600;
-  border-radius: 10px;
-  border: none;
-}
-.background .buttons .button4 button:hover {
-  background-color: #e6deeb;
-  color: black;
-}
-.background .idiopatikheaders {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  gap: 20px;
-}
-.background .idiopatikheaders h2 {
-  font-weight: 600;
-  font-size: 32px;
-}
-.background .idiopatikheaders p {
-  text-align: center;
-}
-.background .boxs {
-  margin-top: 50px;
-  border: 1px solid #5d6371;
-  border-radius: 30px;
-  padding: 20px 40px;
-}
-.background .boxs .boxsheader {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-.background .boxs .boxsheader h2 {
-  font-weight: 600;
-  font-size: 32px;
-}
-.background .boxs .controlboxs {
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-  padding-top: 30px;
-}
-.background .boxs .controlboxs .boxs1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-.background .boxs .controlboxs .boxs1 .boxstexts1 h2 {
-  text-align: center;
-  font-weight: 600;
-  font-size: 22px;
-}
-.background .boxs .controlboxs .boxs1 .boxsdescription1 p {
-  text-align: center;
-}
-.background .xtray {
-  padding-top: 50px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-.background .xtray .leftside {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-.background .xtray .leftside .leftheader h2 {
-  font-weight: 600;
-  font-size: 32px;
-}
-.background .xtray .leftside .leftdesc p {
-  width: 100%;
-  color: #004f92;
-  font-weight: 600;
-  line-height: 24px;
-}
-.background .xtray .leftside .mrt {
-  width: 100%;
-}
-.background .xtray .leftside .mrt img {
-  border-radius: 20px;
-  width: 100%;
-}
-.background .xtray .rightside {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-.background .xtray .rightside .xtrayimage img {
-  width: 100%;
-  border-radius: 10px;
-}
-.background .xtray .rightside .rightdesc p {
-  width: 100%;
-  line-height: 24px;
-}
-.background .swiper {
-  padding-top: 50px;
-  display: flex;
-  justify-content: center;
-}
-.background .swiper .price .borders {
-  margin-bottom: 50px;
-}
-.background .swiper .price .borders img {
-  cursor: pointer;
-  width: 100%;
-  height: 40vh;
-}
-.background .about {
-  padding-top: 50px;
-}
-.background .about .aboutheaders {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.background .about .aboutheaders h2 {
-  font-weight: 600;
-  font-size: 14px;
-  color: #004f92;
-}
-.background .about .aboutheaders h1 {
-  font-weight: 600;
-  font-size: 25px;
-}
-.background .about .list {
-  padding-top: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.background .about .list .leftul {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.background .about .list .leftul .list1 {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
   gap: 5px;
-}
-.background .about .list .leftul .list1 li {
+  font-size: 72px;
   font-weight: 600;
+}
+.background .control .headerText h2 h1 {
+  font-size: 72px;
+  color: #6E4EEF;
+  font-weight: 600;
+}
+.background .control .boxOne {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.background .control .boxOne .leftBox {
+  width: 40%;
+}
+.background .control .boxOne .leftBox h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+.background .control .boxOne .leftBox .controlLeftBox {
+  margin-top: 30px;
+  background-color: #DFEED7;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.background .control .boxOne .leftBox .controlLeftBox .leftBoxText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 100px;
+}
+.background .control .boxOne .leftBox .controlLeftBox .leftBoxText .leftBoxHeader h2 {
+  color: #439A75;
+}
+.background .control .boxOne .leftBox .controlLeftBox .leftBoxText .leftBoxBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.background .control .boxOne .leftBox .controlLeftBox .leftBoxText .leftBoxBottom h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+.background .control .boxOne .leftBox .controlLeftBox .leftBoxText .leftBoxBottom p {
+  width: 400px;
+}
+.background .control .boxOne .controlMiddleBox {
+  background-color: #F9E8D6;
+  width: 28%;
+  padding: 30px;
+  border-radius: 10px;
+}
+.background .control .boxOne .controlMiddleBox .middleBoxText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 108px;
+}
+.background .control .boxOne .controlMiddleBox .middleBoxText .middleBoxHeader h2 {
+  color: #ED8E61;
+}
+.background .control .boxOne .controlMiddleBox .middleBoxText .middleBoxBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.background .control .boxOne .controlMiddleBox .middleBoxText .middleBoxBottom h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+.background .control .boxOne .controlMiddleBox .middleBoxText .middleBoxBottom p {
+  max-width: 400px;
+  line-height: 22px;
+}
+.background .control .boxOne .controlRightBox {
+  background-color: #E6DEEB;
+  width: 28%;
+  padding: 30px;
+  border-radius: 10px;
+}
+.background .control .boxOne .controlRightBox .rightBoxText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 108px;
+}
+.background .control .boxOne .controlRightBox .rightBoxText .rightBoxHeader h2 {
+  color: #A68CD0;
+}
+.background .control .boxOne .controlRightBox .rightBoxText .rightBoxBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.background .control .boxOne .controlRightBox .rightBoxText .rightBoxBottom h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+.background .control .boxOne .controlRightBox .rightBoxText .rightBoxBottom p {
+  max-width: 400px;
+  line-height: 22px;
+}
+.background .control .boxTwo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+  gap: 40px;
+}
+.background .control .boxTwo .controlFiveBox {
+  width: 100%;
+  background-color: #DFEED7;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.background .control .boxTwo .controlFiveBox .fiveBoxText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 100px;
+}
+.background .control .boxTwo .controlFiveBox .fiveBoxText .fiveBoxHeader h2 {
+  color: #439A75;
+}
+.background .control .boxTwo .controlFiveBox .fiveBoxText .fiveBoxBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.background .control .boxTwo .controlFiveBox .fiveBoxText .fiveBoxBottom h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+.background .control .boxTwo .controlFiveBox .fiveBoxText .fiveBoxBottom p {
+  width: 400px;
+}
+.background .control .boxTwo .controlForBox {
+  background-color: #E6DEEB;
+  width: 24%;
+  padding: 30px;
+  border-radius: 10px;
+}
+.background .control .boxTwo .controlForBox .forBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.background .control .boxTwo .controlForBox .forBox .forBoxHeader h2 {
+  color: #A68CD0;
+}
+.background .control .boxTwo .controlForBox .forBox .forBoxBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.background .control .boxTwo .controlForBox .forBox .forBoxBottom h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+.background .control .boxTwo .controlForBox .forBox .forBoxBottom p {
+  max-width: 400px;
+  line-height: 22px;
+}
+.background .control .boxThree {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+  gap: 40px;
+}
+.background .control .boxThree .controlFiveBox {
+  width: 100%;
+  background-color: #F8F0D2;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.background .control .boxThree .controlFiveBox .fiveBoxText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 100px;
+}
+.background .control .boxThree .controlFiveBox .fiveBoxText .fiveBoxHeader h2 {
+  color: #439A75;
+}
+.background .control .boxThree .controlFiveBox .fiveBoxText .fiveBoxBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.background .control .boxThree .controlFiveBox .fiveBoxText .fiveBoxBottom h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+.background .control .boxThree .controlFiveBox .fiveBoxText .fiveBoxBottom p {
+  width: 400px;
+}
+.background .control .boxThree .controlForBox {
+  background-color: #E6DEEB;
+  width: 24%;
+  padding: 30px;
+  border-radius: 10px;
+}
+.background .control .boxThree .controlForBox .forBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.background .control .boxThree .controlForBox .forBox .forBoxHeader h2 {
+  color: #A68CD0;
+}
+.background .control .boxThree .controlForBox .forBox .forBoxBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.background .control .boxThree .controlForBox .forBox .forBoxBottom h2 {
+  font-size: 28px;
+  font-weight: 600;
+}
+.background .control .boxThree .controlForBox .forBox .forBoxBottom p {
+  max-width: 400px;
+  line-height: 22px;
 }
 
-@media (min-width: 768px) {
-  .background .buttons {
-    padding-top: 50px;
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
+@media (max-width: 498px) {
+  .background .control .headerText h2 {
+    font-size: 24px;
   }
-  .background .buttons .button1 button {
-    border: 1px solid gray;
+  .background .control .headerText h2 h1 {
+    font-size: 24px;
   }
-  .background .buttons .button1 .idiopatiks {
-    border: none;
-    font-weight: 600;
-  }
-  .background .buttons .button2 button {
-    border: 1px solid gray;
-  }
-  .background .buttons .button2 .konjenental {
-    border: none;
-  }
-  .background .buttons .button3 button {
-    border: 1px solid gray;
-  }
-  .background .buttons .button3 .neyromuskulyar {
-    border: none;
-  }
-  .background .buttons .button4 button {
-    border: 1px solid gray;
-  }
-  .background .buttons .button4 .kifoz {
-    border: none;
-  }
-  .background .idiopatikheaders h2 {
-    font-size: 48px;
-  }
-  .background .boxs {
-    padding-top: 30px;
-    padding-bottom: 50px;
-    height: 100%;
-  }
-  .background .boxs .controlboxs {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: flex-start;
-  }
-  .background .boxs .controlboxs .boxs1 {
+  .background .control .boxOne {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 20px;
   }
-  .background .boxs .controlboxs .boxs1 .boxsdescription1 {
-    display: flex;
-    justify-content: flex-end;
-  }
-  .background .xtray {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .background .xtray .leftside .leftdesc p {
-    width: 600px;
-  }
-  .background .xtray .rightside .xtrayimage {
+  .background .control .boxOne .leftBox {
     width: 100%;
   }
-  .background .xtray .rightside .xtrayimage img {
+  .background .control .boxOne .leftBox h1 {
+    font-size: 20px;
+  }
+  .background .control .boxOne .leftBox .controlLeftBox .leftBoxText .leftBoxBottom h2 {
+    font-size: 18px;
+  }
+  .background .control .boxOne .leftBox .controlLeftBox .leftBoxText .leftBoxBottom p {
+    width: 100%;
+    font-size: 16px;
+  }
+  .background .control .boxOne .controlMiddleBox {
     width: 100%;
   }
-  .background .xtray .rightside .rightdesc p {
-    width: 600px;
-    line-height: 40px;
+  .background .control .boxOne .controlMiddleBox .middleBoxText .middleBoxBottom h2 {
+    font-size: 18px;
   }
-  .background .swiper {
-    padding-top: 150px;
-    display: flex;
-    justify-content: center;
-  }
-  .background .swiper .price .borders {
-    display: flex;
-    align-items: center;
-    padding-bottom: 50px;
-  }
-  .background .swiper .price .borders img {
-    cursor: pointer;
+  .background .control .boxOne .controlMiddleBox .middleBoxText .middleBoxBottom p {
     width: 100%;
-    height: auto;
+    font-size: 16px;
   }
-  .background .about .list {
-    padding-top: 70px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  .background .control .boxOne .controlRightBox {
+    width: 100%;
   }
-  .background .about .list .leftul {
+  .background .control .boxOne .controlRightBox .rightBoxText .rightBoxBottom h2 {
+    font-size: 18px;
+  }
+  .background .control .boxOne .controlRightBox .rightBoxText .rightBoxBottom p {
+    width: 100%;
+    font-size: 16px;
+  }
+  .background .control .boxTwo {
     display: flex;
     flex-direction: column;
-    gap: 15px;
   }
-  .background .about .list .leftul .list1 {
+  .background .control .boxTwo .controlForBox {
+    width: 100%;
+  }
+  .background .control .boxTwo .controlForBox .forBox {
     display: flex;
-    align-items: center;
-    gap: 0;
+    flex-direction: column;
+    gap: 100px;
   }
-  .background .about .list .leftul .list1 li {
-    font-weight: 600;
-    width: 500px;
-    line-height: 24px;
+  .background .control .boxTwo .controlForBox .forBox .forBoxBottom h2 {
+    font-size: 18px;
+  }
+  .background .control .boxTwo .controlForBox .forBox .forBoxBottom p {
+    width: 100%;
+    font-size: 16px;
+  }
+  .background .control .boxTwo .controlFiveBox {
+    width: 100%;
+  }
+  .background .control .boxTwo .controlFiveBox .fiveBoxText .fiveBoxBottom h2 {
+    font-size: 18px;
+  }
+  .background .control .boxTwo .controlFiveBox .fiveBoxText .fiveBoxBottom p {
+    width: 100%;
+    font-size: 16px;
+  }
+  .background .control .boxThree {
+    display: flex;
+    flex-direction: column;
+  }
+  .background .control .boxThree .controlForBox {
+    width: 100%;
+  }
+  .background .control .boxThree .controlForBox .forBox {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+  .background .control .boxThree .controlForBox .forBox .forBoxBottom h2 {
+    font-size: 18px;
+  }
+  .background .control .boxThree .controlForBox .forBox .forBoxBottom p {
+    width: 100%;
+    font-size: 16px;
+  }
+  .background .control .boxThree .controlFiveBox {
+    width: 100%;
+  }
+  .background .control .boxThree .controlFiveBox .fiveBoxText .fiveBoxBottom h2 {
+    font-size: 18px;
+  }
+  .background .control .boxThree .controlFiveBox .fiveBoxText .fiveBoxBottom p {
+    width: 100%;
+    font-size: 16px;
   }
 }/*# sourceMappingURL=index.module.css.map */
