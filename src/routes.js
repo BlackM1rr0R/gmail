@@ -1,5 +1,6 @@
 import About from "./pages/about";
 import Contact from "./pages/contact";
+import Details from "./pages/detailsblog";
 import Gallery from "./pages/gallery";
 import Home from "./pages/home";
 import Idiopatik from "./pages/idiopatik";
@@ -21,7 +22,9 @@ const routes = {
  contact:routeItem(4,"contact","/contact",Contact),
  gallery:routeItem(5,"gallery","/gallery",Gallery),
  idiopatik:routeItem(6,"idiopatik","/idiopatik",Idiopatik),
- kifoz:routeItem(7,"kifoz","/kifoz",Kifoz)
+ kifoz:routeItem(7,"kifoz","/kifoz",Kifoz),
+ detailsbloog:routeItem(8,"detailsblog","/details/:id",Details)
+
 };
 
 const routeArr = Object.values(routes);
