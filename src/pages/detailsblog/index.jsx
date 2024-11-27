@@ -3,6 +3,7 @@ import styles from './index.module.css'
 import { useParams } from "react-router-dom";
 import IshalPhoto from '../../assets/images/ishal.png'
 import Wrapper from '../../components/UI/wrapper'
+import { GarantieIcon } from "../../icons";
 const Details = () => {
     const { id } = useParams(); // URL'deki id'yi al
     const photos = useMemo(
@@ -25,7 +26,10 @@ const Details = () => {
                 aboutKind: "İshal durumunda bebeklere sıvı vermeye devam edilmesi elzemdir. Bebek eğer mamayla besleniyorsa normalden daha sık beslenmesi sağlanmalıdır. Anne sütüyle besleniyorsa da bebeğe daha sık süt verilmelidir. Bebeklerde ishalin yaklaşık iki hafta kadar sürebileceği de unutulmamalıdır.İshal çoğu zaman tedaviye ihtiyaç olmadan kendiliğinden geçen bir rahatsızlık olsa da bazı durumlarda tıbbi yardım almak gerekebilir. ",
                 whyIshal: "İshal Neden Olur?",
                 aboutIshal: "İshalin başlıca nedenleri: Crohn hastalığı ve ülseratif kolit gibi bağırsak hastalıkları, bakteriyel enfeksiyonlar, virüsler, bazı gıdalara karşı alerjiler, temiz olmayan gıdalar veya sulardaki bakteriler, gıda intoleransı (bazı besinleri sindirmede zorlanma), bazı kanser türleri, antibiyotik kullanımı ve bazı kanser ilaçları, mide veya safra kesesi ameliyatı, hipertiroidizm, bazı besin maddelerinin emiliminde sorun yaşama (malabsorpsiyon), huzursuz bağırsak sendromu.",
-                
+                beshil: "İshal Yapan Besinler Nelerdir?",
+                aboutBeshil: "Süt ve süt ürünleri, baharatlı ve acı yiyecekler, işlenmiş gıdalar, brokoli, lahana, ıspanak, karnabahar gibi sebzeler, kahve ve kafein içeren gıdalar, kızartılmış ve yağlı besinler, alkol, şekerli ürünler ishale yol açabilir.",
+                textBeshil: "Bu besinlerin yanı sıra yemekleri hızlı bir şekilde yemek ve fruktoz içeren meyveleri aşırı tüketmek de ishale neden olabilir. Özellikle fruktoz hassasiyeti olan bireylerin gaz, şişkinlik ve ishal gibi sorunlar yaşamamak için meyve tüketiminde daha dikkatli olmaları büyük önem taşır."
+
 
 
             },
@@ -64,6 +68,16 @@ const Details = () => {
                     <p>{photo.aboutKind}</p>
                     <h3>{photo.whyIshal}</h3>
                     <p>{photo.aboutIshal}</p>
+                    <h3>{photo.beshil}</h3>
+                    <p>{photo.aboutBeshil}</p>
+                    <p>{photo.textBeshil}</p>
+                </div>
+                <div className={styles.garantie}>
+                    <div className={styles.controlGarantie}>
+                        <button><GarantieIcon /> Onaylanmış İçerik </button>
+                        <h1>Verdiğimiz Bilgilere Güvenebilirsiniz</h1>
+                        <h2>Bu içerik 360 Sağlık Tıbbi Yayın Kurulu tarafından onaylanmıştır. Tıbbi Yayın Kurulumuz, sağlık alanında güvenilir bilgiye erişim sağlamak amacıyla oluşturulmuş deneyimli doktor ve araştırmacılardan oluşan bir ekiptir.</h2>
+                    </div>
                 </div>
 
             </Wrapper>

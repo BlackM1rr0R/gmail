@@ -1,408 +1,102 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 .background {
-  padding-top: 10px;
-  padding-bottom: 40px;
-  .control{
-    .headerText{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        h2{
+    
+    .overlay {
+        background-color: white;
+        border: 1px solid #DFDEE0;
+        position: absolute;
+        top: 18%;
+        right: 10%;
+        transform: translate(-10%, -18%); // Tam ekran ortalama
+        border-radius: 20px;
+        padding: 25px 17px;
+        max-width: 20%; // Responsive genişlik
+        max-width: 400px; // Maksimum genişlik
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        .controlOverlay {
             display: flex;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            gap: 5px;
-            font-size: 72px;
-            font-weight: 600;
-            h1{
-            font-size: 72px;
-            color: #6E4EEF;
-            font-weight: 600;
+            gap: 20px;
+
+            svg {
+                border: 2px solid #FEDDDF;
+                border-radius: 50%;
+                padding: 8px;
+                width: 40px;
+                height: 40px;
+            }
+
+            h2 {
+                text-align: center;
+                font-weight: 600;
+            }
+
+            p {
+                text-align: center;
+                color: #8E8D91;
+                width: 400px;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                text-decoration: none;
+
+                background-color: #F0EDFD;
+                border-radius: 10px;
+                border: none;
+                color: #6E4EEF;
+                padding: 17px 0;
+                width: 100%;
+                font-weight: 600;
+                font-size: 16px;
+
+                svg {
+                    border: none;
+                    border-radius: 0;
+                    padding: 0;
+                    width: 15px;
+                    height: 15px;
+                }
             }
         }
     }
-    .boxOne{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 80px;
-       .leftBox{
-        width: 40%;
-           h1{
-            font-size: 32px;
-            font-weight: 600;
-           }
-           .controlLeftBox{
-            margin-top: 30px;
-            background-color: #DFEED7;
-            padding: 30px;
-            border-radius: 10px;
+
+    .control {
+        background-color: #9a83f436;
+
+        .doctorBack {
+            max-width: 1440px;
+            margin: auto;
             display: flex;
-            justify-content: space-between;
-            .leftBoxText{
+            padding: 24px 20px;
+            gap: 24px;
+
+            .textControl {
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
-                gap: 100px;
-                .leftBoxHeader{
-                    h2{
-                        color: #439A75;
-                    }
-                }
-                .leftBoxBottom{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-                    h2{
-                        font-size: 28px;
-                        font-weight: 600;
-                      
-                    }p{
-                        width: 400px;
-                    }
-                }
-            }
-           }
-       } 
-       .controlMiddleBox{
-        background-color: #F9E8D6;
-        width: 28%;
-        padding: 30px;
-        border-radius: 10px;
-        .middleBoxText{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            gap: 108px;
-            .middleBoxHeader{
-                h2{
-                    color: #ED8E61;
-                }
-            }
-            .middleBoxBottom{
-                display: flex;
-                flex-direction: column;
-                gap: 28px;
-                h2{
-                    font-size: 28px;
+                gap: 10px;
+
+                h2 {
+                    color: #372778;
+                    font-size: 32px;
                     font-weight: 600;
-                  
-                }p{
-                    max-width: 400px;
-                    line-height: 22px;
+                }
+
+                h3 {
+                    color: #8E8D91;
                 }
             }
         }
-       }
-       .controlRightBox{
-        background-color: #E6DEEB;
-        width: 28%;
-        padding: 30px;
-        border-radius: 10px;
-        .rightBoxText{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            gap: 108px;
-            .rightBoxHeader{
-                h2{
-                    color: #A68CD0;
-                }
-            }
-            .rightBoxBottom{
-                display: flex;
-                flex-direction: column;
-                gap: 28px;
-                h2{
-                    font-size: 28px;
-                    font-weight: 600;
-                  
-                }p{
-                    max-width: 400px;
-                    line-height: 22px;
-                }
-            }
-        }
-       }
     }
-    .boxTwo{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 17px;
-        gap: 40px;
-        .controlFiveBox{
-
-            width: 100%;
-            background-color: #DFEED7;
-            padding: 30px;
-            border-radius: 10px;
-            display: flex;
-            justify-content: space-between;
-            .fiveBoxText{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                gap: 100px;
-                .fiveBoxHeader{
-                    h2{
-                        color: #439A75;
-                    }
-                }
-                .fiveBoxBottom{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-                    h2{
-                        font-size: 28px;
-                        font-weight: 600;
-                      
-                    }p{
-                        width: 400px;
-                    }
-                }
-            }
-           }
-           .controlForBox{
-            background-color: #E6DEEB;
-            width: 24%;
-            padding: 30px;
-            border-radius: 10px;
-            .forBox{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-    
-                .forBoxHeader{
-                    h2{
-                        color: #A68CD0;
-                    }
-                }
-                .forBoxBottom{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 28px;
-                    h2{
-                        font-size: 28px;
-                        font-weight: 600;
-                      
-                    }p{
-                        max-width: 400px;
-                        line-height: 22px;
-                    }
-                }
-            }
-           }
-
-    }
-    .boxThree{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 17px;
-        gap: 40px;
-        .controlFiveBox{
-
-            width: 100%;
-            background-color: #F8F0D2;
-            padding: 30px;
-            border-radius: 10px;
-            display: flex;
-            justify-content: space-between;
-            .fiveBoxText{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                gap: 100px;
-                .fiveBoxHeader{
-                    h2{
-                        color: #439A75;
-                    }
-                }
-                .fiveBoxBottom{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 10px;
-                    h2{
-                        font-size: 28px;
-                        font-weight: 600;
-                      
-                    }p{
-                        width: 400px;
-                    }
-                }
-            }
-           }
-           .controlForBox{
-            background-color: #E6DEEB;
-            width: 24%;
-            padding: 30px;
-            border-radius: 10px;
-            .forBox{
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-    
-                .forBoxHeader{
-                    h2{
-                        color: #A68CD0;
-                    }
-                }
-                .forBoxBottom{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 28px;
-                    h2{
-                        font-size: 28px;
-                        font-weight: 600;
-                      
-                    }p{
-                        max-width: 400px;
-                        line-height: 22px;
-                    }
-                }
-            }
-           }
-
-    }
-
-
-}
-}
-@media(max-width:498px){
-  .background{
-    .control{
-      .headerText{
-          h2{
-              font-size: 24px;
-
-              h1{
-                  font-size: 24px;
-              }
-          }
-      }
-      .boxOne{
-          display: flex;
-          flex-direction: column;
-          gap: 20px;
-        .leftBox{
-          width: 100%;
-          h1{
-              font-size: 20px;
-          }
-          .controlLeftBox{
-              .leftBoxText{
-                  .leftBoxBottom{
-                      h2{
-                          font-size: 18px;
-                      }
-                      p{
-                          width: 100%;
-                          font-size: 16px;
-                      }
-                  }
-              }
-          }
-        }
-        .controlMiddleBox{
-          width: 100%;
-          .middleBoxText{
-              .middleBoxBottom{
-                  h2{
-                      font-size: 18px;
-                  }
-                  p{
-                      width: 100%;
-                      font-size: 16px;
-                  }
-              }
-          }
-        }
-        .controlRightBox{
-          width: 100%;
-          .rightBoxText{
-              .rightBoxBottom{
-                  h2{
-                      font-size: 18px;
-                  }
-                  p{
-                      width: 100%;
-                      font-size: 16px;
-                  }
-              }
-          }
-        }
-      }
-      .boxTwo{
-          display: flex;
-          flex-direction: column;
-          .controlForBox{
-              width: 100%;
-              .forBox{
-                  display: flex;
-                  flex-direction: column;
-                  gap: 100px;
-                  .forBoxBottom{
-                      h2{
-                          font-size: 18px;
-                      }
-                      p{
-                          width: 100%;
-                          font-size: 16px;
-                      }
-                  }
-              }
-          }
-          .controlFiveBox{
-              width: 100%;
-              .fiveBoxText{
-                  .fiveBoxBottom{
-                      h2{
-                          font-size: 18px;
-                      }
-                      p{
-                          width: 100%;
-                          font-size: 16px;
-                      }
-                  }
-              }
-          }
-      }
-      .boxThree{
-          display: flex;
-          flex-direction: column;
-          .controlForBox{
-              width: 100%;
-              .forBox{
-                  display: flex;
-                  flex-direction: column;
-                  gap: 100px;
-                  .forBoxBottom{
-                      h2{
-                          font-size: 18px;
-                      }
-                      p{
-                          width: 100%;
-                          font-size: 16px;
-                      }
-                  }
-              }
-          }
-          .controlFiveBox{
-              width: 100%;
-              .fiveBoxText{
-                  .fiveBoxBottom{
-                      h2{
-                          font-size: 18px;
-                      }
-                      p{
-                          width: 100%;
-                          font-size: 16px;
-                      }
-                  }
-              }
-          }
-      }
-  }
-  }
 }
