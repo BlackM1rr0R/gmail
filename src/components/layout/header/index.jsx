@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./index.module.css";
 import Wrapper from "../../UI/wrapper/index";
-import Logo from "../../../assets/images/logo1.png";
+import Logo from "../../../assets/images/logosaglik.png";
 import { Sling as Hamburger } from "hamburger-react";
 import {
   FacebookIcon,
@@ -26,7 +26,7 @@ const Header = () => {
           <div className={styles.services}>
             <Link to={"/idiopatik"}>Randevu</Link>
             <Link to={"/kifoz"}>Hizmetlerimiz</Link>
-            <Link to={"/about"}>Haqqımda</Link>
+            <Link to={"/about"}>Hakkımda</Link>
             <Link to={"/gallery"}>Blog</Link>
             <Link to={"/contact"}>Iletisim</Link>
           </div>
@@ -48,7 +48,7 @@ const Header = () => {
         {isMenuOpen && (
           <div className={styles.overlay}>
             <div className={styles.services}>
-              <Link to={"/about"}>Haqqımdaa</Link>
+              <Link to={"/about"}>Hakkımda</Link>
               <Link to={"/idiopatik"}>Randevu</Link>
               <Link to={"/kifoz"}>Hizmetlerimiz</Link>
               <Link to={"/gallery"}>Blog</Link>

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./index.module.css";
 import Wrapper from "../../UI/wrapper/index";
-import Logo from "../../../assets/images/logo1.png";
+import Logo from "../../../assets/images/logosaglik.png";
 import { FacebookIcon, InstagramIcon, LinkedinIcon } from "../../../icons";
 const Footer = () => {
   return (

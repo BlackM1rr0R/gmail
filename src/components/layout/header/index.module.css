@@ -18,7 +18,7 @@
   padding-bottom: 20px;
 }
 .background .control .images img {
-  width: 170px;
+  width: 70px;
 }
 .background .control .services {
   display: none;
@@ -69,7 +69,7 @@
     padding-bottom: 20px;
   }
   .background .control .images img {
-    width: 170px;
+    width: 70px;
   }
   .background .control .services {
     display: flex;
