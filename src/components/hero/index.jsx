@@ -5,31 +5,33 @@ import Doctors from "../../assets/images/doctors.png";
 import { RightArrow } from "../../icons/";
 import ScrollTrigger from "react-scroll-trigger";
 import CountUp from "react-countup";
+import Wrapper from "../UI/wrapper";
+import { Link } from "react-router-dom";
 const Hero = () => {
   const [counterOn, setCounterOn] = useState(false);
   return (
     <div className={styles.background}>
-      <div className={styles.headers}>
-        <h2>Fizioterapevt</h2>
-      </div>
+      <Wrapper>
+
+     
       <div className={styles.texts}>
-        <h2>Where Compassion</h2>
-        <img src={Doctors} alt="" />
-        <h2>Meets</h2>
-        <h2>Advanced Medical Services</h2>
+        <>
+        <h2>Günün Her Anında </h2>
+     
+        <h2>Biz sizin yanında</h2>
+        </>
       </div>
       <div className={styles.control}>
         <div className={styles.leftside}>
           <div className={styles.line1}>
             <h2>
-              Skolioz, kifoz, lordoz əyrilikləri, onurğada disk yırıqları,
-              idmançı zədələnmələri, insultun reabilitasıyası.
+            Alanında uzman sağlık ekibimizle ihtiyaç duy.
             </h2>
           </div>
           <div className={styles.line2}>
             <h2>0506282628</h2>
             <div className={styles.icons}>
-              <h3>Müalicələrimiz </h3>
+              <Link to={"/kifoz"}>Hizmetlerimiz</Link>
               <RightArrow />
             </div>
           </div>
@@ -68,10 +70,10 @@ const Hero = () => {
             </div>
           </ScrollTrigger>
         </div>
-        <div className={styles.rightside}>
-        <img src={YusifBackground} alt="" />
-        </div>
+   
       </div>
+      </Wrapper>
+
     </div>
   );
 };

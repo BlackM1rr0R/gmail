@@ -10,19 +10,20 @@ import ChatApp from "../../components/chat";
 
 import Questions from "../../components/questions";
 import SwiperComp from "../../components/swipercomp";
+import LatestArticles from "../../components/latestarticles";
 
 const Home = () => {
   return (
     <>
-      <Wrapper>
         <Hero />
+      <Wrapper>
         <Main />
         <Logo />
         <YusifAbout />
-        <Hospital />
-        <ChatApp />
+        {/* <Hospital />
+        <ChatApp /> */}
+  <LatestArticles/>
 
-        <Questions />
       </Wrapper>
     </>
   );

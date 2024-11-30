@@ -1,3 +1,4 @@
+import LatestArticles from "./components/latestarticles";
 import About from "./pages/about";
 import Contact from "./pages/contact";
 import Details from "./pages/detailsblog";
@@ -6,12 +7,13 @@ import Home from "./pages/home";
 import Idiopatik from "./pages/idiopatik";
 import Kifoz from "./pages/kifoz";
 import NotFound from "./pages/notFound";
-const routeItem = (id, title, path, component) => {
+const routeItem = (id, title, path, component,element) => {
   return {
     id,
     title,
     path,
     component,
+    element
   };
 };
 
