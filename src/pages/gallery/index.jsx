@@ -74,8 +74,8 @@ const Gallery = () => {
     <div className={styles.background}>
       <Wrapper>
         <div className={styles.headers}>
-          <h2>NƏTİCƏLƏRİMİZ</h2>
-          <p>Pasiyentlərimiz ilə əldə etdiyimiz müalicə nəticələrimiz.</p>
+          <h2>Hastalıklar</h2>
+          <p>Hastalıklar hakkında okuya bilirsiniz.</p>
         </div>
         <div className={styles.boxs}>
           {photos.map((item) => (

@@ -1,19 +1,56 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./index.module.css";
 import Wrapper from "../../components/UI/wrapper";
 import YusifPhoto from "../../assets/images/contact.png";
 import { ClockIcon, LocationIcon, PhoneIcon } from "../../icons";
+import { sendMessage } from "../../api";
+
 const Contact = () => {
+  const [firstname, setFirstName] = useState("");
+  const [lastname, setLastName] = useState("");
+  const [gmail, setGmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [phonenumber, setPhone] = useState("")
+  const [successMessage, setSuccessMessage] = useState(""); // Yeni durum
+
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // Sayfanın yenilenmesini engelle
+
+    if (!firstname || !lastname || !gmail || !message || !phonenumber) {
+      alert("Lütfen tüm alanları doldurun.");
+      return;
+    }
+
+    try {
+      const response = await sendMessage({
+        firstname,
+        lastname,
+        gmail,
+        message,
+        phonenumber
+      });
+
+      setSuccessMessage("Mesajınız başarıyla gönderildi!"); // Başarı mesajını ayarla
+      console.log("Mesaj gönderildi: " + response.data);
+
+      // Formu temizle
+      setFirstName("");
+      setLastName("");
+      setGmail("");
+      setMessage("");
+      setPhone("")
+    } catch (err) {
+      alert("Mesaj gönderilmedi, bir sorun oluştu.");
+    }
+  };
+
   return (
     <div className={styles.background}>
       <Wrapper>
         <div className={styles.headerControl}>
           <div className={styles.location}>
             <LocationIcon />
-            <h2>
-             Sarıgül Sokak B Blok No:37/1 İçkapı No: 66
-   
-            </h2>
+            <h2>Sarıgül Sokak B Blok No:37/1 İçkapı No: 66</h2>
           </div>
           <div className={styles.clockOpen}>
             <ClockIcon />
@@ -34,33 +71,68 @@ const Contact = () => {
             <h2>
               360 Sağlık ekibi olarak müşteri memnuniyetini öncelikli
               hedeflerimiz arasına koyan bir firma olarak, size en kısa sürede
-              geri dönüş yapacağız.
+              geri dönüş yapacağız.
             </h2>
             <img src={YusifPhoto} alt="Yusif" />
           </div>
-          <form className={styles.texts}>
+          <form className={styles.texts} onSubmit={handleSubmit}>
             <label htmlFor="">
               Adınız*
-              <input placeholder="Enter your name" type="text" required />
+              <input
+                value={firstname}
+                onChange={(e) => setFirstName(e.target.value)}
+                placeholder="Adınızı yazın"
+                type="text"
+                required
+              />
             </label>
             <label htmlFor="">
               Soyadınız*
-              <input placeholder="Enter your surname" type="text" required />
+              <input
+                value={lastname}
+                onChange={(e) => setLastName(e.target.value)}
+                placeholder="Soyadınızı yazın"
+                type="text"
+                required
+              />
             </label>
-            <label htmlFor="">
-              Telefon numarası*
-              <input placeholder="Phone number" type="phone" required />
-            </label>
+
             <label htmlFor="">
               E-posta*
-              <input placeholder="Enter your email" type="email" required />
+              <input
+                value={gmail}
+                onChange={(e) => setGmail(e.target.value)}
+                placeholder="Mailinizi yazın"
+                type="email"
+                required
+              />
+            </label>
+
+            <label htmlFor="">
+              Numara*
+              <input
+                value={phonenumber}
+                onChange={(e) => setPhone(e.target.value)}
+                placeholder="Numaranızı yazın"
+                type="text"
+                required
+              />
             </label>
             <label htmlFor="" className={styles.textArea}>
               Mesajınız*
-              <textarea name="" id="" cols="30" rows="10  required"></textarea>
+              <textarea
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                required
+              ></textarea>
             </label>
             <label htmlFor="" className={styles.buttonControl}>
-              <button type="submit">Mesaji gonder</button>
+              <button type="submit">Mesajı gönder</button>
+              {successMessage && <span className={styles.success}>{successMessage}</span>} {/* Başarı mesajı */}
             </label>
           </form>
         </div>
