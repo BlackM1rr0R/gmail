@@ -10,12 +10,18 @@ import {
   YoutubeIcon,
 } from "../../../icons";
 import { Link } from "react-router-dom";
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <div className={styles.background}>
       <Wrapper>
@@ -31,9 +37,7 @@ const Header = () => {
             <Link to={"/contact"}>Iletisim</Link>
           </div>
           <div className={styles.icons}>
-            <FacebookIcon />
             <InstagramIcon />
-            <YoutubeIcon />
             <TiktokIcon />
           </div>
           <div className={styles.hamburger}>
@@ -48,16 +52,16 @@ const Header = () => {
         {isMenuOpen && (
           <div className={styles.overlay}>
             <div className={styles.services}>
-              <Link to={"/about"}>Hakkımda</Link>
-              <Link to={"/idiopatik"}>Randevu</Link>
-              <Link to={"/kifoz"}>Hizmetlerimiz</Link>
-              <Link to={"/gallery"}>Blog</Link>
-              <Link to={"/contact"}>Iletisim</Link>
+              <Link to={"/about"} onClick={closeMenu}>Hakkımda</Link>
+              <Link to={"/idiopatik"} onClick={closeMenu}>Randevu</Link>
+              <Link to={"/kifoz"} onClick={closeMenu}>Hizmetlerimiz</Link>
+              <Link to={"/gallery"} onClick={closeMenu}>Blog</Link>
+              <Link to={"/contact"} onClick={closeMenu}>Iletisim</Link>
             </div>
             <div className={styles.icons}>
-              <FacebookIcon />
+       
               <InstagramIcon />
-              <YoutubeIcon />
+          
               <TiktokIcon />
             </div>
           </div>

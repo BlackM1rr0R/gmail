@@ -56,4 +56,7 @@
   .background .controlHeader a {
     padding: 10px 20px;
   }
+  .background .boxs .price .border {
+    height: 32vh;
+  }
 }/*# sourceMappingURL=index.module.css.map */
