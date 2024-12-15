@@ -3,6 +3,7 @@ import styles from "./index.module.css";
 import Wrapper from "../../UI/wrapper/index";
 import Logo from "../../../assets/images/logoeternal.png";
 import { FacebookIcon, InstagramIcon, LinkedinIcon } from "../../../icons";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className={styles.background}>
@@ -22,12 +23,12 @@ const Footer = () => {
           <div className={styles.line2}>
             <h2>Sayfalar</h2>
             <ul>
-              <li>Ana Sayfa</li>
-              <li>Randevu</li>
-              <li>Hizmetlerimiz</li>
-              <li>Hakkımızda</li>
-              <li>Blog</li>
-              <li>İletişim</li>
+              <Link to={"/"}>Ana Sayfa</Link>
+              <Link to={"/idiopatik"}>Randevu</Link>
+              <Link to={"/kifoz"}>Hizmetlerimiz</Link>
+              <Link to={"/about"}>Hakkımızda</Link>
+              <Link to={"/gallery"}>Blog</Link>
+              <Link to={"/contact"}>İletişim</Link>
             </ul>
           </div>
           <div className={styles.line3}>

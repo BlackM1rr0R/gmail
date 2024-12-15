@@ -15,8 +15,8 @@ const Main = () => {
         <div className={styles.control}>
           <div className={styles.border1}>
             <div className={styles.bordertext1}>
-              <h2>{counterOn && <CountUp duration={4} delay={0} end={7} />}</h2>
-              <p>Yıllık profosyenöllük</p>
+              <h2>{counterOn && <CountUp duration={4} delay={0} end={15} />}</h2>
+              <p>Yıllık profesyonellik</p>
             </div>
           </div>
           <div className={styles.border2}>
@@ -27,7 +27,7 @@ const Main = () => {
           </div>
           <div className={styles.border3}>
             <div className={styles.bordertext3}>
-              <h2>{counterOn && <CountUp duration={4} delay={0} end={1548} />}+</h2>
+              <h2>{counterOn && <CountUp duration={4} delay={0} end={10348} />}+</h2>
               <p>İyileşen hastalarımız</p>
             </div>
           </div>

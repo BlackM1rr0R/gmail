@@ -40,14 +40,16 @@
 }
 .background .control .line2 h2 {
   color: #9d9da9;
-  font-size: 14px;
+  font-size: 18px;
 }
 .background .control .line2 ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.background .control .line2 ul li {
+.background .control .line2 ul a {
+  text-decoration: none;
+  color: black;
   font-size: 14px;
 }
 .background .control .line3 {

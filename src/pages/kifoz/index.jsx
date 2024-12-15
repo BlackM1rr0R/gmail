@@ -294,23 +294,19 @@ const Kifoz = () => {
             {state.orange ? (
               <>
                 <div className={styles.orangetext}>
-                  <h2>What positions can you cover? </h2>
+                  <h2>Hastalıklara karşı ne yapmalıyız? </h2>
 
                   <GrayArrow />
                 </div>
                 <div className={styles.orangeabout}>
                   <p>
-                    Konjenental Skoliozlar anadangəlmə fəqərələrin formalaşma
-                    qüsurları (pazvari fəqərələr, kəpənəyəbənzər fəqərələr və s)
-                    və fəqərələrin bitişmə qüsurları (bir tərəflə bir neçə
-                    fəqərənin bir-biri ilə bitişik olması) fonunda yaranan
-                    skoliozlardır.
+                  Hastalıklara karşı korunmak, erken teşhis koymak ve tedavi süreçlerini daha etkili bir şekilde yönetmek için doğru adımları atmak hayati önem taşır. Modern tıbbın sunduğu en büyük kolaylıklardan biri, evde sağlık hizmetleridir. Bu hizmetler, bireylerin hastane ortamına gitmeden kendi konfor alanlarında sağlık sorunlarını yönetmelerine yardımcı olur ve hastalıklarla mücadelede önemli bir role sahiptir.Evde sağlık hizmetlerinin temel amacı, hastalıkların önlenmesi, kronik rahatsızlıkların yönetimi, düzenli kontrollerin yapılması ve bireyin yaşam kalitesini artırmaktır. 
                   </p>
                 </div>
               </>
             ) : (
               <div className={styles.orangetext}>
-                <h2>What positions can you cover? </h2>
+                <h2>Hastalıklara karşı ne yapmalıyız? </h2>
                 <GrayArrowTrue />
               </div>
             )}
@@ -322,22 +318,18 @@ const Kifoz = () => {
             {state.red ? (
               <>
                 <div className={styles.redtext}>
-                  <h2>Staffing suit my business? </h2>
+                  <h2>Uzmanların görüşleri nelerdir? </h2>
                   <GrayArrow />
                 </div>
                 <div className={styles.orangeabout}>
                   <p>
-                    Konjenental Skoliozlar anadangəlmə fəqərələrin formalaşma
-                    qüsurları (pazvari fəqərələr, kəpənəyəbənzər fəqərələr və s)
-                    və fəqərələrin bitişmə qüsurları (bir tərəflə bir neçə
-                    fəqərənin bir-biri ilə bitişik olması) fonunda yaranan
-                    skoliozlardır.
+                  Hastalıklara karşı mücadelede uzmanların görüşleri, bireylerin bilinçlenmesini sağlamak ve toplum sağlığını koruma altına almak açısından büyük bir rehber niteliği taşır. Sağlık uzmanlarının koruyucu, önleyici ve tedaviye yönelik yaklaşımları, bireylerin sağlıklı bir yaşam sürdürmelerine yardımcı olmanın yanı sıra, hastalıkların yayılmasını engellemek ve sağlık sistemleri üzerindeki yükü azaltmak için de hayati önem taşır.Bu görüşler, hem bireylerin kişisel sağlıklarını korumalarına hem de genel halk sağlığını iyileştirmeye katkıda bulunur. Özellikle kronik hastalıkların artış gösterdiği, bulaşıcı hastalıkların küresel ölçekte tehdit oluşturduğu ve sağlık kaynaklarının daha verimli kullanılması gerektiği günümüzde, uzmanların sunduğu stratejiler bireyler ve toplumlar için bir yol haritası niteliği taşır.
                   </p>
                 </div>
               </>
             ) : (
               <div className={styles.redtext}>
-                <h2>Staffing suit my business? </h2>
+                <h2>Uzmanların görüşleri nelerdir? </h2>
                 <GrayArrowTrue />
               </div>
             )}
@@ -349,22 +341,18 @@ const Kifoz = () => {
             {state.violet ? (
               <>
                 <div className={styles.violettext}>
-                  <h2>How much can I save annually?</h2>
+                  <h2>Ne kadar güvene biliriz?</h2>
                   <GrayArrow />
                 </div>
                 <div className={styles.orangeabout}>
                   <p>
-                    Konjenental Skoliozlar anadangəlmə fəqərələrin formalaşma
-                    qüsurları (pazvari fəqərələr, kəpənəyəbənzər fəqərələr və s)
-                    və fəqərələrin bitişmə qüsurları (bir tərəflə bir neçə
-                    fəqərənin bir-biri ilə bitişik olması) fonunda yaranan
-                    skoliozlardır.
+                  Hastalıklarla mücadelede uzmanların görüşlerine güven, sağlık sistemlerinin temelini oluşturan en önemli unsurlardan biridir. Sağlık uzmanlarının rehberliği, bilgi birikimi ve deneyimleri sayesinde bireyler doğru adımlar atarak sağlıklarını koruyabilir, hastalıkları önleyebilir ve tedavi süreçlerinde en iyi sonuçları elde edebilir. Ancak bu güvenin dayandığı bilimsel temeller, etik değerler ve sürekli gelişen sağlık teknolojileri hakkında daha derin bir anlayışa sahip olmak, bu güveni daha da güçlendirebilir.
                   </p>
                 </div>
               </>
             ) : (
               <div className={styles.violettext}>
-                <h2>How much can I save annually?</h2>
+                <h2>Ne kadar güvene biliriz?</h2>
                 <GrayArrowTrue />
               </div>
             )}

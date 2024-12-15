@@ -16,9 +16,9 @@ const Hero = () => {
      
       <div className={styles.texts}>
         <>
-        <h2>Günün Her Anında </h2>
+        <h2>Aradığınız Sağlık Sağlıklı Gelecek 🍀</h2>
      
-        <h2>Biz sizin yanında</h2>
+        <h2>Her anınızda yanınızdayız ✨</h2>
         </>
       </div>
       <div className={styles.control}>
