@@ -42,10 +42,10 @@ const Header = () => {
         <h1>ETERNAL</h1>
         <h2>Sağlık Hizmetleri</h2>
           </div>
-          <div className={styles.icons}>
+          <Link to={"https://www.instagram.com/sakaryaevdesaglik.esh/"} className={styles.icons}>
             <InstagramIcon />
-            <TiktokIcon />
-          </div>
+       
+          </Link>
           <div className={styles.hamburger}>
             <Hamburger
               size={22}
@@ -64,12 +64,12 @@ const Header = () => {
               <Link to={"/gallery"} onClick={closeMenu}>Blog</Link>
               <Link to={"/contact"} onClick={closeMenu}>Iletisim</Link>
             </div>
-            <div className={styles.icons}>
+            <Link to={"https://www.instagram.com/sakaryaevdesaglik.esh/"} className={styles.icons}>
        
               <InstagramIcon />
           
-              <TiktokIcon />
-            </div>
+             
+            </Link>
           </div>
         )}
       </Wrapper>

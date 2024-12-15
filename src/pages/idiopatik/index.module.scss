@@ -14,7 +14,7 @@
         width: 100%;
 
         .overlay {
-          
+
             background-color: white;
             border: 1px solid #DFDEE0;
             border-radius: 20px;
@@ -23,7 +23,8 @@
             position: absolute;
             top: -8%;
             right: -1%;
-            transform: translate(1%,8%);
+            transform: translate(1%, 8%);
+
             .controlOverlay {
                 display: flex;
                 flex-direction: column;
@@ -87,6 +88,14 @@
             display: flex;
             padding: 24px 20px;
             gap: 24px;
+
+            .imagesControl {
+                img {
+                    width: 170px;
+                    height: 150px;
+                    border-radius: 50%;
+                }
+            }
 
             .textControl {
                 display: flex;

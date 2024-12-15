@@ -77,6 +77,11 @@
   padding: 24px 20px;
   gap: 24px;
 }
+.background .control .doctorBack .imagesControl img {
+  width: 170px;
+  height: 150px;
+  border-radius: 50%;
+}
 .background .control .doctorBack .textControl {
   display: flex;
   flex-direction: column;

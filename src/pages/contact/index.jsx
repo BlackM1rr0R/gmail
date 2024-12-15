@@ -50,17 +50,17 @@ const Contact = () => {
         <div className={styles.headerControl}>
           <div className={styles.location}>
             <LocationIcon />
-            <h2>Düzce,Kocaeli,İstanbul</h2>
+            <h2>Sakarya,Düzce,Kocaeli,İstanbul</h2>
           </div>
           <div className={styles.clockOpen}>
             <ClockIcon />
-            <h2>Pazartesi - Cuma 08:00-19:00</h2>
+            <h2>24 saat</h2>
           </div>
           <div className={styles.phone}>
             <PhoneIcon />
             <h2>
-              <a href="tel:0543 406 35 44" className={styles.phoneNumber}>
-              0543 406 35 44
+              <a href="tel:0552 518 96 54" className={styles.phoneNumber}>
+              0552 518 96 54
               </a>
             </h2>
           </div>

@@ -79,7 +79,9 @@
         flex-direction: column;
         gap: 20px;
 
-        li {
+        a {
+          text-decoration: none;
+          color: black;
           font-size: 14px;
         }
       }
@@ -171,7 +173,9 @@
           gap: 20px;
 
           li {
-            font-size: 17px;
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
           }
         }
 

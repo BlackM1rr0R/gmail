@@ -34,14 +34,14 @@ const Footer = () => {
           <div className={styles.line3}>
             <h2>Baş Ofisimiz</h2>
             <ul>
-              <li>Düzce,Kocaeli,İstanbul</li>
-              <li>0543 406 35 44</li>
+              <li> Sakarya,Semerciler Mahallesi</li>
+             <a href="tel:0552 518 96 54">0552 518 96 54</a>
               
             </ul>
             <div className={styles.icons}>
-              <div className={styles.linkedin}>
+              <Link to={"https://www.instagram.com/sakaryaevdesaglik.esh/"} className={styles.linkedin}>
                 <InstagramIcon />
-              </div>
+              </Link>
             </div>
           </div>
         </div>

@@ -66,7 +66,9 @@
   flex-direction: column;
   gap: 20px;
 }
-.background .control .line3 ul li {
+.background .control .line3 ul a {
+  text-decoration: none;
+  color: black;
   font-size: 14px;
 }
 .background .control .line3 .icons {
@@ -138,7 +140,9 @@
     gap: 20px;
   }
   .background .control .line3 ul li {
-    font-size: 17px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
   }
   .background .control .line3 .icons {
     padding-top: 0;
