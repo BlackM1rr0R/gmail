@@ -7,9 +7,15 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import LosemPhoto from '../../assets/images/losem.png'
-import IshalPhoto from '../../assets/images/ishalphoto.png'
-import EvdeTemel from '../../assets/images/evdetemel.png'
+import Photo1 from "../../assets/images/ishalphoto.png";
+import Photo2 from "../../assets/images/diyabet.webp";
+import Photo3 from "../../assets/images/astim.jpg";
+import Photo4 from "../../assets/images/kalp.jpg";
+import Photo5 from "../../assets/images/cilt.jpg";
+import Photo6 from "../../assets/images/covid.jpg";
+import Photo7 from "../../assets/images/iyne.jpg";
+import Photo8 from "../../assets/images/iltihap.webp";
+import Photo9 from "../../assets/images/idrar.jpg";
 const LatestArticles = () => {
 
 
@@ -18,32 +24,56 @@ const LatestArticles = () => {
       {
         id: 1,
         link: "/details/1",
-        img: `${IshalPhoto}`,
-        header: "İshal Durumunda Neler Yapılmalı?",
+        img: `${Photo1}`,
+        info: "İshal Durumunda Neler Yapılmalı?",
       },
       {
         id: 2,
-        link: "/details/1",
-        img: `${LosemPhoto}`,
-        header: "Lösemi Nedir? Lösemi Belirtileri ve Tedavisi",
+        link: "/details/2",
+        img: `${Photo2}`,
+        info: "Diyabet (Şeker Hastalığı)",
       },
       {
         id: 3,
-        link: "/details/1",
-        img: `${EvdeTemel}`,
-        header: "Evde Temel İlk Yardım",
+        link: "/details/3",
+        img: `${Photo3}`,
+        info: "Astım",
       },
       {
-        id: 3,
-        link: "/details/1",
-        img: `${LosemPhoto}`,
-        header: "Lösemi Nedir? Lösemi Belirtileri ve Tedavisi",
+        id: 4,
+        link: "/details/4",
+        img: `${Photo4}`,
+        info: "Kalp Yetmezliği",
       },
       {
-        id: 3,
-        link: "/details/1",
-        img: `${LosemPhoto}`,
-        header: "Lösemi Nedir? Lösemi Belirtileri ve Tedavisi",
+        id: 5,
+        link: "/details/5",
+        img: `${Photo5}`,
+        info: "Cilt Lekeleri ve Yorgunluk",
+      },
+      {
+        id: 6,
+        link: "/details/6",
+        img: `${Photo6}`,
+        info: "Covid-19 (PCR Testi)",
+      },
+      {
+        id: 7,
+        link: "/details/7",
+        img: `${Photo7}`,
+        info: "Enjeksiyon (iğne)",
+      },
+      {
+        id: 8,
+        link: "/details/8",
+        img: `${Photo8}`,
+        info: "İleri Derece İltihaplanmalar",
+      },
+      {
+        id: 9,
+        link: "/details/9",
+        img: `${Photo9}`,
+        info: "İdrar Yolu Problemleri ",
       },
     ],
     []
@@ -88,7 +118,7 @@ const LatestArticles = () => {
                 className={styles.border}
               >
                   <img src={item.img} alt="" />
-                  <h2>{item.header}</h2>
+                  <h2>{item.info}</h2>
               </Link>
             </SwiperSlide>
           ))}
