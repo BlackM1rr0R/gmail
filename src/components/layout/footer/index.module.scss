@@ -85,7 +85,7 @@
       .icons {
         display: flex;
 
-        padding-top: 20px;
+        padding-top: 0;
         gap: 20px;
 
         .linkedin {
@@ -174,23 +174,21 @@
         }
 
         .icons {
-          display: flex;
-          justify-content: space-between;
+        
 
           padding-top: 0;
 
           .linkedin {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        
             border: 1px solid #9B9FAC;
-            width: 100%;
-            padding: 16px;
-            border-radius: 50%;
-            svg {
+      width: auto;
+      padding: 10px;
+      border-radius: 50%;
+            svg{
               width: 30px;
               height: 30px;
             }
+        
 
 
 

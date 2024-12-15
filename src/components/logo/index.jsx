@@ -14,11 +14,7 @@ const Logo = () => {
   return (
     <div className={styles.background}>
       <div className={styles.control}>
-        {icons.map((Icon, index) => (
-          <div key={index} className={styles.border}>
-            <Icon />
-          </div>
-        ))}
+      <script defer async src='https://cdn.trustindex.io/loader.js?8b1fe5d3858c613e3256749e328'></script>
       </div>
     </div>
   );

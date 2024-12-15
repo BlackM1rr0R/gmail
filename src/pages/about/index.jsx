@@ -16,7 +16,7 @@ const About = () => {
           <div className={styles.control}>
             <div className={styles.leftside}>
               <div className={styles.header}>
-                <h2><h1>360 Sağlık</h1> İle Tanışın</h2>
+                <h2><h1>Eternal Sağlık </h1> İle Tanışın</h2>
               </div>
               <div className={styles.profilpicture}>
                 <img src={Yusif} alt="" />
@@ -24,16 +24,7 @@ const About = () => {
               <div className={styles.experience}>
                 <h2>Misyonumuz</h2>
                 <p>
-                  Türkiye'de yaşayan her bireyin sağlık hizmetlerine kolay ve
-                  hızlıca erişebilmesini amaçlıyoruz. Öncü bir kurum olarak tüm
-                  Türkiye'ye kaliteli ve güvenli bir şekilde yerinde veya
-                  uzaktan sağlık hizmeti sunma hedefini benimsiyoruz. Hasta
-                  memnuniyetini ve toplum sağlığını her şeyin önünde tutarak
-                  geleceğin sağlık hizmetlerini şekillendirmeyi hedefliyoruz.
-                  360 Sağlık; kaliteli hizmet anlayışı, uzman sağlık
-                  profesyonelleri ve güçlü teknolojik altyapısıyla herkesin 7/24
-                  sağlık hizmetlerine erişebilmesi için çalışmalarını
-                  sürdürüyor.
+                  ETERNAL SAĞLIK HİZMETLERİ olarak, uzman bir ekip tarafından sunulan kapsamlı yerinde bakım hizmetleri sunmaktayız. Ekibimiz, deneyimli doktorlar, hemşireler ve diğer sağlık profesyonellerinden oluşur ve her biri alanında uzmandır. Hastalarımızın ihtiyaçlarına özel olarak tasarlanan bakım planlarıyla, onların güvenliğini, konforunu ve sağlıklarını sağlamayı hedefliyoruz.
                 </p>
               </div>
             </div>
@@ -41,31 +32,14 @@ const About = () => {
               <div className={styles.education}>
                 <h2>Hakkımızda</h2>
                 <p>
-                  Yeni nesil sağlık hizmetleriyle öne çıkan, sektörünün genç ve
-                  dinamik şirketi 360 Sağlık; bir Doğan Holding iştirakidir.
-                  Türkiye'nin önde gelen gruplarından biri olan Doğan Holding,
-                  1959'dan bu yana hemen her alanda faaliyet göstermektedir.
-                  Doğan Grubu; elektrik üretimi, sanayi&ticaret, otomotiv
-                  ticaret&pazarlama, finansman&yatırım, internet&eğlence ve
-                  gayrimenkul yatırımları alanlarında yenilikçi vizyon ve
-                  müşteri odaklı yöntem anlayışını benimser. Değer odaklı bir
-                  kurum olan Doğan Grubu, iş dünyasında kurumsal ve etik
-                  değerlere sahip çıkarak hem ulusal hem uluslararası kurumlara
-                  örnek olur.
+
+                  Müşteri memnuniyetine/deneyimine büyük önem veriyoruz ve her bir hastamızı ailemizin bir parçası gibi görüyoruz. İhtiyaçlarını anlamak, onları dinlemek ve gereksinimlerine göre uygun çözümler sunmak için bireysel bir yaklaşım benimsiyoruz. Her hasta için kişiselleştirilmiş bir bakım planı oluşturarak, onların özel gereksinimlerini karşılamak ve en uygun tedaviyi sağlamak için çalışıyoruz.
                 </p>
               </div>
               <div className={styles.diplom}>
                 <h2>Vizyonumuz</h2>
                 <p>
-                  Sağlık hizmeti almak, her bireyin temel hakkıdır. Biz de bu
-                  hakkı koruma ve iyileştirme sorumluluğunu taşıyoruz.
-                  Teknolojik, hasta odaklı, çağdaş, güvenilir ve kaliteli sağlık
-                  hizmetinin, uzaktan ve/veya hastanın bulunduğu yerde
-                  verilmesini hedefliyoruz. Türkiye'nin her noktasına ulaşacak
-                  multidisipliner ekibimiz ve teknolojik altyapımız ile
-                  uzaklıkları aşarak, her türlü uzmanlık branşında, kişilerin
-                  ihtiyacı olan sağlık hizmetlerine 7 gün 24 saat ulaşabilmesini
-                  sağlayacağız.
+                  Eternal sağlık olarak, evde bakım hizmetlerimizi güvenilirlik, kalite ve etik değerlere dayandırıyoruz. Ekip olarak, her zaman en son tıbbi gelişmeleri takip ediyor ve en iyi uygulamaları kullanarak hastalarımıza en iyi bakımı sunmaya çalışıyoruz.
                 </p>
               </div>
               <div className={styles.sertifikat}>
@@ -75,51 +49,51 @@ const About = () => {
           </div>
           <div className={styles.workPerson}>
             <div className={styles.controlWorkPerson}>
-            <div className={styles.leftWork}>
-              <h1>360 Sağlık Yönetim Kurulumuz</h1>
-              <h2>We recognize that our strength lies in our people that
-bring unparalleled value to our operations. Our C-level
-team directs 360 Saglig hizmeti's strategic growth and supports other
-businesses in navigating the market challenges.</h2>
-            </div>
-            <div className={styles.rightWork}>
-             <div className={styles.controlRightWork}>
+              <div className={styles.leftWork}>
+                <h1>ETERNAL Sağlık Yönetim Kurulumuz</h1>
+                <h2>We recognize that our strength lies in our people that
+                  bring unparalleled value to our operations. Our C-level
+                  team directs 360 Saglig hizmeti's strategic growth and supports other
+                  businesses in navigating the market challenges.</h2>
+              </div>
+              <div className={styles.rightWork}>
+                <div className={styles.controlRightWork}>
                   <img src={DoctorPhoto} alt="" />
                   <div className={styles.nameRight}>
                     <h2>Yuriy Radchishin</h2>
                     <h3>President / COO</h3>
 
                   </div>
-             </div>
-             <hr />
-             <div className={styles.controlRightWork}>
+                </div>
+                <hr />
+                <div className={styles.controlRightWork}>
                   <img src={DoctorPhoto} alt="" />
                   <div className={styles.nameRight}>
                     <h2>Yuriy Radchishin</h2>
                     <h3>President / COO</h3>
 
                   </div>
-             </div>
-             <hr />
-             <div className={styles.controlRightWork}>
+                </div>
+                <hr />
+                <div className={styles.controlRightWork}>
                   <img src={DoctorPhoto} alt="" />
                   <div className={styles.nameRight}>
                     <h2>Yuriy Radchishin</h2>
                     <h3>President / COO</h3>
 
                   </div>
-             </div>
-             <hr />
-            </div>
+                </div>
+                <hr />
+              </div>
             </div>
           </div>
           <div className={styles.images}>
             <img src={FillImage} alt="" />
           </div>
           <div className={styles.hospitalText}>
-          <h2>Sağlık hizmetinizi ayağınıza getirmek için buradayız.</h2>
-          <p>Bitedavi’yi uygulama marketlerinden indirerek hizmetlerimizi incelemeye,
-          rezervasyon oluşturmaya ve tedavi süreçlerinize şimdi başlayabilirsiniz.</p>
+            <h2>Sağlık hizmetinizi ayağınıza getirmek için buradayız.</h2>
+            <p>Bitedavi’yi uygulama marketlerinden indirerek hizmetlerimizi incelemeye,
+              rezervasyon oluşturmaya ve tedavi süreçlerinize şimdi başlayabilirsiniz.</p>
           </div>
         </div>
       </Wrapper>

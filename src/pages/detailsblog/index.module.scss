@@ -16,8 +16,9 @@
 
             img {
                 display: block;
-                width: 100%;
-                height: auto; // Görüntü oranını korur
+                width: 1440px;
+                height: 70vh;
+                 // Görüntü oranını korur
             }
 
             &::before {
@@ -49,8 +50,8 @@
         justify-content: center;
         align-items: center;
         background-color: #F1F1F2;
-        padding-top: 110px;
-        padding-bottom: 110px;
+        padding-top: 60px;
+        padding-bottom: 60px;
 
         p {
             width: 700px;
@@ -79,26 +80,31 @@
 
             line-height: 28px;
         }
-        h3{
+
+        h3 {
             color: #6E4EEF;
-            h2{
+
+            h2 {
                 color: black;
                 line-height: 28px;
             }
         }
     }
-    .garantie{
+
+    .garantie {
         margin-top: 88px;
         background-color: #E8F7F8;
         padding-top: 100px;
         padding-bottom: 100px;
-        .controlGarantie{
+
+        .controlGarantie {
             width: 50%;
             margin: auto;
             display: flex;
             flex-direction: column;
             gap: 24px;
-            button{
+
+            button {
                 width: 200px;
                 display: flex;
                 align-items: center;
@@ -109,38 +115,45 @@
                 padding: 8px 24px;
                 border-radius: 30px;
             }
-            h1{
+
+            h1 {
                 color: #0F595B;
                 font-size: 32px;
                 font-weight: 600;
             }
-            h2{
+
+            h2 {
                 line-height: 30px;
             }
         }
     }
 
 }
-@media(max-width:498px){
-    .background{
-        .images{
-            h2{
-          
+
+@media(max-width:498px) {
+    .background {
+        .images {
+            h2 {
+
                 font-size: 14px;
             }
         }
-        .textTwoBack{
-      
+
+        .textTwoBack {
+
             padding: 30px 40px;
         }
-        .headerText{
+
+        .headerText {
             width: 100%;
             padding-top: 40px;
         }
-        .garantie{
+
+        .garantie {
             margin-top: 40px;
             padding: 40px 30px;
-            .controlGarantie{
+
+            .controlGarantie {
                 width: 100%;
             }
         }

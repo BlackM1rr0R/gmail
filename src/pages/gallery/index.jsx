@@ -1,15 +1,15 @@
 import React, { useMemo } from "react";
 import styles from "./index.module.css";
 import Wrapper from "../../components/UI/wrapper";
-import Photo1 from "../../assets/images/foto1.png";
-import Photo2 from "../../assets/images/foto2.png";
-import Photo3 from "../../assets/images/foto3.png";
-import Photo4 from "../../assets/images/foto4.png";
-import Photo5 from "../../assets/images/foto5.png";
-import Photo6 from "../../assets/images/foto6.png";
-import Photo7 from "../../assets/images/foto7.png";
-import Photo8 from "../../assets/images/foto8.png";
-import Photo9 from "../../assets/images/foto9.png";
+import Photo1 from "../../assets/images/ishalphoto.png";
+import Photo2 from "../../assets/images/diyabet.webp";
+import Photo3 from "../../assets/images/astim.jpg";
+import Photo4 from "../../assets/images/kalp.jpg";
+import Photo5 from "../../assets/images/cilt.jpg";
+import Photo6 from "../../assets/images/covid.jpg";
+import Photo7 from "../../assets/images/iyne.jpg";
+import Photo8 from "../../assets/images/iltihap.webp";
+import Photo9 from "../../assets/images/idrar.jpg";
 import { useNavigate } from "react-router-dom";
 
 const Gallery = () => {
@@ -20,47 +20,47 @@ const Gallery = () => {
       {
         id: 1,
         images: `${Photo1}`,
-        info: "Outsourcing logistics talent in Ukraine guide",
+        info: "İshal Durumunda Neler Yapılmalı?",
       },
       {
         id: 2,
         images: `${Photo2}`,
-        info: "Improve operational efficiency with remote staffing from Eastern Europe",
+        info: "Diyabet (Şeker Hastalığı)",
       },
       {
         id: 3,
         images: `${Photo3}`,
-        info: "5 tips to handle time zone differences with offshore team",
+        info: "Astım",
       },
       {
         id: 4,
         images: `${Photo4}`,
-        info: "How back office support drives business growth",
+        info: "Kalp Yetmezliği",
       },
       {
         id: 5,
         images: `${Photo5}`,
-        info: "The 10 world’s largest companies that outsource to boost growth",
+        info: "Cilt Lekeleri ve Yorgunluk",
       },
       {
         id: 6,
         images: `${Photo6}`,
-        info: "From Zelh with care: how we support our teams during war",
+        info: "Covid-19 (PCR Testi)",
       },
       {
         id: 7,
         images: `${Photo7}`,
-        info: "What makes Ukraine stand out – why outsource to Ukraine?",
+        info: "Enjeksiyon (iğne)",
       },
       {
         id: 8,
         images: `${Photo8}`,
-        info: "5 Tips how to maintain corporate culture In remote teams",
+        info: "İleri Derece İltihaplanmalar",
       },
       {
         id: 9,
         images: `${Photo9}`,
-        info: "Recruiting trends of 2024 — what the future of recruitment",
+        info: "İdrar Yolu Problemleri ",
       },
     ],
     []

@@ -69,7 +69,7 @@
 }
 .background .control .line3 .icons {
   display: flex;
-  padding-top: 20px;
+  padding-top: 0;
   gap: 20px;
 }
 .background .control .line3 .icons .linkedin {
@@ -139,17 +139,12 @@
     font-size: 17px;
   }
   .background .control .line3 .icons {
-    display: flex;
-    justify-content: space-between;
     padding-top: 0;
   }
   .background .control .line3 .icons .linkedin {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border: 1px solid #9B9FAC;
-    width: 100%;
-    padding: 16px;
+    width: auto;
+    padding: 10px;
     border-radius: 50%;
   }
   .background .control .line3 .icons .linkedin svg {

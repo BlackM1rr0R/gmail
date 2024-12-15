@@ -14,8 +14,8 @@
 }
 .background .images .imageWrapper img {
   display: block;
-  width: 100%;
-  height: auto;
+  width: 1440px;
+  height: 70vh;
 }
 .background .images .imageWrapper::before {
   content: "";
@@ -42,8 +42,8 @@
   justify-content: center;
   align-items: center;
   background-color: #F1F1F2;
-  padding-top: 110px;
-  padding-bottom: 110px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .background .textTwoBack p {
   width: 700px;

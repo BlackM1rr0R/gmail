@@ -9,7 +9,7 @@
   position: relative;
   max-width: 1920px;
   margin: auto;
-  background-image: url("../../assets/images/homeback.png");
+  background-image: url("../../assets/images/health1.avif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -92,7 +92,8 @@
   align-items: center;
   gap: 20px;
 }
-.background .control .leftside .line2 h2 {
+.background .control .leftside .line2 a {
+  text-decoration: none;
   background-color: #6e4eef;
   padding: 18px 25px;
   color: white;

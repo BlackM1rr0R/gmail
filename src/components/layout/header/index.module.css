@@ -17,6 +17,19 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.background .control .images {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  gap: 5px;
+  align-items: center;
+}
+.background .control .images h2 {
+  display: none;
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
 .background .control .images img {
   width: 70px;
 }
@@ -26,6 +39,19 @@
 .background .control .services a {
   text-decoration: none;
   color: black;
+}
+.background .control .phoneHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.background .control .phoneHeader h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.background .control .phoneHeader h2 {
+  font-size: 18px;
 }
 .background .control .hamburger {
   display: flex;
@@ -72,13 +98,23 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
+  .background .control .images {
+    gap: 2px;
+  }
   .background .control .images img {
-    width: 70px;
+    width: 50px;
+  }
+  .background .control .images h2 {
+    display: block;
+    font-size: 16px;
   }
   .background .control .services {
     display: flex;
     align-items: center;
     gap: 30px;
+  }
+  .background .control .phoneHeader {
+    display: none;
   }
   .background .control .icons {
     display: flex;

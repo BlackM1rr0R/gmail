@@ -29,7 +29,7 @@ const Hero = () => {
             </h2>
           </div>
           <div className={styles.line2}>
-            <h2>0506282628</h2>
+          <a href="tel:+905434063544">0543 406 35 44</a>
             <div className={styles.icons}>
               <Link to={"/kifoz"}>Hizmetlerimiz</Link>
               <RightArrow />
