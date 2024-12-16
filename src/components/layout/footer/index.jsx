@@ -32,7 +32,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className={styles.line3}>
-            <h2>Baş Ofisimiz</h2>
+            <h2>Genel Merkez</h2>
             <ul>
               <li> Sakarya,Semerciler Mahallesi</li>
              <a href="tel:0552 518 96 54">0552 518 96 54</a>
