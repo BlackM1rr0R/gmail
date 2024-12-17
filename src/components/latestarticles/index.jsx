@@ -22,10 +22,10 @@ const LatestArticles = () => {
   const articles = useMemo(
     () => [
       {
-        id: 1,
-        link: "/details/1",
-        img: `${Photo1}`,
-        info: "İshal Durumunda Neler Yapılmalı?",
+        id: 7,
+        link: "/details/7",
+        img: `${Photo7}`,
+        info: "Enjeksiyon (iğne)",
       },
       {
         id: 2,
@@ -52,17 +52,18 @@ const LatestArticles = () => {
         info: "Cilt Lekeleri ve Yorgunluk",
       },
       {
+        id: 1,
+        link: "/details/1",
+        img: `${Photo1}`,
+        info: "İshal Durumunda Neler Yapılmalı?",
+      },
+      {
         id: 6,
         link: "/details/6",
         img: `${Photo6}`,
         info: "Covid-19 (PCR Testi)",
       },
-      {
-        id: 7,
-        link: "/details/7",
-        img: `${Photo7}`,
-        info: "Enjeksiyon (iğne)",
-      },
+    
       {
         id: 8,
         link: "/details/8",

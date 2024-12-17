@@ -16,16 +16,16 @@ const Hero = () => {
      
       <div className={styles.texts}>
         <>
-        <h2>Aradığınız Sağlık Sağlıklı Gelecek 🍀</h2>
+        <h2>Aradığınız Sağlık Sağlıklı Gelecek</h2>
      
-        <h2>Her anınızda yanınızdayız ✨</h2>
+        <h2>Her anınızda yanınızdayız</h2>
         </>
       </div>
       <div className={styles.control}>
         <div className={styles.leftside}>
           <div className={styles.line1}>
             <h2>
-            Alanında uzman sağlık ekibimizle ihtiyaç duy.
+            Alanında uzman sağlık ekibimizle rahat bir nefes alın.
             </h2>
           </div>
           <div className={styles.line2}>

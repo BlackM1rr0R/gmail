@@ -1,16 +1,29 @@
-import React from 'react';
-import './App.css';
-import { routeArr } from './routes';
-import Header from './components/layout/header';
-import Footer from './components/layout/footer';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import ScrollToTop from './components/scrolltop';
+import React from "react";
+import "./App.css";
+import { routeArr } from "./routes";
+import Header from "./components/layout/header";
+import Footer from "./components/layout/footer";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import ScrollToTop from "./components/scrolltop";
+import { AnimatePresence, motion } from "framer-motion";
+
 function App() {
   return (
     <BrowserRouter>
-    <ScrollToTop>
+      <ScrollToTop>
+        <AnimatedRoutes />
+      </ScrollToTop>
+    </BrowserRouter>
+  );
+}
 
-      <Routes>
+// Yeni component: Sayfa geçişlerini AnimatePresence ile sarmalıyoruz
+function AnimatedRoutes() {
+  const location = useLocation(); // Mevcut konumu takip et
+
+  return (
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
         {routeArr.map((item) => (
           <Route
             exact
@@ -19,15 +32,21 @@ function App() {
             element={
               <>
                 <Header />
-                <item.component />
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <item.component />
+                </motion.div>
                 <Footer />
-                </>
+              </>
             }
-            />
-            ))}
+          />
+        ))}
       </Routes>
-</ScrollToTop>
-    </BrowserRouter>
+    </AnimatePresence>
   );
 }
 

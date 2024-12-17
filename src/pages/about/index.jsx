@@ -3,7 +3,9 @@ import styles from "./index.module.css";
 import Yusif from "../../assets/images/360photo.png";
 import YusifDiplom from "../../assets/images/360photo1.png";
 import Wrapper from "../../components/UI/wrapper";
-import DoctorPhoto from '../../assets/images/doctorphoto.png'
+import DoctorPhoto from '../../assets/images/doctorpp1.avif'
+import DoctorPhoto1 from '../../assets/images/doctorpp2.avif'
+import DoctorPhoto2 from '../../assets/images/doctorpp3.jpg'
 import FillImage from '../../assets/images/360fill.png'
 const About = () => {
   return (
@@ -51,17 +53,14 @@ const About = () => {
             <div className={styles.controlWorkPerson}>
               <div className={styles.leftWork}>
                 <h1>ETERNAL Sağlık Yönetim Kurulumuz</h1>
-                <h2>We recognize that our strength lies in our people that
-                  bring unparalleled value to our operations. Our C-level
-                  team directs 360 Saglig hizmeti's strategic growth and supports other
-                  businesses in navigating the market challenges.</h2>
+                <h2>Gücümüzün, operasyonlarımıza benzersiz değer katan çalışanlarımızdan geldiğini biliyoruz. Lider ekibimiz, evde sağlık hizmetlerinin kalitesini ve erişilebilirliğini artırmak için stratejik adımlar atarken, hastalarımızın ihtiyaçlarına en iyi şekilde cevap vermeyi hedeflemektedir..</h2>
               </div>
               <div className={styles.rightWork}>
                 <div className={styles.controlRightWork}>
-                  <img src={DoctorPhoto} alt="" />
+                  <img src={DoctorPhoto1} alt="" />
                   <div className={styles.nameRight}>
-                    <h2>Yuriy Radchishin</h2>
-                    <h3>President / COO</h3>
+                    <h2>Dr. Hasan Arslan</h2>
+                    <h3>CEO</h3>
 
                   </div>
                 </div>
@@ -69,17 +68,17 @@ const About = () => {
                 <div className={styles.controlRightWork}>
                   <img src={DoctorPhoto} alt="" />
                   <div className={styles.nameRight}>
-                    <h2>Yuriy Radchishin</h2>
-                    <h3>President / COO</h3>
+                    <h2>Dr. Selin Aydın</h2>
+                    <h3>CEO Yardımcısı</h3>
 
                   </div>
                 </div>
                 <hr />
                 <div className={styles.controlRightWork}>
-                  <img src={DoctorPhoto} alt="" />
+                  <img src={DoctorPhoto2} alt="" />
                   <div className={styles.nameRight}>
-                    <h2>Yuriy Radchishin</h2>
-                    <h3>President / COO</h3>
+                    <h2>Dr. Fatma Koç</h2>
+                    <h3>Genel Yönetim</h3>
 
                   </div>
                 </div>
@@ -92,8 +91,8 @@ const About = () => {
           </div>
           <div className={styles.hospitalText}>
             <h2>Sağlık hizmetinizi ayağınıza getirmek için buradayız.</h2>
-            <p>Bitedavi’yi uygulama marketlerinden indirerek hizmetlerimizi incelemeye,
-              rezervasyon oluşturmaya ve tedavi süreçlerinize şimdi başlayabilirsiniz.</p>
+            <p>ETERNAL MEDLİNE GROUP.</p>
+            <p>Evinizde yalnız değilsin.</p>
           </div>
         </div>
       </Wrapper>
