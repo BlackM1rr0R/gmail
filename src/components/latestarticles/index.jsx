@@ -16,6 +16,13 @@ import Photo6 from "../../assets/images/covid.jpg";
 import Photo7 from "../../assets/images/iyne.jpg";
 import Photo8 from "../../assets/images/iltihap.webp";
 import Photo9 from "../../assets/images/idrar.jpg";
+import Photo10 from "../../assets/images/kanalma.webp";
+import Photo11 from "../../assets/images/yarabakimi.jpg";
+import Photo12 from "../../assets/images/solunum.webp";
+import Photo13 from "../../assets/images/tansiyon.jpg";
+import Photo14 from "../../assets/images/tedavi.jpg";
+
+
 const LatestArticles = () => {
 
 
@@ -75,7 +82,38 @@ const LatestArticles = () => {
         link: "/details/9",
         img: `${Photo9}`,
         info: "İdrar Yolu Problemleri ",
+      },{
+        id: 10,
+        link: "/details/10",
+        img: `${Photo10}`,
+        info: "Evde Kan Alma Hizmeti",
       },
+      {
+        id: 11,
+        link: "/details/11",
+        img: `${Photo11}`,
+        info: "Yara Bakımı ve Pansuman",
+      },
+      {
+        id: 12,
+        link: "/details/12",
+        img: `${Photo12}`,
+        info: "Solunum Terapisi",
+      },
+      {
+        id: 13,
+        link: "/details/13",
+        img: `${Photo13}`,
+        info: "Kalp ve Tansiyon Takibi",
+      },
+      {
+        id: 14,
+        link: "/details/14",
+        img: `${Photo14}`,
+        info: "Evde Fizik Tedavi Hizmetleri",
+      },
+ 
+      
     ],
     []
   );

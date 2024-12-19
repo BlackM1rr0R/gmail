@@ -10,6 +10,11 @@ import Covid from '../../assets/images/covid.jpg'
 import Iyne from '../../assets/images/iyne.jpg'
 import Iltihap from '../../assets/images/iltihap.webp'
 import Idrar from '../../assets/images/idrar.jpg'
+import KanAlma from '../../assets/images/kanalma.webp'
+import YaraBakimi from '../../assets/images/yarabakimi.jpg'
+import SolunumTerapisi from '../../assets/images/solunum.webp'
+import DiyabetKontrolu from '../../assets/images/diyabet.webp'
+import FizikTedavi from '../../assets/images/tedavi.jpg'
 import Wrapper from '../../components/UI/wrapper'
 import { GarantieIcon } from "../../icons";
 const Details = () => {
@@ -200,7 +205,106 @@ const Details = () => {
                 beshil: "İdrar Yolu Problemlerine Karşı Alınacak Önlemler",
                 aboutBeshil: "Düzenli su içmek, hijyen kurallarına uymak ve sık sık tuvalete gitmek, idrar yolu problemlerinin önlenmesine yardımcı olabilir.",
                 textBeshil: "İdrar yolu problemleri tedavi edilmediğinde böbrek enfeksiyonlarına ve daha ciddi sağlık sorunlarına yol açabilir."
-            }
+            },{
+                id: 10,
+                image: `${KanAlma}`,
+                text: "Evde Kan Alma Hizmeti",
+                textTwo: "Evde kan alma hizmeti, hastaların sağlık merkezine gitmeden kan testleri için örneklerin alınmasını sağlar.",
+                headerText: "Evde Kan Alma Hizmeti Nedir?",
+                aboutHeaderText: "Evde kan alma hizmeti, hasta konforunu artırmak için laboratuvar testlerine yönelik kan örneklerinin evde alınmasını içerir.",
+                typeHeaderText: "Evde Kan Alma Hizmetinin Avantajları:",
+                oneTypeHeader: "Zaman Tasarrufu",
+                aboutOneTypeHeader: "Hastaların sağlık merkezine gitmek için zaman kaybetmesini önler.",
+                twoTypeHeader: "Hasta Konforu",
+                aboutTwoTyperHeader: "Özellikle hareket kabiliyeti kısıtlı hastalar için büyük kolaylık sağlar.",
+                forKind: "Evde Kan Alma Hizmeti Nasıl Yapılır?",
+                aboutKind: "Kan alma işlemi, steril ekipmanlarla ev ortamında gerçekleştirilir ve örnekler laboratuvara gönderilir.",
+                whyIshal: "Evde Kan Alma Hizmetine Neden İhtiyaç Duyulur?",
+                aboutIshal: "Bu hizmet, sağlık merkezine gitmesi zor olan yaşlılar, engelliler veya kronik hastalar için idealdir.",
+                beshil: "Evde Kan Alma Hizmetinin Önemi",
+                aboutBeshil: "Bu hizmet, kan testleri için hızlı ve güvenli bir yöntem sunar, aynı zamanda enfeksiyon riskini de azaltır.",
+                textBeshil: "Evde kan alma hizmeti, düzenli sağlık kontrolleri için gerekli olan kan örneklerinin alınmasını kolaylaştırır."
+              },
+              {
+                id: 11,
+                image: `${YaraBakimi}`,
+                text: "Yara Bakımı ve Pansuman",
+                textTwo: "Yara bakımı ve pansuman, enfeksiyon riskini azaltmak ve iyileşme sürecini hızlandırmak için önemlidir.",
+                headerText: "Yara Bakımı ve Pansuman Nedir?",
+                aboutHeaderText: "Yara bakımı, ciltteki açık yaraların temizlenmesi, pansuman yapılması ve enfeksiyonların önlenmesi işlemlerini içerir.",
+                typeHeaderText: "Yara Bakımının Aşamaları:",
+                oneTypeHeader: "Yaranın Temizlenmesi",
+                aboutOneTypeHeader: "Yaranın steril malzemelerle temizlenmesi enfeksiyon riskini azaltır.",
+                twoTypeHeader: "Pansuman Yapılması",
+                aboutTwoTyperHeader: "Yaranın üzerinin kapatılması ve iyileşme sürecinin izlenmesi.",
+                forKind: "Yara Bakımı Nasıl Yapılır?",
+                aboutKind: "Yara, antiseptik malzemelerle temizlenir ve steril bandajlarla kapatılır.",
+                whyIshal: "Yara Bakımına Neden İhtiyaç Duyulur?",
+                aboutIshal: "Yara enfeksiyonlarının önlenmesi ve daha hızlı iyileşme sağlanması için gereklidir.",
+                beshil: "Yara Bakımında Dikkat Edilmesi Gerekenler",
+                aboutBeshil: "Steril koşullarda yapılması ve doktorun önerilerine uyulması önemlidir.",
+                textBeshil: "Yara bakımı ihmal edildiğinde, ciddi enfeksiyonlar veya uzun iyileşme süreçleri yaşanabilir."
+              },{
+                id: 12,
+                image: `${SolunumTerapisi}`,
+                text: "Solunum Terapisi",
+                textTwo: "Solunum terapisi, solunum yollarında yaşanan problemleri çözmek için uygulanan bir tedavi yöntemidir.",
+                headerText: "Solunum Terapisi Nedir?",
+                aboutHeaderText: "Solunum terapisi, akciğer fonksiyonlarını iyileştirmek ve nefes almayı kolaylaştırmak için uygulanan bir tedavi şeklidir.",
+                typeHeaderText: "Solunum Terapisinin Uygulama Alanları:",
+                oneTypeHeader: "KOAH Tedavisi",
+                aboutOneTypeHeader: "Kronik Obstrüktif Akciğer Hastalığı olan hastalarda nefes almayı kolaylaştırır.",
+                twoTypeHeader: "Astım Yönetimi",
+                aboutTwoTyperHeader: "Astım ataklarını kontrol altına almak için uygulanır.",
+                forKind: "Solunum Terapisi Nasıl Yapılır?",
+                aboutKind: "Terapide oksijen cihazları, inhalerler veya fizyoterapi yöntemleri kullanılır.",
+                whyIshal: "Solunum Terapisine Neden İhtiyaç Duyulur?",
+                aboutIshal: "Solunum yolları hastalıklarında nefes almayı kolaylaştırmak ve yaşam kalitesini artırmak için gereklidir.",
+                beshil: "Solunum Terapisi Sırasında Dikkat Edilmesi Gerekenler",
+                aboutBeshil: "Terapinin düzenli uygulanması ve uzman bir terapist eşliğinde yapılması önemlidir.",
+                textBeshil: "Solunum terapisi, uzun vadeli akciğer sağlığını destekler ve ciddi komplikasyonları önler."
+              },
+              {
+                id: 13,
+                image: `${DiyabetKontrolu}`,
+                text: "Diyabet Kontrolü ve Eğitim",
+                textTwo: "Diyabet kontrolü ve eğitim, kan şekeri seviyelerini yönetmek ve komplikasyonları önlemek için gereklidir.",
+                headerText: "Diyabet Kontrolü ve Eğitim Nedir?",
+                aboutHeaderText: "Diyabet kontrolü, sağlıklı bir yaşam tarzı sürdürmek ve diyabetin etkilerini azaltmak için yapılan uygulamaları içerir.",
+                typeHeaderText: "Diyabet Yönetiminin Temel Unsurları:",
+                oneTypeHeader: "Kan Şekeri Takibi",
+                aboutOneTypeHeader: "Kan şekeri seviyelerinin düzenli olarak ölçülmesi ve kaydedilmesi.",
+                twoTypeHeader: "Sağlıklı Beslenme",
+                aboutTwoTyperHeader: "Diyabet hastalarına uygun bir diyet programının takip edilmesi.",
+                forKind: "Diyabet Kontrolü Nasıl Sağlanır?",
+                aboutKind: "Kan şekeri takibi, düzenli egzersiz ve ilaç tedavisinin kombinasyonu ile yapılır.",
+                whyIshal: "Diyabet Kontrolü Neden Önemlidir?",
+                aboutIshal: "Diyabetin kontrol altına alınması, kalp, böbrek ve göz hastalıkları gibi komplikasyonları önler.",
+                beshil: "Diyabet Kontrolünde Dikkat Edilmesi Gerekenler",
+                aboutBeshil: "Kan şekeri takibi ve düzenli doktor kontrollerine gitmek hayati öneme sahiptir.",
+                textBeshil: "Diyabet kontrolü, hastaların uzun vadeli sağlıklarını korumak için gereklidir."
+              },
+              {
+                id: 14,
+                image: `${FizikTedavi}`,
+                text: "Evde Fizik Tedavi Hizmetleri",
+                textTwo: "Evde fizik tedavi hizmetleri, hareket kabiliyeti kısıtlı hastaların rehabilitasyonu için büyük kolaylık sağlar.",
+                headerText: "Evde Fizik Tedavi Hizmetleri Nedir?",
+                aboutHeaderText: "Evde fizik tedavi, hastaların fiziksel rahatsızlıklarını tedavi etmek için ev ortamında uygulanan egzersiz ve terapi programlarını içerir.",
+                typeHeaderText: "Evde Fizik Tedavinin Avantajları:",
+                oneTypeHeader: "Konforlu Tedavi Ortamı",
+                aboutOneTypeHeader: "Hastaların kendi evlerinde tedavi olmalarını sağlar.",
+                twoTypeHeader: "Bireysel Tedavi Planı",
+                aboutTwoTyperHeader: "Hastaların ihtiyaçlarına uygun olarak hazırlanan bireysel tedavi programları uygulanır.",
+                forKind: "Evde Fizik Tedavi Nasıl Yapılır?",
+                aboutKind: "Fizyoterapist rehberliğinde egzersiz programları ve cihaz destekli tedaviler uygulanır.",
+                whyIshal: "Evde Fizik Tedavi Neden Gerekli?",
+                aboutIshal: "Hareket kabiliyeti sınırlı olan hastaların bağımsızlığını artırmak ve yaşam kalitesini iyileştirmek için önemlidir.",
+                beshil: "Evde Fizik Tedavide Dikkat Edilmesi Gerekenler",
+                aboutBeshil: "Egzersizlerin doğru şekilde yapılması ve terapist önerilerine uyulması önemlidir.",
+                textBeshil: "Evde fizik tedavi, hastaların iyileşme sürecini hızlandırır ve hareketliliklerini artırır."
+              },
+              
             
             
 

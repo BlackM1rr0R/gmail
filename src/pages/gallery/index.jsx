@@ -10,6 +10,11 @@ import Photo6 from "../../assets/images/covid.jpg";
 import Photo7 from "../../assets/images/iyne.jpg";
 import Photo8 from "../../assets/images/iltihap.webp";
 import Photo9 from "../../assets/images/idrar.jpg";
+import Photo10 from "../../assets/images/kanalma.webp";
+import Photo11 from "../../assets/images/yarabakimi.jpg";
+import Photo12 from "../../assets/images/solunum.webp";
+import Photo13 from "../../assets/images/tansiyon.jpg";
+import Photo14 from "../../assets/images/tedavi.jpg";
 import { useNavigate } from "react-router-dom";
 
 const Gallery = () => {
@@ -61,6 +66,36 @@ const Gallery = () => {
         id: 9,
         images: `${Photo9}`,
         info: "İdrar Yolu Problemleri ",
+      },
+      {
+        id: 10,
+  
+        images: `${Photo10}`,
+        info: "Evde Kan Alma Hizmeti",
+      },
+      {
+        id: 11,
+   
+        images: `${Photo11}`,
+        info: "Yara Bakımı ve Pansuman",
+      },
+      {
+        id: 12,
+      
+        images: `${Photo12}`,
+        info: "Solunum Terapisi",
+      },
+      {
+        id: 13,
+
+        images: `${Photo13}`,
+        info: "Kalp ve Tansiyon Takibi",
+      },
+      {
+        id: 14,
+   
+        images: `${Photo14}`,
+        info: "Evde Fizik Tedavi Hizmetleri",
       },
     ],
     []
