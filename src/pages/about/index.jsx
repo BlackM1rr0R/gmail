@@ -7,9 +7,22 @@ import DoctorPhoto from '../../assets/images/doctorpp1.avif'
 import DoctorPhoto1 from '../../assets/images/doctorpp2.avif'
 import DoctorPhoto2 from '../../assets/images/doctorpp3.jpg'
 import FillImage from '../../assets/images/360fill.png'
+import { Helmet } from "react-helmet-async";
 const About = () => {
   return (
     <>
+     <Helmet>
+        <title>Hakkımızda | ETERNAL Sağlık Hizmetleri</title>
+        <meta
+          name="description"
+          content="ETERNAL Sağlık Hizmetleri hakkında daha fazla bilgi edinin. Sağlık sektöründe lider konumdayız."
+        />
+        <meta
+          name="keywords"
+          content="Hakkımızda, ETERNAL Sağlık Hizmetleri, Sağlık, Klinik, Sağlık Hizmetleri"
+        />
+        <link rel="canonical" href="https://www.eternal.com/hakkimizda" />
+      </Helmet>
       <Wrapper>
         <div className={styles.aboutText}>
           <h2>Hakkımızda</h2>

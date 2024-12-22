@@ -16,6 +16,7 @@ import Photo12 from "../../assets/images/solunum.webp";
 import Photo13 from "../../assets/images/tansiyon.jpg";
 import Photo14 from "../../assets/images/tedavi.jpg";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const Gallery = () => {
   const navigate = useNavigate();
@@ -106,6 +107,19 @@ const Gallery = () => {
   };
 
   return (
+    <>
+    <Helmet>
+    <title>Hastalıklar | ETERNAL Sağlık Hizmetleri</title>
+    <meta
+      name="description"
+      content="ETERNAL Sağlık Hizmetleri, çeşitli hastalıklar hakkında bilgi sağlar ve tedavi seçenekleri sunar."
+    />
+    <meta
+      name="keywords"
+      content="Hastalıklar, Sağlık, ETERNAL, Tedavi, Klinik, Hastalık Tedavisi"
+    />
+    <link rel="canonical" href="https://www.eternal.com/hastaliklar" />
+  </Helmet>
     <div className={styles.background}>
       <Wrapper>
         <div className={styles.headers}>
@@ -126,6 +140,8 @@ const Gallery = () => {
         </div>
       </Wrapper>
     </div>
+    </>
+
   );
 };
 

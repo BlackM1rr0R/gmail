@@ -4,6 +4,7 @@ import Wrapper from "../../components/UI/wrapper";
 import YusifPhoto from "../../assets/images/contact.png";
 import { ClockIcon, LocationIcon, PhoneIcon } from "../../icons";
 import { sendMessage } from "../../api";
+import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
   const [firstname, setFirstName] = useState("");
@@ -45,6 +46,19 @@ const Contact = () => {
   };
 
   return (
+    <>
+    <Helmet>
+    <title>İletişim | ETERNAL Sağlık Hizmetleri</title>
+    <meta
+      name="description"
+      content="ETERNAL Sağlık Hizmetleri ile iletişime geçmek için iletişim bilgilerimizi ve formumuzu kullanabilirsiniz."
+    />
+    <meta
+      name="keywords"
+      content="İletişim, ETERNAL Sağlık Hizmetleri, İletişim Formu, Sağlık Hizmetleri, Bize Ulaşın"
+    />
+    <link rel="canonical" href="https://www.eternal.com/iletisim" />
+  </Helmet>
     <div className={styles.background}>
       <Wrapper>
         <div className={styles.headerControl}>
@@ -148,6 +162,8 @@ const Contact = () => {
         </div>
       </Wrapper>
     </div>
+    </>
+
   );
 };
 

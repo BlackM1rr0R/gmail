@@ -7,9 +7,12 @@ import ScrollTrigger from "react-scroll-trigger";
 import CountUp from "react-countup";
 import Wrapper from "../UI/wrapper";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 const Hero = () => {
   const [counterOn, setCounterOn] = useState(false);
   return (
+    <>
+
     <div className={styles.background}>
       <Wrapper>
 
@@ -75,6 +78,8 @@ const Hero = () => {
       </Wrapper>
 
     </div>
+    </>
+
   );
 };
 

@@ -16,6 +16,7 @@ import {
   VioletArrow,
   VioletArrowTrue,
 } from "../../icons";
+import { Helmet } from "react-helmet-async";
 const initialState = {
   green: true,
   orange: false,
@@ -36,7 +37,20 @@ function reducer(state, action) {
 }
 const Kifoz = () => {
   const [state, setState] = useReducer(reducer, initialState);
-  return (
+  return (<>
+        <Helmet>
+        <title>Hizmetlerimiz | ETERNAL Sağlık Hizmetleri</title>
+        <meta
+          name="description"
+          content="ETERNAL Sağlık Hizmetleri, kaliteli sağlık hizmetleriyle hastalarına en iyi çözümleri sunmaktadır."
+        />
+        <meta
+          name="keywords"
+          content="Hizmetler, Sağlık Hizmetleri, ETERNAL, Klinik, Sağlık Çözümleri"
+        />
+        <link rel="canonical" href="https://www.eternal.com/hizmetlerimiz" />
+      </Helmet>
+  
     <div className={styles.background}>
       <Wrapper>
         <div className={styles.control}>
@@ -360,6 +374,7 @@ const Kifoz = () => {
         </div>
       </Wrapper>
     </div>
+    </>
   );
 };
 

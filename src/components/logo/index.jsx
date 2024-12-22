@@ -14,7 +14,7 @@ const Logo = () => {
   return (
     <div className={styles.background}>
       <div className={styles.control}>
-      <script defer async src='https://cdn.trustindex.io/loader.js?8b1fe5d3858c613e3256749e328'></script>
+      <script defer async src='https://cdn.trustindex.io/loader.js?e64faa6387ab971631669ba57a4'></script>
       </div>
     </div>
   );

@@ -11,10 +11,23 @@ import ChatApp from "../../components/chat";
 import Questions from "../../components/questions";
 import SwiperComp from "../../components/swipercomp";
 import LatestArticles from "../../components/latestarticles";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   return (
     <>
+             <Helmet>
+            <title>Sakarya Sağlık Hizmetleri</title>
+            <meta
+              name="description"
+              content="ETERNAL Sağlık Hizmetleri ile kolayca randevunuzu ayarlayın ve en iyi sağlık hizmetlerini deneyimleyin."
+            />
+            <meta
+              name="keywords"
+              content="Randevu, Sağlık Hizmetleri, ETERNAL, Online Randevu, Klinik"
+            />
+           
+          </Helmet>
         <Hero />
       <Wrapper>
         <Main />

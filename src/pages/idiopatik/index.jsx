@@ -3,11 +3,26 @@ import styles from "./index.module.css";
 import Wrapper from "../../components/UI/wrapper";
 import DoctorProfile from '../../assets/images/doctor12.jpg'
 import { AboutIcon, DoctorIcon, DokumentIcon, KlinikIcon, PhoneCallIcon, SkillsIcon } from "../../icons";
+import { Helmet } from "react-helmet-async";
 
 
 const Idiopatik = () => {
 
   return (
+    <>
+         <Helmet>
+        <title>Randevu Ayarlayın | ETERNAL Sağlık Hizmetleri</title>
+        <meta
+          name="description"
+          content="ETERNAL Sağlık Hizmetleri ile kolayca randevunuzu ayarlayın ve en iyi sağlık hizmetlerini deneyimleyin."
+        />
+        <meta
+          name="keywords"
+          content="Randevu, Sağlık Hizmetleri, ETERNAL, Online Randevu, Klinik"
+        />
+       
+      </Helmet>
+   
     <div className={styles.background}>
       <Wrapper>
         <div className={styles.positionOverlay}>
@@ -92,6 +107,7 @@ const Idiopatik = () => {
       </Wrapper>
 
     </div>
+    </>
   );
 };
 

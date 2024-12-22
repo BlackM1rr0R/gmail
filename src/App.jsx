@@ -6,14 +6,18 @@ import Footer from "./components/layout/footer";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import ScrollToTop from "./components/scrolltop";
 import { AnimatePresence, motion } from "framer-motion";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 function App() {
   return (
+    <HelmetProvider>
+
     <BrowserRouter>
       <ScrollToTop>
         <AnimatedRoutes />
       </ScrollToTop>
     </BrowserRouter>
+    </HelmetProvider>
   );
 }
 
@@ -22,6 +26,8 @@ function AnimatedRoutes() {
   const location = useLocation(); // Mevcut konumu takip et
 
   return (
+    <>
+
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
         {routeArr.map((item) => (
@@ -47,6 +53,8 @@ function AnimatedRoutes() {
         ))}
       </Routes>
     </AnimatePresence>
+    </>
+
   );
 }
 
