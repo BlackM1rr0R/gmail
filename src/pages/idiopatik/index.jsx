@@ -17,7 +17,7 @@ const Idiopatik = () => {
               <DoctorIcon />
               <h2>Doktorumuz sizlere hizmet vermektedir</h2>
               <p>Siz sadece ara düymesine tıklayarak randevu ala bilirsiniz.</p>
-              <a href="tel:+901234567890"><PhoneCallIcon />Arayin bizi</a>
+              <a href="tel:+901234567890"><PhoneCallIcon />Bizi Arayın</a>
 
             </div>
           </div>

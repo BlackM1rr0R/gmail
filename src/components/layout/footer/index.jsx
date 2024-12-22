@@ -17,7 +17,7 @@ const Footer = () => {
             <h2>ETERNAL
             Sağlık Hizmetleri</h2>
             <p>
-              Size hizmet göstermekden onur duyarız!
+              Siz neredeyseniz biz oradayız.
             </p>
           </div>
           <div className={styles.line2}>
