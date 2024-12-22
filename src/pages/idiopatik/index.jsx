@@ -23,7 +23,7 @@ const Idiopatik = () => {
           </div>
         </div>
         <div className={styles.fixedCall}>
-          <a href="tel:0552 518 96 54"><PhoneCallIcon />Arayin bizi</a>
+          <a href="tel:0552 518 96 54"><PhoneCallIcon />Bizi Arayın</a>
         </div>
       </Wrapper>
       <div className={styles.control}>
