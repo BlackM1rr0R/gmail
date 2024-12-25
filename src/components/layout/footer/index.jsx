@@ -15,7 +15,7 @@ const Footer = () => {
           <div className={styles.line1}>
             <img src={Logo} alt="" />
             <h2>ETERNAL
-            Sağlık Hizmetleri</h2>
+              Sağlık Hizmetleri</h2>
             <p>
               Siz neredeyseniz biz oradayız.
             </p>
@@ -31,12 +31,23 @@ const Footer = () => {
               <Link to={"/contact"}>İletişim</Link>
             </ul>
           </div>
+          <div className={styles.line2}>
+            <h2>Hizmetler</h2>
+            <ul>
+              <Link >IV Serumlar</Link>
+              <Link >IV Terapiler</Link>
+              <Link >Laboratuvar Paketleri</Link>
+              <Link >Sağlıklı Yaşam</Link>
+              <Link >SSS</Link>
+
+            </ul>
+          </div>
           <div className={styles.line3}>
             <h2>Genel Merkez</h2>
             <ul>
               <li> Sakarya,Semerciler Mahallesi</li>
-             <a href="tel:0552 518 96 54">0552 518 96 54</a>
-              
+              <a href="tel:0552 518 96 54">0552 518 96 54</a>
+
             </ul>
             <div className={styles.icons}>
               <Link to={"https://www.instagram.com/sakaryaevdesaglik.esh/"} className={styles.linkedin}>
