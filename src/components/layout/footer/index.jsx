@@ -34,11 +34,11 @@ const Footer = () => {
           <div className={styles.line2}>
             <h2>Hizmetler</h2>
             <ul>
-              <Link >IV Serumlar</Link>
-              <Link >IV Terapiler</Link>
-              <Link >Laboratuvar Paketleri</Link>
-              <Link >Sağlıklı Yaşam</Link>
-              <Link >SSS</Link>
+              <Link to={"/details/15"}>IV Serumlar</Link>
+              <Link to={"/details/16"}>IV Terapiler</Link>
+              <Link to={"/details/17"}>Laboratuvar Paketleri</Link>
+              <Link to={"/details/18"}>Sağlıklı Yaşam</Link>
+              <Link to={"/details/19"}>SSS</Link>
 
             </ul>
           </div>

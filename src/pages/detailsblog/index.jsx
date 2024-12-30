@@ -15,6 +15,11 @@ import YaraBakimi from '../../assets/images/yarabakimi.jpg'
 import SolunumTerapisi from '../../assets/images/solunum.webp'
 import DiyabetKontrolu from '../../assets/images/diyabet.webp'
 import FizikTedavi from '../../assets/images/tedavi.jpg'
+import IVSerum from '../../assets/images/serum.webp'
+import IVTherapyPhoto from '../../assets/images/terapy.jpg'
+import LabPackagesPhoto from '../../assets/images/lapda.jfif'
+import HealthyLivingPhoto from '../../assets/images/healty.jpg'
+import FAQPhoto from '../../assets/images/faq.jpg'
 import Wrapper from '../../components/UI/wrapper'
 import { GarantieIcon } from "../../icons";
 const Details = () => {
@@ -205,7 +210,7 @@ const Details = () => {
                 beshil: "İdrar Yolu Problemlerine Karşı Alınacak Önlemler",
                 aboutBeshil: "Düzenli su içmek, hijyen kurallarına uymak ve sık sık tuvalete gitmek, idrar yolu problemlerinin önlenmesine yardımcı olabilir.",
                 textBeshil: "İdrar yolu problemleri tedavi edilmediğinde böbrek enfeksiyonlarına ve daha ciddi sağlık sorunlarına yol açabilir."
-            },{
+            }, {
                 id: 10,
                 image: `${KanAlma}`,
                 text: "Evde Kan Alma Hizmeti",
@@ -224,8 +229,8 @@ const Details = () => {
                 beshil: "Evde Kan Alma Hizmetinin Önemi",
                 aboutBeshil: "Bu hizmet, kan testleri için hızlı ve güvenli bir yöntem sunar, aynı zamanda enfeksiyon riskini de azaltır.",
                 textBeshil: "Evde kan alma hizmeti, düzenli sağlık kontrolleri için gerekli olan kan örneklerinin alınmasını kolaylaştırır."
-              },
-              {
+            },
+            {
                 id: 11,
                 image: `${YaraBakimi}`,
                 text: "Yara Bakımı ve Pansuman",
@@ -244,7 +249,7 @@ const Details = () => {
                 beshil: "Yara Bakımında Dikkat Edilmesi Gerekenler",
                 aboutBeshil: "Steril koşullarda yapılması ve doktorun önerilerine uyulması önemlidir.",
                 textBeshil: "Yara bakımı ihmal edildiğinde, ciddi enfeksiyonlar veya uzun iyileşme süreçleri yaşanabilir."
-              },{
+            }, {
                 id: 12,
                 image: `${SolunumTerapisi}`,
                 text: "Solunum Terapisi",
@@ -263,8 +268,8 @@ const Details = () => {
                 beshil: "Solunum Terapisi Sırasında Dikkat Edilmesi Gerekenler",
                 aboutBeshil: "Terapinin düzenli uygulanması ve uzman bir terapist eşliğinde yapılması önemlidir.",
                 textBeshil: "Solunum terapisi, uzun vadeli akciğer sağlığını destekler ve ciddi komplikasyonları önler."
-              },
-              {
+            },
+            {
                 id: 13,
                 image: `${DiyabetKontrolu}`,
                 text: "Diyabet Kontrolü ve Eğitim",
@@ -283,8 +288,8 @@ const Details = () => {
                 beshil: "Diyabet Kontrolünde Dikkat Edilmesi Gerekenler",
                 aboutBeshil: "Kan şekeri takibi ve düzenli doktor kontrollerine gitmek hayati öneme sahiptir.",
                 textBeshil: "Diyabet kontrolü, hastaların uzun vadeli sağlıklarını korumak için gereklidir."
-              },
-              {
+            },
+            {
                 id: 14,
                 image: `${FizikTedavi}`,
                 text: "Evde Fizik Tedavi Hizmetleri",
@@ -303,10 +308,120 @@ const Details = () => {
                 beshil: "Evde Fizik Tedavide Dikkat Edilmesi Gerekenler",
                 aboutBeshil: "Egzersizlerin doğru şekilde yapılması ve terapist önerilerine uyulması önemlidir.",
                 textBeshil: "Evde fizik tedavi, hastaların iyileşme sürecini hızlandırır ve hareketliliklerini artırır."
-              },
-              
-            
-            
+            },
+            {
+                id: 15,
+                image: `${IVSerum}`,
+                text: "IV Serumlar Hakkında Bilmeniz Gerekenler",
+                textTwo: "IV serumlar, vücuda doğrudan damar yoluyla sıvı, elektrolit, ilaç veya besin maddeleri verilmesini sağlayan tıbbi bir uygulamadır. Bu yöntem, özellikle hastaların hızlı bir şekilde tedavi edilmesi gerektiğinde veya ağız yoluyla sıvı alımının mümkün olmadığı durumlarda kullanılır.",
+                headerText: "IV Serum Nedir? IV Serum Türleri Nelerdir?",
+                aboutHeaderText: "IV serumlar, intravenöz (damar içi) yolla verilen sıvı tedavileridir. Bu tedavi yöntemi, vücudun sıvı ve elektrolit dengesini sağlamak, ilaçları doğrudan kana vermek veya besin maddelerini hızlı bir şekilde vücuda almak için kullanılır.",
+                typeHeaderText: "IV Serum Türleri:",
+                oneTypeHeader: "İzotonik Serumlar:",
+                aboutOneTypeHeader: "Vücudun sıvı ve elektrolit dengesini korumak için kullanılan serum türleridir. Örneğin, %0.9 sodyum klorür (tuzlu su) çözeltisi.",
+                twoTypeHeader: "Hipotonik Serumlar:",
+                aboutTwoTyperHeader: "Hücrelerin içine sıvı çekmek için kullanılan serum türleridir. Örneğin, %0.45 sodyum klorür çözeltisi.",
+                threeTypeHeader: "Hipertonik Serumlar:",
+                aboutThreeTypeHeader: "Hücrelerden sıvı çekmek için kullanılan serum türleridir. Örneğin, %3 sodyum klorür çözeltisi.",
+                forKind: "IV Serumların Kullanım Alanları",
+                aboutKind: "IV serumlar, dehidrasyon, elektrolit dengesizlikleri, ilaç tedavisi, beslenme desteği ve acil durumlarda kullanılır. Ayrıca, cerrahi operasyonlar sırasında ve sonrasında hastaların sıvı ihtiyaçlarını karşılamak için de yaygın olarak kullanılır.",
+                whyIshal: "IV Serumların Avantajları",
+                aboutIshal: "IV serumlar, hızlı ve etkili bir tedavi yöntemi sunar. Vücuda doğrudan damar yoluyla sıvı ve ilaç verilmesi, tedavi sürecini hızlandırır ve hastaların daha hızlı iyileşmesine yardımcı olur.",
+                beshil: "IV Serumların Riskleri ve Yan Etkileri",
+                aboutBeshil: "IV serum tedavisi sırasında enfeksiyon riski, damar içi pıhtılaşma, alerjik reaksiyonlar ve sıvı dengesizlikleri gibi yan etkiler görülebilir. Bu nedenle, IV serum tedavisi uzman sağlık personeli tarafından dikkatle uygulanmalıdır.",
+                textBeshil: "IV serum tedavisi, doğru uygulandığında hastaların sağlık durumunu hızla iyileştirebilir ve tedavi sürecini destekleyebilir."
+            },
+            {
+                id: 16,
+                image: `${IVTherapyPhoto}`,
+                text: "IV Terapiler Hakkında Bilmeniz Gerekenler",
+                textTwo: "IV terapiler, vücuda doğrudan damar yoluyla sıvı, vitamin, mineral ve diğer besin maddelerinin verilmesini sağlayan bir tedavi yöntemidir. Bu tedavi, özellikle hızlı bir şekilde besin maddelerinin alınması gerektiğinde veya ağız yoluyla alımın mümkün olmadığı durumlarda kullanılır.",
+                headerText: "IV Terapi Nedir? IV Terapi Türleri Nelerdir?",
+                aboutHeaderText: "IV terapiler, intravenöz (damar içi) yolla verilen tedavilerdir. Bu tedavi yöntemi, vücudun ihtiyaç duyduğu sıvı, vitamin ve mineralleri hızlı bir şekilde almasını sağlar.",
+                typeHeaderText: "IV Terapi Türleri:",
+                oneTypeHeader: "Vitamin ve Mineral Terapileri:",
+                aboutOneTypeHeader: "Vücudun ihtiyaç duyduğu vitamin ve mineralleri hızlı bir şekilde sağlamak için kullanılır.",
+                twoTypeHeader: "Hidrasyon Terapileri:",
+                aboutTwoTyperHeader: "Dehidrasyon durumlarında vücudun sıvı dengesini sağlamak için kullanılır.",
+                threeTypeHeader: "Detoks Terapileri:",
+                aboutThreeTypeHeader: "Vücuttan toksinlerin atılmasına yardımcı olmak için kullanılır.",
+                forKind: "IV Terapilerin Kullanım Alanları",
+                aboutKind: "IV terapiler, dehidrasyon, vitamin ve mineral eksiklikleri, detoksifikasyon ve genel sağlık desteği için kullanılır. Ayrıca, sporcuların performansını artırmak ve iyileşme sürecini hızlandırmak için de tercih edilir.",
+                whyIshal: "IV Terapilerin Avantajları",
+                aboutIshal: "IV terapiler, hızlı ve etkili bir tedavi yöntemi sunar. Vücuda doğrudan damar yoluyla besin maddeleri verilmesi, tedavi sürecini hızlandırır ve hastaların daha hızlı iyileşmesine yardımcı olur.",
+                beshil: "IV Terapilerin Riskleri ve Yan Etkileri",
+                aboutBeshil: "IV terapi sırasında enfeksiyon riski, damar içi pıhtılaşma, alerjik reaksiyonlar ve sıvı dengesizlikleri gibi yan etkiler görülebilir. Bu nedenle, IV terapi uzman sağlık personeli tarafından dikkatle uygulanmalıdır.",
+                textBeshil: "IV terapi, doğru uygulandığında hastaların sağlık durumunu hızla iyileştirebilir ve tedavi sürecini destekleyebilir."
+            },
+            {
+                id: 17,
+                image: `${LabPackagesPhoto}`,
+                text: "Laboratuvar Paketleri Hakkında Bilmeniz Gerekenler",
+                textTwo: "Laboratuvar paketleri, çeşitli sağlık taramaları ve testleri içeren hizmetlerdir. Bu paketler, genel sağlık durumunu değerlendirmek, hastalıkları erken teşhis etmek ve tedavi sürecini izlemek için kullanılır.",
+                headerText: "Laboratuvar Paketleri Nedir? Laboratuvar Paket Türleri Nelerdir?",
+                aboutHeaderText: "Laboratuvar paketleri, kan testleri, idrar testleri, hormon testleri ve diğer sağlık taramalarını içeren hizmetlerdir. Bu paketler, bireylerin sağlık durumunu kapsamlı bir şekilde değerlendirmek için kullanılır.",
+                typeHeaderText: "Laboratuvar Paket Türleri:",
+                oneTypeHeader: "Genel Sağlık Taraması:",
+                aboutOneTypeHeader: "Genel sağlık durumunu değerlendirmek için yapılan kapsamlı testlerdir.",
+                twoTypeHeader: "Hormon Testleri:",
+                aboutTwoTyperHeader: "Vücuttaki hormon seviyelerini ölçmek için yapılan testlerdir.",
+                threeTypeHeader: "Besin Duyarlılık Testleri:",
+                aboutThreeTypeHeader: "Vücudun belirli besinlere karşı gösterdiği reaksiyonları değerlendirmek için yapılan testlerdir.",
+                forKind: "Laboratuvar Paketlerinin Kullanım Alanları",
+                aboutKind: "Laboratuvar paketleri, genel sağlık taramaları, hastalıkların erken teşhisi, tedavi sürecinin izlenmesi ve besin duyarlılıklarının belirlenmesi için kullanılır.",
+                whyIshal: "Laboratuvar Paketlerinin Avantajları",
+                aboutIshal: "Laboratuvar paketleri, kapsamlı sağlık değerlendirmesi sağlar ve hastalıkların erken teşhis edilmesine yardımcı olur. Bu sayede, tedavi süreci daha etkili bir şekilde yönetilebilir.",
+                beshil: "Laboratuvar Paketlerinin Riskleri ve Yan Etkileri",
+                aboutBeshil: "Laboratuvar testleri sırasında minimal riskler bulunur. Kan alma işlemi sırasında hafif ağrı, morarma veya enfeksiyon riski olabilir. Bu nedenle, testler uzman sağlık personeli tarafından yapılmalıdır.",
+                textBeshil: "Laboratuvar paketleri, doğru uygulandığında bireylerin sağlık durumunu kapsamlı bir şekilde değerlendirebilir ve hastalıkların erken teşhis edilmesine yardımcı olabilir."
+            },
+            {
+                id: 18,
+                image: `${HealthyLivingPhoto}`,
+                text: "Sağlıklı Yaşam Hakkında Bilmeniz Gerekenler",
+                textTwo: "Sağlıklı yaşam, dengeli beslenme, düzenli egzersiz, yeterli uyku ve stres yönetimi gibi faktörleri içeren bir yaşam tarzıdır. Bu yaşam tarzı, bireylerin fiziksel ve zihinsel sağlığını korumak ve iyileştirmek için önemlidir.",
+                headerText: "Sağlıklı Yaşam Nedir? Sağlıklı Yaşamın Önemi Nedir?",
+                aboutHeaderText: "Sağlıklı yaşam, bireylerin fiziksel ve zihinsel sağlığını korumak ve iyileştirmek için benimsemeleri gereken bir yaşam tarzıdır. Bu yaşam tarzı, dengeli beslenme, düzenli egzersiz, yeterli uyku ve stres yönetimi gibi faktörleri içerir.",
+                typeHeaderText: "Sağlıklı Yaşamın Temel Unsurları:",
+                oneTypeHeader: "Dengeli Beslenme:",
+                aboutOneTypeHeader: "Vücudun ihtiyaç duyduğu tüm besin maddelerini yeterli ve dengeli bir şekilde almak önemlidir.",
+                twoTypeHeader: "Düzenli Egzersiz:",
+                aboutTwoTyperHeader: "Fiziksel aktivite, vücudun sağlıklı kalması ve hastalıklardan korunması için gereklidir.",
+                threeTypeHeader: "Yeterli Uyku:",
+                aboutThreeTypeHeader: "Vücudun dinlenmesi ve yenilenmesi için yeterli uyku almak önemlidir.",
+                forKind: "Sağlıklı Yaşamın Faydaları",
+                aboutKind: "Sağlıklı yaşam, bireylerin fiziksel ve zihinsel sağlığını korur, hastalıklardan korunmalarına yardımcı olur ve yaşam kalitesini artırır.",
+                whyIshal: "Sağlıklı Yaşamın Avantajları",
+                aboutIshal: "Sağlıklı yaşam, bireylerin daha enerjik, mutlu ve üretken olmalarını sağlar. Ayrıca, kronik hastalıkların önlenmesine ve genel sağlık durumunun iyileştirilmesine yardımcı olur.",
+                beshil: "Sağlıklı Yaşamın Zorlukları",
+                aboutBeshil: "Sağlıklı yaşam tarzını benimsemek, disiplin ve kararlılık gerektirir. Yoğun iş temposu, stres ve diğer faktörler, sağlıklı yaşam alışkanlıklarını sürdürmeyi zorlaştırabilir.",
+                textBeshil: "Sağlıklı yaşam, bireylerin uzun vadede daha sağlıklı ve mutlu bir yaşam sürmelerine yardımcı olur."
+            },
+            {
+                id: 19,
+                image: `${FAQPhoto}`,
+                text: "Sıkça Sorulan Sorular (SSS)",
+                textTwo: "Sağlık hizmetlerimiz ve tedavi yöntemlerimiz hakkında sıkça sorulan soruların yanıtlarını burada bulabilirsiniz.",
+                headerText: "Sıkça Sorulan Sorular (SSS)",
+                aboutHeaderText: "Sağlık hizmetlerimiz ve tedavi yöntemlerimiz hakkında sıkça sorulan soruların yanıtlarını burada bulabilirsiniz.",
+                typeHeaderText: "SSS:",
+                oneTypeHeader: "IV Terapiler Hakkında SSS:",
+                aboutOneTypeHeader: "IV terapiler nedir? IV terapiler nasıl uygulanır? IV terapilerin yan etkileri nelerdir?",
+                twoTypeHeader: "Laboratuvar Paketleri Hakkında SSS:",
+                aboutTwoTyperHeader: "Laboratuvar paketleri nedir? Laboratuvar paketleri nasıl kullanılır? Laboratuvar paketlerinin avantajları nelerdir?",
+                threeTypeHeader: "Sağlıklı Yaşam Hakkında SSS:",
+                aboutThreeTypeHeader: "Sağlıklı yaşam nedir? Sağlıklı yaşamın temel unsurları nelerdir? Sağlıklı yaşamın faydaları nelerdir?",
+                forKind: "Diğer SSS",
+                aboutKind: "Diğer sağlık hizmetlerimiz ve tedavi yöntemlerimiz hakkında sıkça sorulan soruların yanıtlarını burada bulabilirsiniz.",
+                whyIshal: "SSS'nin Avantajları",
+                aboutIshal: "SSS, hastalarımızın sağlık hizmetlerimiz ve tedavi yöntemlerimiz hakkında bilgi sahibi olmalarını sağlar. Bu sayede, hastalarımız daha bilinçli kararlar verebilir ve tedavi sürecini daha iyi anlayabilir.",
+                beshil: "SSS'nin Riskleri ve Yan Etkileri",
+                aboutBeshil: "SSS'nin herhangi bir riski veya yan etkisi bulunmamaktadır. Ancak, hastalarımızın doğru bilgiye ulaşabilmesi için SSS'nin güncel ve doğru bilgiler içermesi önemlidir.",
+                textBeshil: "SSS, hastalarımızın sağlık hizmetlerimiz ve tedavi yöntemlerimiz hakkında bilgi sahibi olmalarını sağlar ve tedavi sürecini daha iyi anlamalarına yardımcı olur."
+            }
+
+
+
 
         ],
         []
