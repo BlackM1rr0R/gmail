@@ -15,6 +15,11 @@ import Photo11 from "../../assets/images/yarabakimi.jpg";
 import Photo12 from "../../assets/images/solunum.webp";
 import Photo13 from "../../assets/images/tansiyon.jpg";
 import Photo14 from "../../assets/images/tedavi.jpg";
+import IVSerum from '../../assets/images/serum.webp'
+import IVTherapyPhoto from '../../assets/images/terapy.jpg'
+import LabPackagesPhoto from '../../assets/images/lapda.jfif'
+import HealthyLivingPhoto from '../../assets/images/healty.jpg'
+import FAQPhoto from '../../assets/images/faq.jpg'
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
@@ -98,6 +103,32 @@ const Gallery = () => {
         images: `${Photo14}`,
         info: "Evde Fizik Tedavi Hizmetleri",
       },
+      {
+        id: 15,
+        images: `${IVSerum}`,
+       info: "IV Serum Tedavisi"
+       
+    },
+    {
+        id: 16,
+        images: `${IVTherapyPhoto}`,
+       info: "IV Terapi"
+    },
+    {
+        id: 17,
+        images: `${LabPackagesPhoto}`,
+        info: "Laboratuvar Paketleri"
+    },
+    {
+        id: 18,
+        images: `${HealthyLivingPhoto}`,
+       info: "Sağlıklı Yaşam"
+    },
+    {
+        id: 19,
+        images: `${FAQPhoto}`,
+       info: "Sıkça Sorulan Sorular"
+    }
     ],
     []
   );

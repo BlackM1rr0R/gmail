@@ -21,13 +21,43 @@ import Photo11 from "../../assets/images/yarabakimi.jpg";
 import Photo12 from "../../assets/images/solunum.webp";
 import Photo13 from "../../assets/images/tansiyon.jpg";
 import Photo14 from "../../assets/images/tedavi.jpg";
-
+import IVSerum from '../../assets/images/serum.webp'
+import IVTherapyPhoto from '../../assets/images/terapy.jpg'
+import LabPackagesPhoto from '../../assets/images/lapda.jfif'
+import HealthyLivingPhoto from '../../assets/images/healty.jpg'
+import FAQPhoto from '../../assets/images/faq.jpg'
 
 const LatestArticles = () => {
 
 
   const articles = useMemo(
     () => [
+      {
+        id: 15,
+        img: `${IVSerum}`,
+        link: "/details/15",
+        info: "IV Serum Tedavisi"
+
+      },
+      {
+        id: 16,
+        img: `${IVTherapyPhoto}`,
+        link: "/details/16",
+        info: "IV Terapi"
+      },
+      {
+        id: 17,
+        img: `${LabPackagesPhoto}`,
+        link: "/details/17",
+        info: "Laboratuvar Paketleri"
+      },
+      {
+        id: 18,
+        img: `${HealthyLivingPhoto}`,
+        link: "/details/18",
+        info: "Sağlıklı Yaşam"
+      },
+
       {
         id: 7,
         link: "/details/7",
@@ -70,7 +100,7 @@ const LatestArticles = () => {
         img: `${Photo6}`,
         info: "Covid-19 (PCR Testi)",
       },
-    
+
       {
         id: 8,
         link: "/details/8",
@@ -82,7 +112,7 @@ const LatestArticles = () => {
         link: "/details/9",
         img: `${Photo9}`,
         info: "İdrar Yolu Problemleri ",
-      },{
+      }, {
         id: 10,
         link: "/details/10",
         img: `${Photo10}`,
@@ -112,8 +142,13 @@ const LatestArticles = () => {
         img: `${Photo14}`,
         info: "Evde Fizik Tedavi Hizmetleri",
       },
- 
-      
+      {
+        id: 19,
+        img: `${FAQPhoto}`,
+        link: "/details/19",
+        info: "Sıkça Sorulan Sorular"
+      }
+
     ],
     []
   );
@@ -156,8 +191,8 @@ const LatestArticles = () => {
                 to={item.link}
                 className={styles.border}
               >
-                  <img src={item.img} alt="" />
-                  <h2>{item.info}</h2>
+                <img src={item.img} alt="" />
+                <h2>{item.info}</h2>
               </Link>
             </SwiperSlide>
           ))}
