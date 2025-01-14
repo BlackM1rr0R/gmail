@@ -7,14 +7,7 @@ import Patient from "../../assets/images/hasta.png";
 import {
   GrayArrow,
   GrayArrowTrue,
-  GreenArrow,
-  GreenArrowTrue,
-  OrangeArrow,
-  OrangeArrowTrue,
-  RedArrow,
-  RedArrowTrue,
-  VioletArrow,
-  VioletArrowTrue,
+
 } from "../../icons";
 import { Helmet } from "react-helmet-async";
 const initialState = {

@@ -5,11 +5,7 @@ import Hero from "../../components/hero";
 import Main from "../../components/main";
 import Logo from "../../components/logo";
 import YusifAbout from "../../components/yusifabout";
-import Hospital from "../../components/hospital";
-import ChatApp from "../../components/chat";
 
-import Questions from "../../components/questions";
-import SwiperComp from "../../components/swipercomp";
 import LatestArticles from "../../components/latestarticles";
 import { Helmet } from "react-helmet-async";
 

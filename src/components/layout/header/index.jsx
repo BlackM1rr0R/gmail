@@ -4,10 +4,8 @@ import Wrapper from "../../UI/wrapper/index";
 import Logo from "../../../assets/images/logoeternal.png";
 import { Sling as Hamburger } from "hamburger-react";
 import {
-  FacebookIcon,
-  InstagramIcon,
-  TiktokIcon,
-  YoutubeIcon,
+  
+  InstagramIcon
 } from "../../../icons";
 import { Link } from "react-router-dom";
 
@@ -35,6 +33,7 @@ const Header = () => {
             <Link to={"/idiopatik"}>Randevu</Link>
             <Link to={"/kifoz"}>Hizmetlerimiz</Link>
             <Link to={"/about"}>Hakkımda</Link>
+            <Link to={"/serumlar"}>Serumlar</Link>
             <Link to={"/gallery"}>Blog</Link>
             <Link to={"/contact"}>Iletisim</Link>
           </div>
@@ -61,6 +60,7 @@ const Header = () => {
               <Link to={"/about"} onClick={closeMenu}>Hakkımda</Link>
               <Link to={"/idiopatik"} onClick={closeMenu}>Randevu</Link>
               <Link to={"/kifoz"} onClick={closeMenu}>Hizmetlerimiz</Link>
+              <Link to={"/serumlar"}>Serumlar</Link>
               <Link to={"/gallery"} onClick={closeMenu}>Blog</Link>
               <Link to={"/contact"} onClick={closeMenu}>Iletisim</Link>
             </div>

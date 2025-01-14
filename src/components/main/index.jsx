@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./index.module.css";
 import ScrollTrigger from "react-scroll-trigger";
 import CountUp from "react-countup";
-import { Helmet } from "react-helmet-async";
+
 
 const Main = () => {
   const [counterOn, setCounterOn] = useState(false);

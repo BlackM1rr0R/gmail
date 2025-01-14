@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./index.module.css";
 import Wrapper from "../../UI/wrapper/index";
 import Logo from "../../../assets/images/logoeternal.png";
-import { FacebookIcon, InstagramIcon, LinkedinIcon } from "../../../icons";
+import {  InstagramIcon  } from "../../../icons";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
@@ -34,6 +34,7 @@ const Footer = () => {
           <div className={styles.line2}>
             <h2>Hizmetler</h2>
             <ul>
+               <Link to={"/serumlar"}>Serumlar</Link>
               <Link to={"/details/15"}>IV Serumlar</Link>
               <Link to={"/details/16"}>IV Terapiler</Link>
               <Link to={"/details/17"}>Laboratuvar Paketleri</Link>

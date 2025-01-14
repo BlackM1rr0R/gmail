@@ -7,6 +7,8 @@ import Home from "./pages/home";
 import Idiopatik from "./pages/idiopatik";
 import Kifoz from "./pages/kifoz";
 import NotFound from "./pages/notFound";
+import Serumlar from "./pages/serumlar";
+import SerumlarDetails from "./pages/serumlardetails";
 const routeItem = (id, title, path, component,element) => {
   return {
     id,
@@ -25,7 +27,9 @@ const routes = {
  gallery:routeItem(5,"gallery","/gallery",Gallery),
  idiopatik:routeItem(6,"idiopatik","/idiopatik",Idiopatik),
  kifoz:routeItem(7,"kifoz","/kifoz",Kifoz),
- detailsbloog:routeItem(8,"detailsblog","/details/:id",Details)
+ detailsbloog:routeItem(8,"detailsblog","/details/:id",Details),
+ serumlar:routeItem(9,"serumlar","/serumlar",Serumlar),
+ serumlardetails:routeItem(10,"serumlardetails","/serumlar/:id",SerumlarDetails),
 
 };
 

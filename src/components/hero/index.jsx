@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import styles from "./index.module.css";
-import YusifBackground from "../../assets/images/yusifbackground.png";
-import Doctors from "../../assets/images/doctors.png";
 import { RightArrow } from "../../icons/";
 import ScrollTrigger from "react-scroll-trigger";
 import CountUp from "react-countup";
 import Wrapper from "../UI/wrapper";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+
 const Hero = () => {
   const [counterOn, setCounterOn] = useState(false);
   return (
