@@ -131,7 +131,7 @@ const Serumlar = () => {
     <div className={styles.background}>
       <Wrapper>
         <div className={styles.headers}>
-          <h2>Serumlar</h2>
+          <h2>ETERNAL IV TERAPI Tedavileri</h2>
           <p>Serumlar hakkında okuya bilirsiniz.</p>
         </div>
         <div className={styles.boxs}>
