@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
 import styles from './index.module.css'
 const Wrapper = (props) => {
-  return (
-    <div className={styles.background}>{props.children}</div>
-  )
+    return (
+        <div className={styles.wrapper}>
+            {props.children}
+        </div>
+    )
 }
-
-export default Wrapper
+export default Wrapper;

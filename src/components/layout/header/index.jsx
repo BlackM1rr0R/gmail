@@ -1,77 +1,36 @@
 import React, { useState } from "react";
 import styles from "./index.module.css";
-import Wrapper from "../../UI/wrapper/index";
-import Logo from "../../../assets/images/logoeternal.png";
-import { Sling as Hamburger } from "hamburger-react";
-import {
-  
-  InstagramIcon
-} from "../../../icons";
-import { Link } from "react-router-dom";
+import Wrapper from "../../UI/wrapper";
+import GmailIcon from '../../../assets/images/gmailicon.png'
+import SearchIcon from '../../../assets/images/searchicon.png'
+import HelpIcon from '../../../assets/images/helpicon.png'
+import Settingsicon from '../../../assets/images/settingsicon.png'
+import MenuIcon from '../../../assets/images/menuapps.png'
+import ProfileIcon from '../../../assets/images/profilepic.png'
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
 
   return (
-    <div className={styles.background}>
+    <div className={styles.container}>
       <Wrapper>
-        <div className={styles.control}>
-          <Link to={"/"} className={styles.images}>
-            <img src={Logo} alt="" />
-            <h2>ETERNAL</h2>
-            <h2>Sağlık Hizmetleri</h2>
-          </Link>
-          <div className={styles.services}>
-            <Link to={"/idiopatik"}>Randevu</Link>
-            <Link to={"/kifoz"}>Hizmetlerimiz</Link>
-            <Link to={"/about"}>Hakkımda</Link>
-            <Link to={"/serumlar"}>Serumlar</Link>
-            <Link to={"/gallery"}>Blog</Link>
-            <Link to={"/contact"}>Iletisim</Link>
+
+        <div className={styles.controlContainer}>
+          <div className={styles.leftBox}>
+            <img src={GmailIcon} alt="" />
+            <h2>Gmail</h2>
           </div>
-          <div className={styles.phoneHeader}>
-        <h1>ETERNAL</h1>
-        <h2>Sağlık Hizmetleri</h2>
+          <div className={styles.centerBox}>
+            <img src={SearchIcon} alt="" />
+            <input placeholder="Search mail" type="text" />
           </div>
-          <Link to={"https://www.instagram.com/sakaryaevdesaglik.esh/"} className={styles.icons}>
-            <InstagramIcon />
-       
-          </Link>
-          <div className={styles.hamburger}>
-            <Hamburger
-              size={22}
-              distance="lg"
-              toggled={isMenuOpen}
-              toggle={toggleMenu}
-            />
+          <div className={styles.rightBox}>
+            <img src={HelpIcon} alt="" />
+            <img src={Settingsicon} alt="" />
+            <img src={MenuIcon} alt="" />
+            <img className={styles.profileIcon} src={ProfileIcon} alt="" />
           </div>
         </div>
-        {isMenuOpen && (
-          <div className={styles.overlay}>
-            <div className={styles.services}>
-              <Link to={"/about"} onClick={closeMenu}>Hakkımda</Link>
-              <Link to={"/idiopatik"} onClick={closeMenu}>Randevu</Link>
-              <Link to={"/kifoz"} onClick={closeMenu}>Hizmetlerimiz</Link>
-              <Link to={"/serumlar"}>Serumlar</Link>
-              <Link to={"/gallery"} onClick={closeMenu}>Blog</Link>
-              <Link to={"/contact"} onClick={closeMenu}>Iletisim</Link>
-            </div>
-            <Link to={"https://www.instagram.com/sakaryaevdesaglik.esh/"} className={styles.icons}>
-       
-              <InstagramIcon />
-          
-             
-            </Link>
-          </div>
-        )}
       </Wrapper>
     </div>
   );

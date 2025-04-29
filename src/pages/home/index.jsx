@@ -1,40 +1,19 @@
 import React from "react";
-import styles from "./index.module.css";
-import Wrapper from "../../components/UI/wrapper/index";
-import Hero from "../../components/hero";
-import Main from "../../components/main";
-import Logo from "../../components/logo";
-import YusifAbout from "../../components/yusifabout";
-
-import LatestArticles from "../../components/latestarticles";
-import { Helmet } from "react-helmet-async";
-
+import styles from './index.module.css'
+import LeftList from "../../components/leftlist";
+import AllMessage from "../../components/allmessage";
+import Wrapper from "../../components/UI/wrapper";
 const Home = () => {
   return (
-    <>
-             <Helmet>
-            <title>Sakarya Sağlık Hizmetleri</title>
-            <meta
-              name="description"
-              content="ETERNAL Sağlık Hizmetleri ile kolayca randevunuzu ayarlayın ve en iyi sağlık hizmetlerini deneyimleyin."
-            />
-            <meta
-              name="keywords"
-              content="Randevu, Sağlık Hizmetleri, ETERNAL, Online Randevu, Klinik"
-            />
-           
-          </Helmet>
-        <Hero />
+    <div className={styles.container}>
       <Wrapper>
-        <Main />
-        <YusifAbout />
-        <Logo />
-        {/* <Hospital />
-        <ChatApp /> */}
-  <LatestArticles/>
+      <div className={styles.controlContainer}>
 
+        <LeftList />
+        <AllMessage />
+      </div>
       </Wrapper>
-    </>
+    </div>
   );
 };
 

@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.controlContainer {
+  width: 300px;
+}
+.controlContainer .newTask {
+  width: 140px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #C3E7FF;
+  padding: 16px;
+  border-radius: 10px;
+}
+.controlContainer .controlUl {
+  margin-top: 20px;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.controlContainer .controlUl .list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.controlContainer .controlUl .list img {
+  width: 16px;
+}
+.controlContainer .controlUl .list h2 {
+  font-weight: 600;
+}/*# sourceMappingURL=index.module.css.map */
