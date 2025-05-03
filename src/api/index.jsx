@@ -1,25 +1,73 @@
 import axios from "axios";
-const API_URL = "http://localhost:8080";
-export const sendMessage = async (messageData) => {
+
+const API_URL = "http://localhost:8086";
+
+// Kullanıcı girişi
+export const login = async (email, password) => {
   try {
-    const response = await axios.post(`${API_URL}/send`, messageData, {
-      withCredentials: true,
+    const response = await axios.post(`${API_URL}/api/auth/signin`, {
+      email: email,
+      password: password,
     });
+
+    // Token ve username localStorage'a kaydedilir
+    localStorage.setItem("token", response.data.token);
+    localStorage.setItem("username", response.data.username);
+
     return response.data;
   } catch (error) {
-    console.log("Mesaj gonderilmedi", error);
+    console.error("Login failed", error);
     throw error;
   }
 };
 
-export const showGoogleReview = async (showReview) => {
+// Kayıt
+export const register = async (username, email, password) => {
   try {
-    const response = await axios.get("https://featurable.com/api/v1/widgets/ddd9981e-eda0-4798-a92b-2dca78041fb2", showReview, {
-      withCredentials: true,
+    const response = await axios.post(`${API_URL}/api/auth/signup`, {
+      username: username,
+      email: email,
+      password: password,
     });
     return response.data;
   } catch (error) {
-    console.log("Yorumlar Yukelemedi", error)
+    console.error("Register failed", error);
+    throw new Error(error.response ? error.response.data.message : "Kayıt işlemi sırasında bir hata oluştu.");
+  }
+};
+
+// Mesaj gönderme (JWT token kullanarak)
+export const sendMessage = async (messageData) => {
+  const token = localStorage.getItem("token");
+
+  try {
+    const response = await axios.post(`${API_URL}/api/messages/send`, messageData, {
+      headers: {
+        Authorization: `Bearer ${token}`,  // Tokenı burada gönderiyoruz
+      },
+    });
+
+    return response.data;
+  } catch (error) {
+    console.error("Mesaj gönderilemedi", error);
     throw error;
   }
-}
+};
+
+// Kullanıcıya özel mesajları getir (JWT ile korunan endpoint)
+export const getMessages = async () => {
+  const token = localStorage.getItem("token");
+
+  try {
+    const response = await axios.get(`${API_URL}/api/messages`, {
+      headers: {
+        Authorization: `Bearer ${token}`,  // Tokenı burada gönderiyoruz
+      },
+    });
+
+    return response.data;
+  } catch (error) {
+    console.error("Mesajlar alınamadı", error);
+    throw error;
+  }
+};
