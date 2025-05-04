@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-// api.js'den getMessages fonksiyonunu import ettik.
 import styles from './index.module.css'
 import RefreshIcon from '../../assets/images/refresh.png'
 import LeftArrow from '../../assets/images/leftarrow.png'
@@ -8,16 +7,15 @@ import ShapyIcon from '../../assets/images/shapeicon.png'
 import Promotionsicon from '../../assets/images/promotionsicon.png'
 import SocialIcon from '../../assets/images/socialicon.png'
 import FavIcon from '../../assets/images/favicon.png'
-import { getMessages, starMessage } from "../../api";
-
-const AllMessage = () => {
+import { getStarredMessages } from "../../api";
+const Starred = () => {
     const [messages, setMessages] = useState([]);
 
     useEffect(() => {
         // Kullanıcı giriş yaptıysa, mesajları al
         const fetchMessages = async () => {
             try {
-                const messagesData = await getMessages();
+                const messagesData = await getStarredMessages();
                 setMessages(messagesData); // Mesajları state'e kaydet
             } catch (error) {
                 console.error("Mesajlar alınamadı:", error);
@@ -26,14 +24,7 @@ const AllMessage = () => {
 
         fetchMessages(); // Mesajları al
     }, []); // Bileşen mount olduğunda çalışır
-    const handleStar=async(id)=>{
-        try{
-            await starMessage(id);
-            alert("Mesaj yıldızlı olarak işaretlendi.");
-        }catch(error){
-            console.error("Mesaj yıldızlanamadı:", error);
-        }
-    }
+    
     return (
         <div className={styles.container}>
             <div className={styles.header}>
@@ -66,7 +57,7 @@ const AllMessage = () => {
                     messages.map((item) => (
                         <div className={styles.message} key={item.id}>
                             <input type="checkbox" />
-                            <img alt="star" onClick={()=>handleStar(item.id)} src={FavIcon} />
+                            <img src={FavIcon} alt="" />
                             <div className={styles.messageHeader}>
                                 <h2>{item.senderEmail}</h2>
                                 <h2>{item.subject}</h2>
@@ -82,5 +73,4 @@ const AllMessage = () => {
         </div>
     )
 }
-
-export default AllMessage;
+export default Starred;

@@ -59,7 +59,7 @@ export const getMessages = async () => {
   const token = localStorage.getItem("token");
 
   try {
-    const response = await axios.get(`${API_URL}/api/messages`, {
+    const response = await axios.get(`${API_URL}/messages/inbox`, {
       headers: {
         Authorization: `Bearer ${token}`,  // Tokenı burada gönderiyoruz
       },
@@ -71,3 +71,38 @@ export const getMessages = async () => {
     throw error;
   }
 };
+
+export const getStarredMessages = async () => {
+  const token = localStorage.getItem("token");
+
+  try {
+    const response = await axios.get(`${API_URL}/messages/starred`, {
+      headers: {
+        Authorization: `Bearer ${token}`,  // Tokenı burada gönderiyoruz
+      },
+    });
+
+    return response.data;
+  } catch (error) {
+    console.error("Yıldızlı mesajlar alınamadı", error);
+    throw error;
+  }
+}
+
+export const starMessage = async (messageId) => {
+  const token = localStorage.getItem("token");
+
+  try {
+    await axios.post(`${API_URL}/messages/star`, { messageId }, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+        'Content-Type': 'application/json',
+      },
+    });
+  } catch (error) {
+    console.error("Mesaj yıldızlanamadı", error);
+    throw error;
+  }
+};
+
+

@@ -7,32 +7,38 @@ import FavIcon from '../../assets/images/favicon.png'
 import ClockIcon from '../../assets/images/clockicon.png'
 import SentIcon from '../../assets/images/sendicon.png'
 import DraftsIcon from '../../assets/images/draftsicon.png'
+import { Link } from "react-router-dom";
 const LeftList = () => {
     const data = [
         {
             id: 1,
             title: 'Inbox',
-            icon: `${ShapeIcon}`
+            icon: `${ShapeIcon}`,
+            links:`${"/starred"}`
         },
         {
             id: 2,
             title: 'Starred',
-            icon: `${FavIcon}`
+            icon: `${FavIcon}`,
+            links:`${"/starred"}`
         },
         {
             id: 3,
             title: 'Snoozed',
-            icon: `${ClockIcon}`
+            icon: `${ClockIcon}`,
+            links:`${"/starred"}`
         },
         {
             id: 4,
             title: 'Sent',
-            icon: `${SentIcon}`
+            icon: `${SentIcon}`,
+            links:`${"/starred"}`
         },
         {
             id: 5,
             title: 'Drafts',
-            icon: `${DraftsIcon}`
+            icon: `${DraftsIcon}`,
+            links:`${"/starred"}`
         }
     ]
     return (
@@ -45,10 +51,10 @@ const LeftList = () => {
                     </div>
                     <ul className={styles.controlUl}>
                         {data.map((item) => (
-                            <div key={item.id} className={styles.list}>
+                            <Link to={item.links} key={item.id} className={styles.list}>
                                 <img src={item.icon} alt="" />
                                 <h2>{item.title}</h2>
-                            </div>
+                            </Link>
                         ))}
                     </ul>
                 </div>
