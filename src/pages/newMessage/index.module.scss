@@ -1,0 +1,31 @@
+/* src/components/compose.module.css */
+.composeBox {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    border-left: 1px solid #ddd;
+  }
+  
+  .composeBox h2 {
+    margin-bottom: 15px;
+  }
+  
+  .composeBox input,
+  .composeBox textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .composeBox button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: white;
+  width: 1480px;
+  border-radius: 20px;
+  padding: 13px 26px;
+}
+.container .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .header .leftHeader {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.container .header .rightHeader {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.container .selections {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  gap: 126px;
+}
+.container .selections .primary {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.container .messages {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+  gap: 20px;
+}
+.container .messages .message {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+.container .messages .message .messageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 150px;
+}
+.container .messages .message .messageHeader h2 {
+  width: 125px;
+}/*# sourceMappingURL=index.module.css.map */

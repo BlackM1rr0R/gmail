@@ -1,11 +1,14 @@
 
 
+import AllMessage from "./components/allmessage";
 import About from "./pages/about";
 import Contact from "./pages/contact";
 
 import Home from "./pages/home";
+import ComposeMessage from "./pages/newMessage";
 import Profile from "./pages/profile";
 import Register from "./pages/register";
+import SentMessages from "./pages/sentmessages";
 import Starred from "./pages/starred";
 
 const routeItem = (id, title, path, component, element) => {
@@ -25,6 +28,8 @@ const routes = {
   login: routeItem(4, "profile", "/profile", Profile),
   register: routeItem(5, "register", "/register", Register),
   starred: routeItem(6, "starred", "/starred", Starred),
+  sent: routeItem(7, "sent", "/sent", SentMessages),
+  newMessage: routeItem(8, "newMessage", "/newMessage", ComposeMessage),
 
 
 };

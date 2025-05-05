@@ -1,76 +1,86 @@
 import React, { useEffect, useState } from "react";
-import styles from './index.module.css'
-import RefreshIcon from '../../assets/images/refresh.png'
-import LeftArrow from '../../assets/images/leftarrow.png'
-import RightArrow from '../../assets/images/rightarrow.png'
-import ShapyIcon from '../../assets/images/shapeicon.png'
-import Promotionsicon from '../../assets/images/promotionsicon.png'
-import SocialIcon from '../../assets/images/socialicon.png'
-import FavIcon from '../../assets/images/favicon.png'
-import { getStarredMessages, starMessage } from "../../api";
+import styles from './index.module.css';
+import RefreshIcon from '../../assets/images/refresh.png';
+import LeftArrow from '../../assets/images/leftarrow.png';
+import RightArrow from '../../assets/images/rightarrow.png';
+import ShapyIcon from '../../assets/images/shapeicon.png';
+import Promotionsicon from '../../assets/images/promotionsicon.png';
+import SocialIcon from '../../assets/images/socialicon.png';
+
+import { getSentMessages, starMessage } from "../../api";
 import LeftList from "../../components/leftlist";
-const Starred = () => {
+
+const SentMessages = () => {
     const [messages, setMessages] = useState([]);
 
     useEffect(() => {
-        // Kullanıcı giriş yaptıysa, mesajları al
         const fetchMessages = async () => {
             try {
-                const messagesData = await getStarredMessages();
-                setMessages(messagesData); // Mesajları state'e kaydet
+                const messagesData = await getSentMessages();
+                setMessages(messagesData);
             } catch (error) {
                 console.error("Mesajlar alınamadı:", error);
             }
         };
 
-        fetchMessages(); // Mesajları al
-    }, []); // Bileşen mount olduğunda çalışır
+        fetchMessages();
+    }, []);
+
     const handleToggleStar = async (id) => {
         try {
             await starMessage(id);
-            const updatedMessages = await getStarredMessages();
-            setMessages(updatedMessages); // Güncellenmiş mesajları state'e kaydet
-        }
-        catch (error) {
+            const updatedMessages = await getSentMessages();
+            setMessages(updatedMessages);
+        } catch (error) {
             console.error("Mesaj yıldızlanamadı:", error);
         }
-    }
+    };
+
     return (
         <div className={styles.container}>
             <LeftList />
             <div className={styles.header}>
                 <div className={styles.leftHeader}>
                     <input type="checkbox" />
-                    <img src={RefreshIcon} alt="" />
+                    <img src={RefreshIcon} alt="refresh" />
                 </div>
                 <div className={styles.rightHeader}>
                     <h2>{messages.length}-16 of {messages.length}</h2>
-                    <img src={LeftArrow} alt="" />
-                    <img src={RightArrow} alt="" />
+                    <img src={LeftArrow} alt="left" />
+                    <img src={RightArrow} alt="right" />
                 </div>
             </div>
+
             <div className={styles.selections}>
                 <div className={styles.primary}>
-                    <img src={ShapyIcon} alt="" />
+                    <img src={ShapyIcon} alt="primary" />
                     <h2>Primary</h2>
                 </div>
                 <div className={styles.primary}>
-                    <img src={Promotionsicon} alt="" />
+                    <img src={Promotionsicon} alt="promotions" />
                     <h2>Promotions</h2>
                 </div>
                 <div className={styles.primary}>
-                    <img src={SocialIcon} alt="" />
+                    <img src={SocialIcon} alt="social" />
                     <h2>Social</h2>
                 </div>
             </div>
+
             <div className={styles.messages}>
                 {messages.length > 0 ? (
                     messages.map((item) => (
                         <div className={styles.message} key={item.id}>
                             <input type="checkbox" />
-                            <img src={FavIcon} alt="" onClick={()=>handleToggleStar(item.id)}/>
+                            <span
+                                className={styles.starIcon}
+                                style={{ cursor: 'pointer', fontSize: '20px', marginRight: '8px' }}
+                                onClick={() => handleToggleStar(item.id)}
+                            >
+                                {item.starred ? '⭐' : '☆'}
+                            </span>
                             <div className={styles.messageHeader}>
                                 <h2>{item.senderEmail}</h2>
+                                <h2>{item.receiverEmail}</h2>
                                 <h2>{item.subject}</h2>
                                 <h3>{item.content}</h3>
                                 <h3>{item.sentAt}</h3>
@@ -78,10 +88,11 @@ const Starred = () => {
                         </div>
                     ))
                 ) : (
-                    <p>No messages found.</p> // Mesaj yoksa uyarı göster
+                    <p>No messages found.</p>
                 )}
             </div>
         </div>
-    )
-}
-export default Starred;
+    );
+};
+
+export default SentMessages;

@@ -41,7 +41,7 @@ export const sendMessage = async (messageData) => {
   const token = localStorage.getItem("token");
 
   try {
-    const response = await axios.post(`${API_URL}/api/messages/send`, messageData, {
+    const response = await axios.post(`${API_URL}/messages/send`, messageData, {
       headers: {
         Authorization: `Bearer ${token}`,  // Tokenı burada gönderiyoruz
       },
@@ -105,4 +105,20 @@ export const starMessage = async (messageId) => {
   }
 };
 
+export const getSentMessages = async () => {
+  const token = localStorage.getItem("token");
+  try {
+    const response = await axios.get(`${API_URL}/messages/sent`, {
+      headers: {
+        Authorization: `Bearer ${token}`,  // Tokenı burada gönderiyoruz
+      },
+    });
+    return response.data;
+
+  }
+  catch (error) {
+    console.error("Gönderilen mesajlar alınamadı", error);
+    throw error;
+  }
+}
 
