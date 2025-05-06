@@ -27,7 +27,7 @@ const LeftList = () => {
             id: 3,
             title: 'Snoozed',
             icon: `${ClockIcon}`,
-            links: `${"/starred"}`
+            links: `${"/snoozed"}`
         },
         {
             id: 4,
@@ -39,7 +39,7 @@ const LeftList = () => {
             id: 5,
             title: 'Drafts',
             icon: `${DraftsIcon}`,
-            links: `${"/starred"}`
+            links: `${"/drafts"}`
         }
     ]
 

@@ -1,25 +1,24 @@
 import React, { useEffect, useState } from "react";
-import styles from './index.module.css';
 import RefreshIcon from '../../assets/images/refresh.png';
 import LeftArrow from '../../assets/images/leftarrow.png';
 import RightArrow from '../../assets/images/rightarrow.png';
 import ShapyIcon from '../../assets/images/shapeicon.png';
 import Promotionsicon from '../../assets/images/promotionsicon.png';
 import SocialIcon from '../../assets/images/socialicon.png';
-
-import { getSentMessages, starMessage } from "../../api";
+import styles from './index.module.css';
+import { getSnoozedMessages, starMessage } from "../../api";
 import LeftList from "../../components/leftlist";
 
-const SentMessages = () => {
+const SnoozedMessages = () => {
     const [messages, setMessages] = useState([]);
 
     useEffect(() => {
         const fetchMessages = async () => {
             try {
-                const messagesData = await getSentMessages();
+                const messagesData = await getSnoozedMessages();
                 setMessages(messagesData);
             } catch (error) {
-                console.error("Mesajlar alınamadı:", error);
+                console.error("Snoozed mesajlar alınamadı:", error);
             }
         };
 
@@ -29,7 +28,7 @@ const SentMessages = () => {
     const handleToggleStar = async (id) => {
         try {
             await starMessage(id);
-            const updatedMessages = await getSentMessages();
+            const updatedMessages = await getSnoozedMessages();
             setMessages(updatedMessages);
         } catch (error) {
             console.error("Mesaj yıldızlanamadı:", error);
@@ -89,7 +88,7 @@ const SentMessages = () => {
                             </div>
                         ))
                     ) : (
-                        <p>No messages found.</p>
+                        <p>No snoozed messages found.</p>
                     )}
                 </div>
             </div>
@@ -97,4 +96,4 @@ const SentMessages = () => {
     );
 };
 
-export default SentMessages;
+export default SnoozedMessages;

@@ -122,3 +122,51 @@ export const getSentMessages = async () => {
   }
 }
 
+export const getSnoozedMessages = async () => {
+  const token = localStorage.getItem("token");
+
+  try {
+    const response = await axios.get(`${API_URL}/messages/snoozed`, {
+      headers: {
+        Authorization: `Bearer ${token}`,  // Tokenı burada gönderiyoruz
+      },
+    });
+
+    return response.data;
+  } catch (error) {
+    console.error("Snoozed mesajlar alınamadı", error);
+    throw error;
+  }
+}
+export const snoozeMessage=async (messageId) => {
+  const token = localStorage.getItem("token");
+
+  try {
+    await axios.post(`${API_URL}/messages/snooze`, { messageId }, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+        'Content-Type': 'application/json',
+      },
+    });
+  } catch (error) {
+    console.error("Mesaj snooze edilemedi", error);
+    throw error;
+  }
+}
+
+export const getDraftMessages = async () => {
+  const token = localStorage.getItem("token");
+
+  try {
+    const response = await axios.get(`${API_URL}/messages/drafts`, {
+      headers: {
+        Authorization: `Bearer ${token}`,  // Tokenı burada gönderiyoruz
+      },
+    });
+
+    return response.data;
+  } catch (error) {
+    console.error("Taslak mesajlar alınamadı", error);
+    throw error;
+  }
+}
