@@ -9,23 +9,30 @@ import Promotionsicon from '../../assets/images/promotionsicon.png';
 import SocialIcon from '../../assets/images/socialicon.png';
 import FavIcon from '../../assets/images/favicon.png';
 
-import { getMessages, snoozeMessage, starMessage } from "../../api";
+import { getMessages, snoozeMessage, starMessage, getDrafts } from "../../api";
 
 const AllMessage = () => {
     const [messages, setMessages] = useState([]);
+    const [drafts, setDrafts] = useState([]);
+    const [tab, setTab] = useState("inbox"); // inbox or drafts
 
     useEffect(() => {
-        const fetchMessages = async () => {
+        const fetchData = async () => {
             try {
-                const messagesData = await getMessages();
-                setMessages(messagesData);
+                if (tab === "inbox") {
+                    const messagesData = await getMessages();
+                    setMessages(messagesData);
+                } else if (tab === "drafts") {
+                    const draftsData = await getDrafts();
+                    setDrafts(draftsData);
+                }
             } catch (error) {
                 console.error("Mesajlar alınamadı:", error);
             }
         };
 
-        fetchMessages();
-    }, []);
+        fetchData();
+    }, [tab]);
 
     const handleStar = async (id) => {
         try {
@@ -35,7 +42,6 @@ const AllMessage = () => {
                     message.id === id ? { ...message, starred: !message.starred } : message
                 )
             );
-
         } catch (error) {
             console.error("Mesaj yıldızlanamadı:", error);
         }
@@ -58,20 +64,20 @@ const AllMessage = () => {
                     <img src={RefreshIcon} alt="Refresh" />
                 </div>
                 <div className={styles.rightHeader}>
-                    <h2>{messages.length}-16 of {messages.length}</h2>
+                    <h2>{tab === "inbox" ? `${messages.length}-16 of ${messages.length}` : `Drafts: ${drafts.length}`}</h2>
                     <img src={LeftArrow} alt="Previous" />
                     <img src={RightArrow} alt="Next" />
                 </div>
             </div>
 
             <div className={styles.selections}>
-                <div className={styles.primary}>
+                <div className={styles.primary} onClick={() => setTab("inbox")}>
                     <img src={ShapyIcon} alt="Primary" />
-                    <h2>Primary</h2>
+                    <h2>Inbox</h2>
                 </div>
-                <div className={styles.primary}>
-                    <img src={Promotionsicon} alt="Promotions" />
-                    <h2>Promotions</h2>
+                <div className={styles.primary} onClick={() => setTab("drafts")}>
+                    <img src={Promotionsicon} alt="Drafts" />
+                    <h2>Drafts</h2>
                 </div>
                 <div className={styles.primary}>
                     <img src={SocialIcon} alt="Social" />
@@ -80,26 +86,22 @@ const AllMessage = () => {
             </div>
 
             <div className={styles.messages}>
-                {messages.length > 0 ? (
+                {tab === "inbox" && messages.length > 0 ? (
                     messages.map((item) => (
                         <div className={styles.message} key={item.id}>
                             <input type="checkbox" />
-
-                            {/* Yıldız ikonu */}
                             <span
                                 onClick={() => handleStar(item.id)}
                                 style={{ cursor: 'pointer', fontSize: '24px' }}
                             >
                                 {item.starred ? '⭐' : '☆'}
                             </span>
-
                             <img
                                 alt="snooze"
                                 onClick={() => handleSnooze(item.id)}
                                 src={FavIcon}
                                 style={{ cursor: 'pointer' }}
                             />
-
                             <div className={styles.messageHeader}>
                                 <h2>{item.senderEmail}</h2>
                                 <h2>{item.subject}</h2>
@@ -108,11 +110,21 @@ const AllMessage = () => {
                             </div>
                         </div>
                     ))
+                ) : tab === "drafts" && drafts.length > 0 ? (
+                    drafts.map((item) => (
+                        <div className={styles.message} key={item.id}>
+                            <div className={styles.messageHeader}>
+                                <h2>{item.receiverEmail || "Taslak (Alıcı yok)"}</h2>
+                                <h2>{item.subject || "(Başlık yok)"}</h2>
+                                <h3>{item.content || "(İçerik boş)"}</h3>
+                                <h3>{item.createdAt || ""}</h3>
+                            </div>
+                        </div>
+                    ))
                 ) : (
                     <p>No messages found.</p>
                 )}
             </div>
-
         </div>
     );
 };

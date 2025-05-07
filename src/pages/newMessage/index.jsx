@@ -1,7 +1,7 @@
 // src/components/ComposeMessage.jsx
 import React, { useState } from 'react';
 import styles from './index.module.css';
-import { sendMessage } from '../../api';
+import { sendMessage, saveAsDraft } from '../../api'; // <- saveDraft ekledik
 
 const ComposeMessage = () => {
   const [formData, setFormData] = useState({
@@ -29,6 +29,17 @@ const ComposeMessage = () => {
     }
   };
 
+  const handleSaveDraft = async () => {
+    try {
+      await saveAsDraft(formData);
+      alert('Taslak olarak kaydedildi.');
+      setFormData({ receiverEmail: '', subject: '', content: '' });
+    } catch (error) {
+      alert('Taslak kaydedilemedi.');
+      console.error(error);
+    }
+  };
+
   return (
     <div className={styles.composeBox}>
       <h2>Yeni Mesaj</h2>
@@ -39,7 +50,6 @@ const ComposeMessage = () => {
           placeholder="Alıcı Email"
           value={formData.receiverEmail}
           onChange={handleChange}
-          required
         />
         <input
           type="text"
@@ -47,7 +57,6 @@ const ComposeMessage = () => {
           placeholder="Konu"
           value={formData.subject}
           onChange={handleChange}
-          required
         />
         <textarea
           name="content"
@@ -55,9 +64,11 @@ const ComposeMessage = () => {
           rows="6"
           value={formData.content}
           onChange={handleChange}
-          required
         />
-        <button type="submit">Gönder</button>
+        <div className={styles.buttons}>
+          <button type="submit">Gönder</button>
+          <button type="button" onClick={handleSaveDraft}>Taslağa Kaydet</button>
+        </div>
       </form>
     </div>
   );

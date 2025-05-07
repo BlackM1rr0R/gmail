@@ -138,7 +138,7 @@ export const getSnoozedMessages = async () => {
     throw error;
   }
 }
-export const snoozeMessage=async (messageId) => {
+export const snoozeMessage = async (messageId) => {
   const token = localStorage.getItem("token");
 
   try {
@@ -154,7 +154,7 @@ export const snoozeMessage=async (messageId) => {
   }
 }
 
-export const getDraftMessages = async () => {
+export const getDrafts = async () => {
   const token = localStorage.getItem("token");
 
   try {
@@ -167,6 +167,22 @@ export const getDraftMessages = async () => {
     return response.data;
   } catch (error) {
     console.error("Taslak mesajlar alınamadı", error);
+    throw error;
+  }
+}
+
+export const saveAsDraft = async (message) => {
+  const token = localStorage.getItem("token");
+  try {
+    const response = await axios.post(`${API_URL}/messages/draft`, message, {
+      headers: {
+        Authorization: `Bearer ${token}`,  // Tokenı burada gönderiyoruz
+      },
+    });
+    return response.data;
+  }
+  catch (error) {
+    console.error("Taslak mesaj kaydedilemedi", error);
     throw error;
   }
 }
