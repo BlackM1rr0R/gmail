@@ -186,3 +186,43 @@ export const saveAsDraft = async (message) => {
     throw error;
   }
 }
+
+export const deleteMesssage = async (messageId) => {
+  const token = localStorage.getItem("token");
+
+  try {
+    await axios.delete(`${API_URL}/messages/delete`, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+        'Content-Type': 'application/json',
+      },
+      data: { messageId }, // messageId'yi burada gönderiyoruz
+    });
+  }
+  catch (error) {
+    console.error("Mesaj silinemedi", error);
+    throw error;
+  }
+}
+export const getTrashMessages = async () => {
+  const token = localStorage.getItem("token");
+  try {
+    const response = await axios.get(`${API_URL}/messages/trash`, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+
+    // Gelen veriyi kontrol et
+    if (Array.isArray(response.data)) {
+      return response.data;
+    } else {
+      console.warn("Beklenmeyen veri formatı:", response.data);
+      return []; // Hatalıysa boş dizi döndür
+    }
+  } catch (error) {
+    console.error("Çöp kutusu mesajları alınamadı", error);
+    return []; // Hata durumunda da boş dizi döndür
+  }
+};
+

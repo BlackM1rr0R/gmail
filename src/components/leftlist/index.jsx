@@ -40,7 +40,13 @@ const LeftList = () => {
             title: 'Drafts',
             icon: `${DraftsIcon}`,
             links: `${"/drafts"}`
-        }
+        },
+        {
+            id: 6,
+            title: 'Trash',
+            icon: `${DraftsIcon}`,
+            links: `${"/trash"}`
+        },
     ]
 
     return (

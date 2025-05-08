@@ -1,0 +1,81 @@
+.trashWrapper {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  background-color: #fafafa;
+}
+
+.trashContainer {
+  background-color: white;
+  width: 100%;
+  border-radius: 20px;
+  padding: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.trashHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.trashHeader h1 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.trashControls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+.trashControls button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.trashControls button:hover {
+  background-color: #ddd;
+}
+
+.trashMessages {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.trashMessageCard {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  transition: background-color 0.2s;
+}
+.trashMessageCard:hover {
+  background-color: #f9f9f9;
+}
+.trashMessageCard .trashMessageInfo {
+  display: grid;
+  grid-template-columns: 200px 300px 1fr 150px;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+.trashMessageCard .trashMessageInfo h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.trashMessageCard .trashMessageInfo h3 {
+  font-size: 14px;
+  color: #666;
+}
+.trashMessageCard .trashMessageInfo p {
+  font-size: 13px;
+  color: #999;
+}/*# sourceMappingURL=index.module.css.map */

@@ -12,6 +12,7 @@ import Register from "./pages/register";
 import SentMessages from "./pages/sentmessages";
 import SnoozedMessages from "./pages/snoozedmessages";
 import Starred from "./pages/starred";
+import Trash from "./pages/trash";
 
 const routeItem = (id, title, path, component, element) => {
   return {
@@ -34,6 +35,7 @@ const routes = {
   newMessage: routeItem(8, "newMessage", "/newMessage", ComposeMessage),
   snoozed: routeItem(9, "snoozed", "/snoozed", SnoozedMessages),
   drafts: routeItem(10, "drafts", "/drafts", DraftMessages),
+  trash: routeItem(11, "trash", "/trash", Trash),
 
 
 };
