@@ -1,49 +1,107 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.container {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
 }
-
 .container .controlContainer {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 .container .controlContainer .leftBox {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  gap: 10px;
+  gap: 0.5rem;
 }
-.container .controlContainer .leftBox h2 {
-  font-size: 19px;
-  color: #64686C;
-  font-weight: 700;
+.container .controlContainer .leftBox .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #202124;
+}
+.container .controlContainer .leftBox .logo img {
+  width: 32px;
+  height: 32px;
+}
+.container .controlContainer .leftBox .logo h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 .container .controlContainer .centerBox {
   display: flex;
   align-items: center;
+  background-color: #f1f3f4;
+  padding: 0.4rem 1rem;
+  border-radius: 24px;
+  width: 100%;
+  max-width: 500px;
 }
 .container .controlContainer .centerBox img {
-  position: relative;
-  left: 50px;
-  width: 13px;
+  width: 20px;
+  margin-right: 0.5rem;
 }
 .container .controlContainer .centerBox input {
-  width: 800px;
-  background-color: #EAF1FB;
-  border-radius: 20px;
+  flex: 1;
   border: none;
-  padding: 12.5px 54px;
+  background: transparent;
+  outline: none;
+  font-size: 1rem;
 }
 .container .controlContainer .rightBox {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 1rem;
 }
 .container .controlContainer .rightBox img {
-  width: 18px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.container .controlContainer .rightBox img:hover {
+  transform: scale(1.1);
 }
 .container .controlContainer .rightBox .profileIcon {
-  width: 26px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 0.5rem;
+}
+.container .controlContainer .rightBox div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.container .controlContainer .rightBox div span {
+  font-weight: 500;
+}
+.container .controlContainer .rightBox div button {
+  padding: 0.25rem 0.6rem;
+  border: none;
+  background-color: #d93025;
+  color: white;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background-color 0.2s ease;
+}
+.container .controlContainer .rightBox div button:hover {
+  background-color: #b71c1c;
+}
+
+@media (max-width: 768px) {
+  .controlContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .controlContainer .centerBox {
+    width: 100%;
+  }
+  .controlContainer .rightBox {
+    align-self: flex-end;
+  }
 }/*# sourceMappingURL=index.module.css.map */

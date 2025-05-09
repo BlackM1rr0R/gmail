@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { login } from "../../api";
 import { Link, useNavigate } from "react-router-dom";
-
+import styles from './index.module.css'
 const Profile = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -21,7 +21,7 @@ const Profile = () => {
     };
 
     return (
-        <form onSubmit={handleLogin}>
+        <form onSubmit={handleLogin} className={styles.form}>
             <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
             <input type="password" placeholder="Şifre" value={password} onChange={(e) => setPassword(e.target.value)} />
             <button type="submit">Giriş Yap</button>
